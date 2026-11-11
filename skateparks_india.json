@@ -17,8 +17,8 @@
     "quality": "World-class smooth concrete facility; tied as India's largest public skatepark",
     "obstacles": "Massive flow bowl with deep/shallow ends and pool coping, extensive street league section, 8-stair with square handrail, hubbas, euro gap, A-frame rail, manual pads, curved banks, perimeter pump line",
     "yt_query": "\"Chandigarh Skatepark\" \"Sector 17\"",
-    "instagram": "https://www.instagram.com/chandigarhskateboarding/",
-    "ig_handle": "@chandigarhskateboarding",
+    "has_news": true,
+    "news_id": "IN-CH-01",
     "spot_insight": "Ideal for both speed transitions and technical inline slalom. Smooth concrete with excellent grip in dry weather."
   },
   {
@@ -39,8 +39,8 @@
     "quality": "Tied with Sector 17 Chandigarh as India's largest public skatepark (44,000 sq ft)",
     "obstacles": "Championship street course, massive deep bowl, 3-stair & 6-stair handrails, hubbas, down-ledges, A-frame, flatbars, curved banks",
     "yt_query": "\"Lohia Park\" skatepark Lucknow",
-    "instagram": null,
-    "ig_handle": null,
+    "has_news": true,
+    "news_id": "IN-UP-01",
     "spot_insight": "Huge championship layout designed for high-speed street lines and transition air tricks."
   },
   {
@@ -61,8 +61,8 @@
     "quality": "Huge concrete street and transition facility with dual connected bowls",
     "obstacles": "Massive concrete bowl with steel coping, street plaza with multiple ledges, hubbas, flatbars, down-rails, bank-to-bank hip",
     "yt_query": "\"Nerul Skatepark\" Navi Mumbai",
-    "instagram": null,
-    "ig_handle": null,
+    "has_news": true,
+    "news_id": "IN-MH-02",
     "spot_insight": "One of the best bowl transition lines in Western India; regular venue for state-level skating trials."
   },
   {
@@ -83,8 +83,8 @@
     "quality": "Super-smooth reinforced concrete with custom desert tones; international standard clover bowl",
     "obstacles": "Large 3-tier clover bowl with variable depths, tall vert extensions, spine transfer, mellow bowl with hubba and handrail, euro gap, pyramid",
     "yt_query": "\"Desert Dolphin Skatepark\" Khempur",
-    "instagram": "https://www.instagram.com/desertdolphinskatepark/",
-    "ig_handle": "@desertdolphinskatepark",
+    "has_news": true,
+    "news_id": "IN-RJ-01",
     "spot_insight": "Iconic clover bowl with smooth coping and zero seam cracks. A world-class destination facility."
   },
   {
@@ -105,8 +105,8 @@
     "quality": "Premier riverfront concrete skatepark designed to international competition standards",
     "obstacles": "Flow bowl with variable depths, street plaza, handrails, stair sets, hubba ledges, roll-in banks, A-frame spine",
     "yt_query": "\"Sabarmati Riverfront\" skatepark Ahmedabad",
-    "instagram": null,
-    "ig_handle": null,
+    "has_news": true,
+    "news_id": "IN-GJ-01",
     "spot_insight": "Well-lit and breeze-cooled riverfront plaza; perfect for evening transition flow and technical grinds."
   },
   {
@@ -127,8 +127,8 @@
     "quality": "Modern dual bowl concrete facility with beginner and advanced transition flow",
     "obstacles": "Mellow beginner bowl, deep pool bowl with coping, bump-to-bump, perimeter street section with ledges and flat rails",
     "yt_query": "\"Namo Grand Central Park\" skatepark Thane",
-    "instagram": null,
-    "ig_handle": null,
+    "has_news": false,
+    "news_id": null,
     "spot_insight": "Fresh high-grade concrete with low rolling resistance. The shallow bowl is excellent for practicing drop-ins."
   },
   {
@@ -149,8 +149,8 @@
     "quality": "Iconic seaside concrete street plaza integrated into an urban amphitheater",
     "obstacles": "Street plaza with banks, steep quarter pipes, hubba ledges, down ledges, flat rails, manual pads",
     "yt_query": "\"Carter Road Skatepark\" Bandra Mumbai",
-    "instagram": null,
-    "ig_handle": null,
+    "has_news": true,
+    "news_id": "IN-MH-01",
     "spot_insight": "Mumbai's spiritual skate home. Great coastal community vibe, active during sunset sessions."
   },
   {
@@ -171,8 +171,8 @@
     "quality": "Industrial-chic urban concrete skatepark inside the historic Alembic Art District",
     "obstacles": "Deep concrete bowl, transition quarter pipes, flat rails, ledges, manual pads, pyramid bank",
     "yt_query": "\"Alembic\" skatepark Vadodara",
-    "instagram": null,
-    "ig_handle": null,
+    "has_news": false,
+    "news_id": null,
     "spot_insight": "Superb artistic ambiance with smooth coping and plenty of shaded viewing areas."
   },
   {
@@ -193,8 +193,8 @@
     "quality": "Largest public concrete skatepark in Northeast India with street and bowl flow",
     "obstacles": "Smooth bowl with pool coping, down-rail, hubbas, A-frame, banked hips, manual pads, roll-in waterfall",
     "yt_query": "\"NFRSA\" skatepark Guwahati",
-    "instagram": null,
-    "ig_handle": null,
+    "has_news": false,
+    "news_id": null,
     "spot_insight": "Premier training ground for North-East athletes preparing for national competitions."
   },
   {
@@ -215,8 +215,8 @@
     "quality": "State-of-the-art public facility built by the municipality in rural Karnataka",
     "obstacles": "Flow bowl, banks, hubbas, down-ledges, flat rail, quarter pipe, roll-in",
     "yt_query": "\"Chintamani\" skatepark Karnataka",
-    "instagram": null,
-    "ig_handle": null,
+    "has_news": false,
+    "news_id": null,
     "spot_insight": "Inspiring grassroots municipal park that introduced modern concrete transitions to rural youth."
   },
   {
@@ -237,8 +237,8 @@
     "quality": "Central gathering hub for Goa skateboarding overlooking the Mandovi River",
     "obstacles": "Quarter pipes, flat ground rails, funbox with ledge, movable kickers, manual pad",
     "yt_query": "\"Miramar\" skatepark \"Youth Hostel\" Goa",
-    "instagram": null,
-    "ig_handle": null,
+    "has_news": false,
+    "news_id": null,
     "spot_insight": "Riverfront sea breeze makes this comfortable during early mornings and sunset sessions."
   },
   {
@@ -259,8 +259,8 @@
     "quality": "Historic subterranean indoor wooden park; weatherproof haven from Delhi's heat and smog",
     "obstacles": "Full wooden vert ramp, mini-ramp transitions, quarter pipes, flat grind rails, launch banks, dedicated core skateshop",
     "yt_query": "\"Delhi Skateboarding Academy\" \"Neb Sarai\"",
-    "instagram": "https://www.instagram.com/delhi_sb/",
-    "ig_handle": "@delhi_sb",
+    "has_news": true,
+    "news_id": "IN-DL-02",
     "spot_insight": "Delhi's foundational indoor hall. Wooden surface provides forgiving fall protection when practicing advanced flips."
   },
   {
@@ -281,8 +281,8 @@
     "quality": "Hybrid covered wooden ramp room and outdoor concrete street training park",
     "obstacles": "Wooden mini-ramps, quarter pipes, flatbars, grind boxes, foam pit for aerial stunts, outdoor banks, ledges, kickers",
     "yt_query": "\"Backyard Skatepark\" \"Neb Sarai\"",
-    "instagram": "https://www.instagram.com/backyardskatepark_/",
-    "ig_handle": "@backyardskatepark_",
+    "has_news": false,
+    "news_id": null,
     "spot_insight": "The foam pit is a huge plus for freestyle skaters practicing rotational spins and flips safely."
   },
   {
@@ -303,8 +303,8 @@
     "quality": "Well-maintained urban skate facility with smooth concrete",
     "obstacles": "Sectional mini-ramp, kidney bowl, pyramid street hip, A-frame rail, round flatbar, low hubbas, manual pad",
     "yt_query": "\"Proper Park\" skatepark Pune Hotfut",
-    "instagram": null,
-    "ig_handle": null,
+    "has_news": false,
+    "news_id": null,
     "spot_insight": "Well-sheltered transition lines; fantastic for intermediate skaters refining pyramid transfers."
   },
   {
@@ -325,8 +325,8 @@
     "quality": "Covered wooden ramp training facility with modular street elements",
     "obstacles": "Large wooden mini-ramp, quarter pipe wall, flat rails, grind boxes, bank to bank, manual pad",
     "yt_query": "\"United Roller Sports Club\" Dhelpur Mohali skatepark",
-    "instagram": null,
-    "ig_handle": null,
+    "has_news": false,
+    "news_id": null,
     "spot_insight": "Top training hub in Punjab for junior speed and freestyle skaters transitioning to street."
   },
   {
@@ -347,8 +347,8 @@
     "quality": "One of India's foundational skateparks featuring an expansive concrete bowl and street section",
     "obstacles": "Variable-depth concrete bowl with spine, mini-ramp, 4-stair with square handrail, hubba ledges, flatbars, curved banks",
     "yt_query": "\"Play Arena\" skatepark Sarjapur Bangalore",
-    "instagram": null,
-    "ig_handle": null,
+    "has_news": false,
+    "news_id": null,
     "spot_insight": "A benchmark bowl in South India. Features deep vertical walls suited for experienced bowl carvers."
   },
   {
@@ -369,8 +369,8 @@
     "quality": "Chennai's primary purpose-built concrete skatepark with balanced street and transition flow",
     "obstacles": "Bowl section with roll-in, banks, quarter pipe hips, flat rails, low-to-high ledge, euro gap, manual pad",
     "yt_query": "\"Madras Wheelers\" skatepark Chennai",
-    "instagram": "https://www.instagram.com/madraswheelers/",
-    "ig_handle": "@madraswheelers",
+    "has_news": false,
+    "news_id": null,
     "spot_insight": "Active local coaching academy. Excellent place to rent pads and try a bowl for the first time."
   },
   {
@@ -391,8 +391,8 @@
     "quality": "Sculpted concrete bowl and street features; premier urban hub in Kerala",
     "obstacles": "Flow bowl, mini-ramp transitions, street obstacles, flatground lounge",
     "yt_query": "\"Loop Skatepark\" Kochi",
-    "instagram": "https://www.instagram.com/loopskatepark/",
-    "ig_handle": "@loopskatepark",
+    "has_news": false,
+    "news_id": null,
     "spot_insight": "Very clean, aesthetic bowl design with an energetic youth skating community."
   },
   {
@@ -413,9 +413,9 @@
     "quality": "Pioneering action sports hub featuring India's first asphalt pump track and wooden transition room",
     "obstacles": "Asphalt pump track with continuous berms and rollers, wooden mini-ramps, quarter pipes, wallride curve, spine, street flatbar",
     "yt_query": "\"WallRide Park\" Hyderabad pumptrack",
-    "instagram": "https://www.instagram.com/wallridepark/",
-    "ig_handle": "@wallridepark",
-    "spot_insight": "Riding a pump track is the single best way to build lower-body endurance, rhythm, and quad pumping strength without pushing."
+    "has_news": true,
+    "news_id": "IN-TG-01",
+    "spot_insight": "Riding a pump track builds lower-body endurance, rhythm, and quad pumping strength without pushing."
   },
   {
     "id": "IN-LA-01",
@@ -435,8 +435,8 @@
     "quality": "World's highest skate & bike pump track (over 11,500 ft above sea level) with Himalayan backdrop",
     "obstacles": "Continuous asphalt pump track with berms and rollers, concrete bowl section, mini ramp",
     "yt_query": "\"Disko Valley\" Leh Ladakh skate",
-    "instagram": null,
-    "ig_handle": null,
+    "has_news": true,
+    "news_id": "IN-LA-01",
     "spot_insight": "High-altitude skating demands lung capacity. Acclimate properly before sustained pump sessions at 11,500 ft."
   },
   {
@@ -457,8 +457,8 @@
     "quality": "India's first rural skatepark; internationally acclaimed social impact project",
     "obstacles": "Huge concrete bowl with deep/shallow ends, pump transitions, rollover hips, street ledges, beginner banks",
     "yt_query": "\"Janwaar Castle\" skatepark Panna",
-    "instagram": "https://www.instagram.com/janwaar_castle/",
-    "ig_handle": "@janwaar_castle",
+    "has_news": true,
+    "news_id": "IN-MP-01",
     "spot_insight": "A historic spot in Indian skateboarding. Cultivated national medalists from a rural farming village."
   },
   {
@@ -479,8 +479,8 @@
     "quality": "Scenic mountain concrete skatepark built amidst pine trees; premier hub of North-East skateboarding",
     "obstacles": "A-frame rail, steep banks, stair set with handrail, manual pads, transition bowls, street ledges",
     "yt_query": "\"Pro-Life Skatepark\" Shillong",
-    "instagram": null,
-    "ig_handle": null,
+    "has_news": false,
+    "news_id": null,
     "spot_insight": "Surrounded by pine forests. The fresh mountain air and grippy concrete make it a standout session spot."
   },
   {
@@ -501,8 +501,8 @@
     "quality": "High-altitude mountain skatepark with scenic pine valley views",
     "obstacles": "Compact bowl transition, bank ramps, quarter pipe, flat rail",
     "yt_query": "\"Butfire Skatepark\" Ooty",
-    "instagram": null,
-    "ig_handle": null,
+    "has_news": false,
+    "news_id": null,
     "spot_insight": "Cool mountain climate year-round. Great for morning bowl sessions."
   },
   {
@@ -523,8 +523,8 @@
     "quality": "Grassroots seaside concrete bowl that empowered Kamali Moorthy and local surf/skate culture",
     "obstacles": "Concrete mini-ramp and kidney bowl transition with coping, roll-in banks",
     "yt_query": "\"Mahabs Skatepark\" Mahabalipuram",
-    "instagram": null,
-    "ig_handle": null,
+    "has_news": false,
+    "news_id": null,
     "spot_insight": "A coastal grassroots bowl where surfing culture meets skateboarding on the Coromandel Coast."
   },
   {
@@ -545,8 +545,8 @@
     "quality": "Rooftop and ground concrete mini-ramp and bowl; India's first school-integrated skatepark",
     "obstacles": "Wooden and concrete mini-ramps, quarter pipes, rollover spine, flatbars",
     "yt_query": "\"Kovalam Skate Club\" SISP",
-    "instagram": "https://www.instagram.com/kovalamskateclub/",
-    "ig_handle": "@kovalamskateclub",
+    "has_news": true,
+    "news_id": "IN-KL-02",
     "spot_insight": "First school in India to incorporate skateboarding into educational attendance initiatives."
   },
   {
@@ -567,8 +567,8 @@
     "quality": "Eco-friendly concrete bowl facility nestled inside the Auroville forest sanctuary",
     "obstacles": "Flow bowl with pool coping, hip transfer, quarter pipe waterfall, mini ramp spine",
     "yt_query": "\"Auroville\" skatepark \"Youth Center\"",
-    "instagram": null,
-    "ig_handle": null,
+    "has_news": false,
+    "news_id": null,
     "spot_insight": "Completely quiet, forest-shaded bowl. Mindful, rhythmic skating in a serene sanctuary setting."
   },
   {
@@ -589,9 +589,31 @@
     "quality": "Community-built concrete skatepark and active hub for central Indian skateboarding",
     "obstacles": "Mini ramp, transition quarter pipes, flat rails, ledge, bank to bank, manual pad",
     "yt_query": "\"Hilltop Skatepark\" BhopalSB Bhopal",
-    "instagram": "https://www.instagram.com/bhopalsb/",
-    "ig_handle": "@bhopalsb",
-    "spot_insight": "Passionate local community. Connect with BhopalSB on Instagram before visiting for the latest jam timings."
+    "has_news": false,
+    "news_id": null,
+    "spot_insight": "Passionate local community. Connect with BhopalSB before visiting for the latest jam timings."
+  },
+  {
+    "id": "IN-TG-02",
+    "name": "Empty Heads Rooftop Skatepark",
+    "category": "cross_check",
+    "category_label": "Private DIY / Rooftop Spot",
+    "state": "Telangana",
+    "city": "Secunderabad / Hyderabad",
+    "region": "South India",
+    "address": "Rooftop Terrace, Venkatapuram, Alwal, Secunderabad, Telangana - 500010",
+    "maps_link": "https://maps.google.com/?q=Alwal+Venkatapuram+Secunderabad",
+    "charges": "Private / Prior Permission Required (Free Community)",
+    "access_badge": "🏠 Private Rooftop DIY Spot",
+    "area_sqft": 2000,
+    "operational_since": 2021,
+    "builder": "Empty Heads Skaters Crew",
+    "quality": "Hand-built wooden mini-ramps and DIY flat rails on residential terrace",
+    "obstacles": "Wooden mini-ramps, quarter pipes, flat grind rails, launch bank, creative subculture lounge",
+    "yt_query": "\"Empty Heads\" skatepark Hyderabad",
+    "has_news": true,
+    "news_id": "IN-TG-02",
+    "spot_insight": "⚠️ PRIVATE DIY ROOFTOP: Built by local skaters on a residential terrace to combat the municipal skatepark shortage. Not a commercial walk-in facility. Permission required."
   },
   {
     "id": "IN-MP-03",
@@ -611,9 +633,9 @@
     "quality": "Custom concrete street plaza connected to a private skateshop (gscsk8.com)",
     "obstacles": "Quarter pipes, steep banks, low hubbas, flat rails, wallride surface, manual pads",
     "yt_query": "\"GSC Skatepark\" Gwalior",
-    "instagram": "https://www.instagram.com/gscsk8/",
-    "ig_handle": "@gscsk8",
-    "spot_insight": "⚠️ Cross-check alert: Operated in tandem with the local skateshop. Always DM @gscsk8 on Instagram to confirm gate hours."
+    "has_news": false,
+    "news_id": null,
+    "spot_insight": "⚠️ Cross-check alert: Operated in tandem with the local skateshop. Confirm opening hours before traveling."
   },
   {
     "id": "IN-ML-02",
@@ -633,8 +655,8 @@
     "quality": "Compact community concrete training ground for Garo Hills youth",
     "obstacles": "Quarter pipes, bank ramps, flat ground rails, grind box",
     "yt_query": "\"Nokrek Skatepark\" Tura Garo Hills",
-    "instagram": null,
-    "ig_handle": null,
+    "has_news": false,
+    "news_id": null,
     "spot_insight": "⚠️ Cross-check alert: Sits inside the government sports complex. Subject to stadium opening/closing hours."
   },
   {
@@ -655,8 +677,8 @@
     "quality": "Historic underground transition bowl and DIY outdoor skate arena",
     "obstacles": "Deep concrete pool bowl, roll-in banks, steep transition walls, coping grind",
     "yt_query": "\"Cirrus\" \"skate bowl\" Goa",
-    "instagram": null,
-    "ig_handle": null,
+    "has_news": false,
+    "news_id": null,
     "spot_insight": "⚠️ Cross-check alert: Located inside a private alternative venue. Check event schedule before traveling."
   },
   {
@@ -677,8 +699,8 @@
     "quality": "Smooth concrete community park built on police station campus",
     "obstacles": "Flat rails, ledges, hubbas, bump to curved ledge, steep bump-to-bump, quarter pipes, perimeter speedbumps",
     "yt_query": "\"Dharambandha\" skatepark Odisha",
-    "instagram": null,
-    "ig_handle": null,
+    "has_news": false,
+    "news_id": null,
     "spot_insight": "🛑 IMPORTANT WARNING: Not an open public park. Built inside an active police station boundary for local tribal community outreach. Do not visit without official police clearance."
   },
   {
@@ -699,8 +721,8 @@
     "quality": "India's most iconic free DIY park; hosted international tours and pioneer sessions",
     "obstacles": "Massive concrete bowl, transition hip, spine, mini ramp, wallride, street ledges",
     "yt_query": "\"The Cave Skatepark\" Bangalore",
-    "instagram": null,
-    "ig_handle": null,
+    "has_news": false,
+    "news_id": null,
     "spot_insight": "🛑 COMMUNITY MEMORIAL: Leased land was reclaimed by owners in 2023 and ramps were dismantled. Preserved here as a historical milestone."
   },
   {
@@ -721,8 +743,8 @@
     "quality": "India's first indoor hospitality skate bowl embedded inside a cafe/pub",
     "obstacles": "Custom wooden mini bowl with pool coping inside restaurant space",
     "yt_query": "\"Khar Social\" skate bowl Mumbai",
-    "instagram": null,
-    "ig_handle": null,
+    "has_news": false,
+    "news_id": null,
     "spot_insight": "🛑 HISTORICAL SPOT: The wooden bowl made headlines in 2015 as the first pub bowl in Asia, but was subsequently decommissioned for restaurant seating."
   }
 ]
