@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Skateparks of India — Culture, History &amp; National Infrastructure Registry</title>
-  <meta name="description" content="The definitive field-verified directory of skateparks, pump tracks, and indoor training academies across India. Complete with obstacle breakdowns, exact GPS coordinates, and historical context.">
+  <meta name="description" content="The definitive field-verified directory of skateparks, pump tracks, and indoor training academies across India. Complete with obstacle blueprints, exact GPS coordinates, and historical context.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -21,11 +21,44 @@
       }
     }
   </script>
+  <style>
+    /* Strict Content Protection & Anti-Copy System */
+    *, html, body {
+      -webkit-user-select: none !important;
+      -moz-user-select: none !important;
+      -ms-user-select: none !important;
+      user-select: none !important;
+      -webkit-touch-callout: none !important;
+    }
+    input, textarea {
+      -webkit-user-select: auto !important;
+      -moz-user-select: auto !important;
+      user-select: auto !important;
+    }
+    img {
+      -webkit-user-drag: none !important;
+      pointer-events: none !important;
+    }
+    @media print {
+      html, body {
+        display: none !important;
+        visibility: hidden !important;
+      }
+    }
+  </style>
 </head>
-<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-amber-400 selection:text-slate-950">
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-none" oncontextmenu="return false;">
+
+  <!-- Anti-Copy Toast Notification -->
+  <div id="copy-protection-toast" class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none">
+    <div class="flex items-center gap-3 px-4 py-3 rounded-xl bg-slate-900/95 border border-amber-500/40 text-amber-300 shadow-2xl backdrop-blur-md text-xs font-semibold">
+      <span class="text-base">🔒</span>
+      <span>Protected Registry &bull; Content copying, saving, and downloading are disabled.</span>
+    </div>
+  </div>
 
   <!-- Top Navigation Bar -->
-  <nav class="sticky top-0 z-50 bg-slate-950/90 backdrop-blur-xl border-b border-slate-800/80">
+  <nav class="sticky top-0 z-40 bg-slate-950/90 backdrop-blur-xl border-b border-slate-800/80">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       <div class="flex items-center gap-3">
         <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-amber-400 to-amber-500 flex items-center justify-center font-display font-black text-slate-950 text-xl shadow-lg shadow-amber-400/20">
@@ -37,17 +70,24 @@
         </div>
       </div>
 
-      <!-- Live Counter Badge -->
-      <div class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-xs text-slate-300">
-        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-        <span class="font-bold text-white">33</span>
-        <span>Verified Facilities</span>
+      <div class="flex items-center gap-4">
+        <a href="#history" class="hidden md:inline-flex text-xs font-bold text-amber-400 hover:text-amber-300 transition-colors uppercase tracking-wider">
+          Historical Context
+        </a>
+        <a href="#directory" class="hidden md:inline-flex text-xs font-bold text-slate-300 hover:text-white transition-colors uppercase tracking-wider">
+          Facility Directory
+        </a>
+        <div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-xs text-slate-300">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span class="font-bold text-white">33</span>
+          <span class="hidden sm:inline">Verified Facilities</span>
+        </div>
       </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <header class="relative pt-16 pb-20 overflow-hidden border-b border-slate-800/80 bg-gradient-to-b from-slate-900/60 via-slate-950 to-slate-950">
+  <header class="relative pt-16 pb-16 overflow-hidden border-b border-slate-800/80 bg-gradient-to-b from-slate-900/60 via-slate-950 to-slate-950">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       
       <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-400/10 border border-amber-400/30 text-amber-300 text-xs font-bold tracking-wide uppercase mb-6">
@@ -61,92 +101,208 @@
       </h1>
 
       <p class="mt-6 text-base sm:text-lg text-slate-300 max-w-3xl leading-relaxed">
-        From early underground basement ramp rooms in Delhi to 44,000 sq. ft. municipal smart city plazas, explore the history, obstacle blueprints, exact GPS coordinates, and verified operational details of India’s action sports infrastructure.
+        The definitive national registry mapping India’s action sports evolution—from early subterranean wooden ramp rooms in Delhi to 44,000 sq. ft. municipal championship plazas. Every venue is field-audited with verified GPS locations, obstacle blueprints, and targeted search records.
       </p>
 
-      <!-- Key Stats Bar -->
-      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-10 pt-8 border-t border-slate-800/80">
-        <div class="bg-slate-900/60 p-4 rounded-2xl border border-slate-800/80">
-          <div class="text-2xl sm:text-3xl font-display font-extrabold text-amber-400">33</div>
-          <div class="text-xs text-slate-400 mt-1">Cataloged Facilities</div>
+      <!-- Key Stats Bar - Clear Details on all 4 Metrics -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-12 pt-8 border-t border-slate-800/80">
+        
+        <!-- Metric 1: 33 Cataloged Facilities -->
+        <div class="bg-slate-900/80 p-5 rounded-2xl border border-slate-800/90 hover:border-amber-400/40 transition-all flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="px-2 py-0.5 rounded text-[10px] font-bold uppercase bg-amber-400/10 text-amber-300 border border-amber-400/20">National Census</span>
+              <span class="text-slate-500 text-xs">🏛️</span>
+            </div>
+            <div class="text-3xl sm:text-4xl font-display font-extrabold text-amber-400">33</div>
+            <div class="text-xs font-bold text-white mt-1">Cataloged Facilities</div>
+            <p class="text-[11px] text-slate-400 mt-2 leading-relaxed">
+              Total verified skate venues across 14 Indian states &amp; UTs—covering municipal public mega-parks, indoor ramp academies, pump tracks, and grassroots rural bowls.
+            </p>
+          </div>
+          <div class="mt-3 pt-2.5 border-t border-slate-800/60 text-[10px] text-amber-300/80 font-mono">
+            6 Facility Categories Covered
+          </div>
         </div>
-        <div class="bg-slate-900/60 p-4 rounded-2xl border border-slate-800/80">
-          <div class="text-2xl sm:text-3xl font-display font-extrabold text-cyan-400">44,000</div>
-          <div class="text-xs text-slate-400 mt-1">Largest Area (Sq. Ft.)</div>
+
+        <!-- Metric 2: 44,000 Sq. Ft. Largest Area -->
+        <div class="bg-slate-900/80 p-5 rounded-2xl border border-slate-800/90 hover:border-cyan-400/40 transition-all flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="px-2 py-0.5 rounded text-[10px] font-bold uppercase bg-cyan-400/10 text-cyan-300 border border-cyan-400/20">Championship Scale</span>
+              <span class="text-slate-500 text-xs">📐</span>
+            </div>
+            <div class="text-3xl sm:text-4xl font-display font-extrabold text-cyan-400">44,000 <span class="text-lg font-normal text-cyan-300">sq. ft.</span></div>
+            <div class="text-xs font-bold text-white mt-1">Largest Area (Sq. Ft.)</div>
+            <p class="text-[11px] text-slate-400 mt-2 leading-relaxed">
+              India's largest continuous concrete skate plazas (Chandigarh Sector 17 &amp; Lucknow Lohia Park), each built to Olympic-spec street courses and massive deep bowls.
+            </p>
+          </div>
+          <div class="mt-3 pt-2.5 border-t border-slate-800/60 text-[10px] text-cyan-300/80 font-mono">
+            Sector 17 (CHD) &amp; Lohia (LKO)
+          </div>
         </div>
-        <div class="bg-slate-900/60 p-4 rounded-2xl border border-slate-800/80">
-          <div class="text-2xl sm:text-3xl font-display font-extrabold text-emerald-400">11,500 ft</div>
-          <div class="text-xs text-slate-400 mt-1">World's Highest (Leh)</div>
+
+        <!-- Metric 3: 11,500 Ft World's Highest -->
+        <div class="bg-slate-900/80 p-5 rounded-2xl border border-slate-800/90 hover:border-emerald-400/40 transition-all flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="px-2 py-0.5 rounded text-[10px] font-bold uppercase bg-emerald-400/10 text-emerald-300 border border-emerald-400/20">World Altitude Record</span>
+              <span class="text-slate-500 text-xs">🏔️</span>
+            </div>
+            <div class="text-3xl sm:text-4xl font-display font-extrabold text-emerald-400">11,500 <span class="text-lg font-normal text-emerald-300">ft</span></div>
+            <div class="text-xs font-bold text-white mt-1">World's Highest (Leh)</div>
+            <p class="text-[11px] text-slate-400 mt-2 leading-relaxed">
+              Disko Valley in Leh, Ladakh sits over 11,500 ft above sea level, making it the highest recorded asphalt pump track and action sports facility globally.
+            </p>
+          </div>
+          <div class="mt-3 pt-2.5 border-t border-slate-800/60 text-[10px] text-emerald-300/80 font-mono">
+            Disko Valley &bull; Leh, Ladakh
+          </div>
         </div>
-        <div class="bg-slate-900/60 p-4 rounded-2xl border border-slate-800/80">
-          <div class="text-2xl sm:text-3xl font-display font-extrabold text-rose-400">100%</div>
-          <div class="text-xs text-slate-400 mt-1">GPS &amp; Video Mapped</div>
+
+        <!-- Metric 4: 100% GPS & Video Mapped -->
+        <div class="bg-slate-900/80 p-5 rounded-2xl border border-slate-800/90 hover:border-rose-400/40 transition-all flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="px-2 py-0.5 rounded text-[10px] font-bold uppercase bg-rose-400/10 text-rose-300 border border-rose-400/20">Verified Accuracy</span>
+              <span class="text-slate-500 text-xs">📍</span>
+            </div>
+            <div class="text-3xl sm:text-4xl font-display font-extrabold text-rose-400">100%</div>
+            <div class="text-xs font-bold text-white mt-1">GPS &amp; Video Mapped</div>
+            <p class="text-[11px] text-slate-400 mt-2 leading-relaxed">
+              Every facility has audited Google Maps coordinates and targeted video searches. Restricted sites and closed historic spots are explicitly marked.
+            </p>
+          </div>
+          <div class="mt-3 pt-2.5 border-t border-slate-800/60 text-[10px] text-rose-300/80 font-mono">
+            Zero Fake or Unaudited Spots
+          </div>
         </div>
+
       </div>
 
     </div>
   </header>
 
-  <!-- The Evolution of Skateparks in India (Culture & Context) -->
-  <section class="py-16 bg-slate-900/30 border-b border-slate-800/80">
+  <!-- Large, Prominent Historical Context Section -->
+  <section class="py-20 bg-slate-900/40 border-b border-slate-800/80" id="history">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="text-center max-w-3xl mx-auto mb-14">
-        <h2 class="text-xs font-bold text-amber-400 tracking-wider uppercase mb-2">Historical Context</h2>
-        <h3 class="text-2xl sm:text-4xl font-display font-extrabold text-white">The Three Eras of Skatepark Culture in India</h3>
-        <p class="text-sm text-slate-400 mt-3">Understanding how India transitioned from improvised colony streets to championship-grade concrete bowls.</p>
+      <!-- Section Header -->
+      <div class="max-w-3xl mb-12">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-400/10 border border-amber-400/30 text-amber-300 text-xs font-bold tracking-wider uppercase mb-3">
+          <span>🏛️ Cultural Archive &amp; Origins</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-display font-extrabold text-white tracking-tight">
+          Historical Context: <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-200">The Evolution of Skate Culture in India</span>
+        </h2>
+        <p class="text-sm sm:text-base text-slate-300 mt-4 leading-relaxed">
+          From improvised backyard ramps and underground basements to Olympic recognition and 44,000 sq. ft. municipal smart city developments, India’s skate movement has grown through three defining cultural phases.
+        </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Evolution Timeline Grid (Large, Deep Presentation) -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
         
-        <!-- Era 1 -->
-        <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between">
+        <!-- Era 1: Underground DIY -->
+        <div class="bg-gradient-to-b from-slate-900/90 to-slate-950 border border-slate-800/90 rounded-3xl p-8 relative overflow-hidden flex flex-col justify-between hover:border-amber-400/50 transition-all duration-300 shadow-xl">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-amber-400/5 rounded-bl-full pointer-events-none"></div>
           <div>
-            <div class="flex items-center justify-between mb-4">
-              <span class="px-2.5 py-1 rounded-md text-[11px] font-bold bg-amber-400/20 text-amber-300 border border-amber-400/30">2010 – 2015</span>
-              <span class="text-xs text-slate-500 font-mono">Era I</span>
+            <div class="flex items-center justify-between mb-6">
+              <span class="px-3.5 py-1.5 rounded-lg text-xs font-bold bg-amber-400/20 text-amber-300 border border-amber-400/30">
+                2010 – 2015
+              </span>
+              <span class="text-xs text-slate-400 font-mono tracking-widest uppercase">Era I</span>
             </div>
-            <h4 class="text-lg font-bold text-white mb-2">The Underground &amp; DIY Genesis</h4>
-            <p class="text-xs text-slate-300 leading-relaxed mb-4">
-              Pioneered by early action-sports builders and grassroots collectives. In the absence of municipal skateparks, skaters poured private backyard bowls (Play Arena Bengaluru) and constructed India’s first subterranean wooden basement ramp room in Delhi (Freemotion Sk8, evolving into Delhi Skateboarding Academy in Neb Sarai). This era birthed India’s original <em>Jugaad</em> competitions.
+            
+            <h3 class="text-xl sm:text-2xl font-display font-extrabold text-white mb-3">
+              The Underground &amp; DIY Genesis
+            </h3>
+            
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              In the early 2010s, public action sports infrastructure did not exist in India. Grassroots skate collectives and foreign volunteers took matters into their own hands, building private backyard concrete bowls (such as Play Arena in Bengaluru in 2013) and carving out subterranean spaces.
+            </p>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mt-3">
+              In Delhi, the capital's extreme weather—blistering summers, severe winters, and heavy monsoons—led pioneers to construct the city's first weatherproof subterranean wooden ramp room in Neb Sarai (originally Freemotion Sk8, evolving into the Delhi Skateboarding Academy). This era created India's original grassroots <em>Jugaad</em> skateboarding competitions.
             </p>
           </div>
-          <div class="pt-3 border-t border-slate-800 text-[11px] text-amber-400/90 font-semibold">
-            Key Legacy: Play Arena (BLR), Delhi SB Basement (DEL), The Cave (BLR)
+
+          <div class="mt-8 pt-5 border-t border-slate-800">
+            <span class="block text-[11px] font-bold text-amber-400 uppercase tracking-wider mb-1">Key Era Milestones:</span>
+            <ul class="text-xs text-slate-400 space-y-1">
+              <li>&bull; Play Arena Concrete Bowl (Bengaluru, 2013)</li>
+              <li>&bull; Delhi SB Basement Vert &amp; Mini-Ramps (Neb Sarai, 2016)</li>
+              <li>&bull; The Cave Community DIY Bowl (Hegde Nagar, 2013)</li>
+              <li>&bull; Birthed National "Jugaad" Skate Championships</li>
+            </ul>
           </div>
         </div>
 
-        <!-- Era 2 -->
-        <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between">
+        <!-- Era 2: Rural Social Revolution -->
+        <div class="bg-gradient-to-b from-slate-900/90 to-slate-950 border border-slate-800/90 rounded-3xl p-8 relative overflow-hidden flex flex-col justify-between hover:border-cyan-400/50 transition-all duration-300 shadow-xl">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-cyan-400/5 rounded-bl-full pointer-events-none"></div>
           <div>
-            <div class="flex items-center justify-between mb-4">
-              <span class="px-2.5 py-1 rounded-md text-[11px] font-bold bg-cyan-500/20 text-cyan-300 border border-cyan-400/30">2016 – 2020</span>
-              <span class="text-xs text-slate-500 font-mono">Era II</span>
+            <div class="flex items-center justify-between mb-6">
+              <span class="px-3.5 py-1.5 rounded-lg text-xs font-bold bg-cyan-500/20 text-cyan-300 border border-cyan-400/30">
+                2016 – 2020
+              </span>
+              <span class="text-xs text-slate-400 font-mono tracking-widest uppercase">Era II</span>
             </div>
-            <h4 class="text-lg font-bold text-white mb-2">Social Revolution &amp; Rural Bowls</h4>
-            <p class="text-xs text-slate-300 leading-relaxed mb-4">
-              Skateboarding demonstrated extraordinary social impact in rural India. In Madhya Pradesh, <strong>Janwaar Castle</strong> broke caste and gender barriers under the motto <em>"No School, No Skateboarding"</em>. In Rajasthan, <strong>Desert Dolphin Skatepark</strong> was built for Netflix’s <em>Skater Girl</em>, proving that world-class public infrastructure could nurture international-level athletes from small villages.
+            
+            <h3 class="text-xl sm:text-2xl font-display font-extrabold text-white mb-3">
+              Social Awakening &amp; Rural Bowls
+            </h3>
+            
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              Between 2016 and 2020, Indian skateboarding emerged as a proven catalyst for radical social change. In the remote Bundelkhand village of Janwaar, Madhya Pradesh, a concrete skatepark broke generational caste lines and promoted female empowerment under the strict rule: <em>"No School, No Skateboarding"</em>.
+            </p>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mt-3">
+              This momentum reached Rajasthan with the creation of the 14,500 sq. ft. Desert Dolphin Skatepark in Khempur (built for the Netflix film <em>Skater Girl</em>), and coastal hubs in Mahabalipuram and Kovalam. Skateboarding demonstrated that village athletes, given world-class facilities, could compete with international talent.
             </p>
           </div>
-          <div class="pt-3 border-t border-slate-800 text-[11px] text-cyan-400/90 font-semibold">
-            Key Legacy: Janwaar Castle (Panna), Desert Dolphin (Udaipur), Carter Road (Bandra)
+
+          <div class="mt-8 pt-5 border-t border-slate-800">
+            <span class="block text-[11px] font-bold text-cyan-400 uppercase tracking-wider mb-1">Key Era Milestones:</span>
+            <ul class="text-xs text-slate-400 space-y-1">
+              <li>&bull; Janwaar Castle Rural Social Bowl (Panna, MP, 2015)</li>
+              <li>&bull; Desert Dolphin 3-Tier Clover Bowl (Khempur, RJ, 2018)</li>
+              <li>&bull; Carter Road Coastal Promenade Plaza (Mumbai, 2018)</li>
+              <li>&bull; Kovalam SISP School Rooftop Skatepark (Kerala, 2014)</li>
+            </ul>
           </div>
         </div>
 
-        <!-- Era 3 -->
-        <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between">
+        <!-- Era 3: Olympic Era & Civic Megaparks -->
+        <div class="bg-gradient-to-b from-slate-900/90 to-slate-950 border border-slate-800/90 rounded-3xl p-8 relative overflow-hidden flex flex-col justify-between hover:border-emerald-400/50 transition-all duration-300 shadow-xl">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-emerald-400/5 rounded-bl-full pointer-events-none"></div>
           <div>
-            <div class="flex items-center justify-between mb-4">
-              <span class="px-2.5 py-1 rounded-md text-[11px] font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-400/30">2021 – Present</span>
-              <span class="text-xs text-slate-500 font-mono">Era III</span>
+            <div class="flex items-center justify-between mb-6">
+              <span class="px-3.5 py-1.5 rounded-lg text-xs font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-400/30">
+                2021 – Present
+              </span>
+              <span class="text-xs text-slate-400 font-mono tracking-widest uppercase">Era III</span>
             </div>
-            <h4 class="text-lg font-bold text-white mb-2">Olympic Recognition &amp; Municipal Mega-Plazas</h4>
-            <p class="text-xs text-slate-300 leading-relaxed mb-4">
-              Following skateboarding's Olympic debut (Tokyo 2020, Paris 2024), municipal development corporations embraced action sports. Cities partnered with builders to pour 44,000 sq. ft. smart city championship plazas in Chandigarh (Sector 17) and Lucknow (Lohia Park), alongside the world’s highest asphalt pump track in Leh, Ladakh (11,500 ft).
+            
+            <h3 class="text-xl sm:text-2xl font-display font-extrabold text-white mb-3">
+              Olympic Era &amp; Municipal Mega-Plazas
+            </h3>
+            
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              With skateboarding's official inclusion in the Tokyo 2020 and Paris 2024 Olympic Games, civic mindset shifted dramatically. Municipal corporations and Smart City initiatives began sanctioning large budgets to build institutional, Olympic-grade public infrastructure.
+            </p>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mt-3">
+              This catalyzed 44,000 sq. ft. mega-facilities in Chandigarh (Sector 17) and Lucknow (Lohia Park), riverfront plazas in Ahmedabad, modern dual-bowl parks in Thane, and extreme high-altitude asphalt pump tracks in Leh, Ladakh (11,500 ft). India transitioned from back-alleys to formal sports complexes.
             </p>
           </div>
-          <div class="pt-3 border-t border-slate-800 text-[11px] text-emerald-400/90 font-semibold">
-            Key Legacy: Chandigarh Sector 17, Lohia Lucknow, Disko Valley Leh, Nerul Navi Mumbai
+
+          <div class="mt-8 pt-5 border-t border-slate-800">
+            <span class="block text-[11px] font-bold text-emerald-400 uppercase tracking-wider mb-1">Key Era Milestones:</span>
+            <ul class="text-xs text-slate-400 space-y-1">
+              <li>&bull; Chandigarh Sector 17 Urban Plaza (44,000 sq ft, 2022)</li>
+              <li>&bull; Dr. Ram Manohar Lohia Skatepark (Lucknow, 44,000 sq ft, 2021)</li>
+              <li>&bull; Disko Valley High-Altitude Pump Track (Leh, 11,500 ft, 2021)</li>
+              <li>&bull; NFRSA Regional Stadium Park (Guwahati, Assam, 2023)</li>
+            </ul>
           </div>
         </div>
 
@@ -162,8 +318,8 @@
       <!-- Directory Header & Search Bar -->
       <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-8">
         <div>
-          <h2 class="text-2xl sm:text-3xl font-display font-extrabold text-white">National Skatepark Explorer</h2>
-          <p class="text-xs text-slate-400 mt-1" id="parks-counter">Showing 33 Documented Facilities across India</p>
+          <h2 class="text-2xl sm:text-4xl font-display font-extrabold text-white">National Skatepark Explorer</h2>
+          <p class="text-xs sm:text-sm text-slate-400 mt-1" id="parks-counter">Showing 33 Documented Facilities across India</p>
         </div>
 
         <!-- Search Input -->
@@ -171,7 +327,7 @@
           <input 
             type="text" 
             id="park-search-input" 
-            placeholder="Search city, state, builder, obstacle (e.g. bowl, pump)..." 
+            placeholder="Search city, state, obstacle (e.g. bowl, pump)..." 
             class="w-full bg-slate-900 border border-slate-700/80 rounded-xl px-4 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-amber-400 transition-colors"
           />
           <span class="absolute right-3 top-2.5 text-slate-500 text-sm">🔍</span>
@@ -228,11 +384,11 @@
     </div>
   </section>
 
-  <!-- Community Crowdsource Protocol -->
+  <!-- Community Verification Protocol -->
   <section class="py-16 bg-slate-900/40 border-t border-slate-800/80">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-slate-800 border border-slate-700 text-slate-300 text-xs font-semibold mb-4">
-        <span>🤝 Community Verification Protocol</span>
+        <span>🤝 Independent Audit Protocol</span>
       </div>
       <h3 class="text-2xl sm:text-3xl font-display font-extrabold text-white">Know a Skatepark That Needs Updating?</h3>
       <p class="text-xs sm:text-sm text-slate-400 mt-2 max-w-xl mx-auto leading-relaxed">
@@ -251,13 +407,13 @@
   <footer class="py-8 bg-slate-950 border-t border-slate-800/80 text-center text-xs text-slate-500">
     <div class="max-w-7xl mx-auto px-4">
       <p>&copy; 2026 Skateparks of India &bull; National Action Sports Infrastructure Registry</p>
-      <p class="mt-1 text-[11px] text-slate-600">Maintained as a public non-commercial resource for skateboarding, inline freestyle, and action sports athletes.</p>
+      <p class="mt-1 text-[11px] text-slate-600">Maintained as an independent, non-commercial research archive for skateboarding, inline freestyle, and action sports.</p>
     </div>
   </footer>
 
-  <!-- Client-Side Mutually-Exclusive & Toggle Logic -->
+  <!-- Client-Side App Logic & Content Protection -->
   <script>
-    const allParks = [{"id": "IN-CH-01", "name": "Chandigarh Skatepark (Tiranga Urban Park)", "category": "public_mega", "category_label": "Public Mega-Park", "state": "Chandigarh (UT)", "city": "Chandigarh", "region": "North India", "address": "Tiranga Urban Park, Sub. City Center, Sector 17, Chandigarh - 160017", "maps_link": "https://maps.google.com/?q=Chandigarh+Skatepark+Sector+17", "charges": "Free Public Access", "access_badge": "\ud83d\udfe2 Verified Public Park", "area_sqft": 44000, "operational_since": 2022, "builder": "100 Ramps Skatepark Builders & Chandigarh Smart City Ltd", "quality": "World-class smooth concrete facility; tied as India's largest public skatepark", "obstacles": "Massive flow bowl with deep/shallow ends and pool coping, extensive street league section, 8-stair with square handrail, hubbas, euro gap, A-frame rail, manual pads, curved banks, perimeter pump line", "yt_query": "Chandigarh Skatepark Sector 17", "instagram": "https://www.instagram.com/chandigarhskateboarding/", "ig_handle": "@chandigarhskateboarding", "spot_insight": "Ideal for both speed transitions and technical inline slalom. The concrete has low friction and great grip in dry weather."}, {"id": "IN-UP-01", "name": "Lohia Skatepark (Lucknow)", "category": "public_mega", "category_label": "Public Mega-Park", "state": "Uttar Pradesh", "city": "Lucknow", "region": "North India", "address": "Dr. Ram Manohar Lohia Park, Vipin Khand, Gomti Nagar, Lucknow, Uttar Pradesh - 226010", "maps_link": "https://maps.google.com/?q=Lohia+Park+Skatepark+Gomti+Nagar+Lucknow", "charges": "Park Entry (~Rs 10-20); skatepark free", "access_badge": "\ud83d\udfe2 Verified Public Park", "area_sqft": 44000, "operational_since": 2021, "builder": "100 Ramps Skatepark Builders & Lucknow Development Authority", "quality": "Tied with Sector 17 Chandigarh as India's largest public skatepark (44,000 sq ft)", "obstacles": "Championship street course, massive deep bowl, 3-stair & 6-stair handrails, hubbas, down-ledges, A-frame, flatbars, curved banks", "yt_query": "Lohia Park Skatepark Lucknow 100 Ramps", "instagram": "https://www.instagram.com/100ramps/", "ig_handle": "@100ramps", "spot_insight": "Huge championship layout designed for high-speed street lines and transition air tricks."}, {"id": "IN-MH-02", "name": "Nerul Skatepark (Rajiv Gandhi Joggers Park)", "category": "public_mega", "category_label": "Public Mega-Park", "state": "Maharashtra", "city": "Navi Mumbai", "region": "West India", "address": "Rajiv Gandhi Joggers Park, Sector 10, Nerul West, Navi Mumbai, Maharashtra - 400706", "maps_link": "https://maps.google.com/?q=Nerul+Skatepark+Rajiv+Gandhi+Joggers+Park+Navi+Mumbai", "charges": "Free Public Access (Park entry Rs 10)", "access_badge": "\ud83d\udfe2 Verified Public Park", "area_sqft": 20000, "operational_since": 2019, "builder": "Bombay SB", "quality": "Huge concrete street and transition facility with dual connected bowls", "obstacles": "Massive concrete bowl with steel coping, street plaza with multiple ledges, hubbas, flatbars, down-rails, bank-to-bank hip", "yt_query": "Nerul Skatepark Navi Mumbai", "instagram": "https://www.instagram.com/bombay_sb/", "ig_handle": "@bombay_sb", "spot_insight": "One of the best bowl transition lines in Western India; host to annual state trials."}, {"id": "IN-RJ-01", "name": "Desert Dolphin Skatepark", "category": "public_mega", "category_label": "Public Mega-Park", "state": "Rajasthan", "city": "Khempur (near Udaipur)", "region": "North India", "address": "Near Ravla Khempur Heritage Hotel, Village Khempur, District Mavli, Rajasthan - 313203", "maps_link": "https://maps.google.com/?q=Desert+Dolphin+Skatepark+Khempur+Rajasthan", "charges": "Free Community Access (Prior note for visiting skaters)", "access_badge": "\ud83d\udfe2 Verified Public Park", "area_sqft": 14500, "operational_since": 2018, "builder": "100 Ramps Skatepark Builders & Manjari Makijany", "quality": "Super-smooth reinforced concrete with custom desert tones; built for Netflix film 'Skater Girl'", "obstacles": "Large 3-tier clover bowl with variable depths, tall vert extensions, spine transfer, mellow bowl with hubba and handrail, euro gap, pyramid", "yt_query": "Desert Dolphin Skatepark Khempur", "instagram": "https://www.instagram.com/desertdolphinskatepark/", "ig_handle": "@desertdolphinskatepark", "spot_insight": "Iconic clover bowl with smooth coping and zero seam cracks. A destination park for any serious skater."}, {"id": "IN-GJ-01", "name": "Sabarmati Riverfront Skatepark (Jal Skatepark)", "category": "public_mega", "category_label": "Public Mega-Park", "state": "Gujarat", "city": "Ahmedabad", "region": "West India", "address": "Sabarmati Riverfront West Promenade, Near Ellis Bridge, Ahmedabad, Gujarat - 380009", "maps_link": "https://maps.google.com/?q=Sabarmati+Riverfront+Skatepark+Ahmedabad", "charges": "Free Public Access", "access_badge": "\ud83d\udfe2 Verified Public Park", "area_sqft": 14000, "operational_since": 2021, "builder": "100 Ramps Skatepark Builders & Sabarmati Riverfront Dev. Corp", "quality": "Premier riverfront concrete skatepark designed to international competition standards", "obstacles": "Flow bowl with variable depths, street plaza, handrails, stair sets, hubba ledges, roll-in banks, A-frame spine", "yt_query": "Sabarmati Riverfront Skatepark Ahmedabad 100 Ramps", "instagram": "https://www.instagram.com/100ramps/", "ig_handle": "@100ramps", "spot_insight": "Well-lit and breeze-cooled riverfront plaza; perfect for evening transition flow and technical grinds."}, {"id": "IN-MH-03", "name": "Namo Grand Central Park Skatepark", "category": "public_mega", "category_label": "Public Mega-Park", "state": "Maharashtra", "city": "Thane", "region": "West India", "address": "Kalpataru Parkcity Grand Central Park, Kolshet Road, Thane West, Maharashtra - 400607", "maps_link": "https://maps.google.com/?q=Namo+Grand+Central+Park+Thane", "charges": "Park Entry (~Rs 20-50); skatepark included", "access_badge": "\ud83d\udfe2 Verified Public Park", "area_sqft": 12000, "operational_since": 2024, "builder": "Bombay SB", "quality": "Modern dual bowl concrete facility with beginner and advanced transition flow", "obstacles": "Mellow beginner bowl, deep pool bowl with coping, bump-to-bump, perimeter street section with ledges and flat rails", "yt_query": "Namo Grand Central Park Skatepark Thane", "instagram": "https://www.instagram.com/bombay_sb/", "ig_handle": "@bombay_sb", "spot_insight": "Fresh concrete with very low friction. The shallow bowl is excellent for practicing drop-ins and kickturns."}, {"id": "IN-MH-01", "name": "Carter Road Skatepark ('Hype in the City')", "category": "public_mega", "category_label": "Public Mega-Park", "state": "Maharashtra", "city": "Mumbai", "region": "West India", "address": "Carter Road Seafront Promenade, Additional CP Office, Bandra West, Mumbai, Maharashtra - 400050", "maps_link": "https://maps.google.com/?q=Carter+Road+Skatepark+Bandra+Mumbai", "charges": "Free Public Access", "access_badge": "\ud83d\udfe2 Verified Public Park", "area_sqft": 8000, "operational_since": 2018, "builder": "Bombay SB + Architecture BRIO + Bandra Collective", "quality": "Iconic seaside concrete street plaza integrated into an urban amphitheater", "obstacles": "Street plaza with banks, steep quarter pipes, hubba ledges, down ledges, flat rails, manual pads", "yt_query": "Carter Road Skatepark Mumbai", "instagram": "https://www.instagram.com/bombay_sb/", "ig_handle": "@bombay_sb", "spot_insight": "Mumbai's spiritual skate home. Great coastal community vibe, active during sunset sessions."}, {"id": "IN-GJ-02", "name": "Alembic Skatepark", "category": "public_mega", "category_label": "Public Mega-Park", "state": "Gujarat", "city": "Vadodara", "region": "West India", "address": "Alembic City Art District, Gorwa, Vadodara, Gujarat - 390003", "maps_link": "https://maps.google.com/?q=Alembic+City+Skatepark+Vadodara", "charges": "Free Community Access", "access_badge": "\ud83d\udfe2 Verified Public Park", "area_sqft": 8000, "operational_since": 2022, "builder": "100 Ramps Skatepark Builders & Alembic Real Estate", "quality": "Industrial-chic urban concrete skatepark inside the historic Alembic Art District", "obstacles": "Deep concrete bowl, transition quarter pipes, flat rails, ledges, manual pads, pyramid bank", "yt_query": "Alembic Skatepark Vadodara 100 Ramps", "instagram": "https://www.instagram.com/100ramps/", "ig_handle": "@100ramps", "spot_insight": "Superb artistic ambiance with smooth coping and plenty of shaded viewing areas."}, {"id": "IN-AS-01", "name": "NFRSA Skatepark (Guwahati)", "category": "public_mega", "category_label": "Public Mega-Park", "state": "Assam", "city": "Guwahati", "region": "East & North-East India", "address": "NFRSA Stadium Complex, Maligaon, Guwahati, Assam - 781011", "maps_link": "https://maps.google.com/?q=NFRSA+Stadium+Maligaon+Guwahati", "charges": "Free Community Access", "access_badge": "\ud83d\udfe2 Verified Public Park", "area_sqft": 10000, "operational_since": 2023, "builder": "100 Ramps Skatepark Builders & NF Railway Sports Association", "quality": "Largest public concrete skatepark in Northeast India with street and bowl flow", "obstacles": "Smooth bowl with pool coping, down-rail, hubbas, A-frame, banked hips, manual pads, roll-in waterfall", "yt_query": "NFRSA Skatepark Guwahati 100 Ramps", "instagram": "https://www.instagram.com/100ramps/", "ig_handle": "@100ramps", "spot_insight": "Premier training ground for North-East athletes preparing for national competitions."}, {"id": "IN-KA-02", "name": "Chintamani Skatepark", "category": "public_mega", "category_label": "Public Mega-Park", "state": "Karnataka", "city": "Chintamani", "region": "South India", "address": "Government Municipal Stadium Complex, Chintamani, Chikkaballapur District, Karnataka - 563125", "maps_link": "https://maps.google.com/?q=Chintamani+Skatepark+Karnataka", "charges": "Free Public Access", "access_badge": "\ud83d\udfe2 Verified Public Park", "area_sqft": 6000, "operational_since": 2022, "builder": "100 Ramps Skatepark Builders", "quality": "State-of-the-art public facility built by the municipality in rural Karnataka", "obstacles": "Flow bowl, banks, hubbas, down-ledges, flat rail, quarter pipe, roll-in", "yt_query": "Chintamani Skatepark 100 Ramps", "instagram": "https://www.instagram.com/100ramps/", "ig_handle": "@100ramps", "spot_insight": "Inspiring grassroots municipal park that introduced modern concrete transitions to rural youth."}, {"id": "IN-GA-01", "name": "Youth Hostel Skatepark (Miramar)", "category": "public_mega", "category_label": "Public Mega-Park", "state": "Goa", "city": "Panaji", "region": "West India", "address": "Youth Hostel Campus, Miramar Beach Promenade, Panaji, Goa - 403001", "maps_link": "https://maps.google.com/?q=Youth+Hostel+Miramar+Panjim+Goa", "charges": "Free Public Access", "access_badge": "\ud83d\udfe2 Verified Public Park", "area_sqft": 6000, "operational_since": 2017, "builder": "SkateLifeGoa & Government Sports Authority", "quality": "Central gathering hub for Goa skateboarding overlooking the Mandovi River", "obstacles": "Quarter pipes, flat ground rails, funbox with ledge, movable kickers, manual pad", "yt_query": "Goa skatepark Miramar Youth hostel SkateLifeGoa", "instagram": "https://www.instagram.com/explore/tags/youthhostelskatepark/", "ig_handle": "@skatelifegoa", "spot_insight": "Riverfront sea breeze makes this comfortable during early mornings and sunset sessions."}, {"id": "IN-DL-02", "name": "Delhi Skateboarding Academy (Delhi SB)", "category": "indoor_academy", "category_label": "Indoor Weatherproof Academy", "state": "Delhi", "city": "New Delhi", "region": "North India", "address": "Block A-1, Neb Sarai, Near IGNOU Road / Saket, South Delhi - 110068", "maps_link": "https://goo.gl/maps/9QxqpQ8e84Wrtzjo7", "charges": "Session Fee (~Rs 150-200) / Monthly Coaching Packages", "access_badge": "\ud83c\udfe2 Indoor Academy (Open 365 Days)", "area_sqft": 4500, "operational_since": 2016, "builder": "Surjeet Kumar & Delhi SB Team (Evolution of Freemotion Sk8)", "quality": "Historic subterranean indoor wooden park; weatherproof haven from Delhi's heat and smog", "obstacles": "Full wooden vert ramp, mini-ramp transitions, quarter pipes, flat grind rails, launch banks, dedicated core skateshop", "yt_query": "Delhi Skateboarding Academy Neb Sarai", "instagram": "https://www.instagram.com/delhi_sb/", "ig_handle": "@delhi_sb", "spot_insight": "Delhi's foundational indoor hall. Wooden surface provides forgiving fall protection when practicing advanced flips and vert drops."}, {"id": "IN-DL-01", "name": "Backyard Skatepark & Training Center", "category": "indoor_academy", "category_label": "Indoor Weatherproof Academy", "state": "Delhi", "city": "New Delhi", "region": "North India", "address": "Block A1, 428, Dhankar Road, Neb Sarai, Sainik Farm, New Delhi - 110068", "maps_link": "https://maps.google.com/?q=Backyard+Skatepark+Neb+Sarai+New+Delhi", "charges": "Session Fee (~Rs 200) & Monthly Coaching", "access_badge": "\ud83c\udfe2 Covered / Semi-Indoor Park", "area_sqft": 7000, "operational_since": 2019, "builder": "Delhi Skateboarding Community", "quality": "Hybrid covered wooden ramp room and outdoor concrete street training park", "obstacles": "Wooden mini-ramps, quarter pipes, flatbars, grind boxes, foam pit for aerial stunts, outdoor banks, ledges, kickers", "yt_query": "Backyard Skatepark Delhi Neb Sarai", "instagram": "https://www.instagram.com/backyardskatepark_/", "ig_handle": "@backyardskatepark_", "spot_insight": "The foam pit is a huge plus for freestyle skaters practicing rotational spins and flips safely."}, {"id": "IN-MH-04", "name": "Proper Park Hotfut (Pune)", "category": "indoor_academy", "category_label": "Indoor Weatherproof Academy", "state": "Maharashtra", "city": "Pune", "region": "West India", "address": "Hotfut Sports Club, Mundhwa / Koregaon Park Annexe, Pune, Maharashtra - 411036", "maps_link": "https://maps.google.com/?q=Proper+Park+Skatepark+Hotfut+Pune", "charges": "Session pass (~Rs 150-250)", "access_badge": "\ud83d\udcb3 Commercial Club Facility", "area_sqft": 7500, "operational_since": 2021, "builder": "100 Ramps Skatepark Builders", "quality": "Well-maintained indoor/outdoor urban skate facility with smooth concrete", "obstacles": "Sectional mini-ramp, kidney bowl, pyramid street hip, A-frame rail, round flatbar, low hubbas, manual pad", "yt_query": "Proper Park Skatepark Pune Hotfut", "instagram": "https://www.instagram.com/100ramps/", "ig_handle": "@100ramps", "spot_insight": "Well-sheltered transition lines; fantastic for intermediate skaters refining pyramid transfers."}, {"id": "IN-PB-01", "name": "United Roller Sports Club Skatepark", "category": "indoor_academy", "category_label": "Indoor Weatherproof Academy", "state": "Punjab", "city": "Mohali", "region": "North India", "address": "United Roller Sports Club, Dhelpur, Near Landran Road, Mohali, Punjab - 140307", "maps_link": "https://maps.google.com/?q=United+Roller+Sports+Club+Dhelpur+Mohali", "charges": "Paid Membership / Academy Training", "access_badge": "\ud83c\udfe2 Covered Training Facility", "area_sqft": 9000, "operational_since": 2022, "builder": "Anubhav Vijayvargiya (Indian Skate Culture)", "quality": "Covered wooden ramp training facility with modular street elements", "obstacles": "Large wooden mini-ramp, quarter pipe wall, flat rails, grind boxes, bank to bank, manual pad", "yt_query": "United Roller Sports Club Dhelpur Mohali skatepark", "instagram": "https://www.instagram.com/indianskateculture/", "ig_handle": "@indianskateculture", "spot_insight": "Top training hub in Punjab for junior speed and freestyle skaters transitioning to street."}, {"id": "IN-KA-01", "name": "Play Arena Skatepark", "category": "indoor_academy", "category_label": "Indoor Weatherproof Academy", "state": "Karnataka", "city": "Bengaluru", "region": "South India", "address": "Play Arena Sports Complex, Silverwood Regency, Kasavanahalli, Sarjapur Road, Bengaluru, Karnataka - 560035", "maps_link": "https://maps.google.com/?q=Play+Arena+Sarjapur+Road+Bangalore", "charges": "Session pass (~Rs 150-250) / Rentals Available", "access_badge": "\ud83d\udcb3 Commercial Sports Arena", "area_sqft": 10000, "operational_since": 2013, "builder": "Nick Smith & Holystoked Collective", "quality": "One of India's foundational skateparks featuring an expansive concrete bowl and street section", "obstacles": "Variable-depth concrete bowl with spine, mini-ramp, 4-stair with square handrail, hubba ledges, flatbars, curved banks", "yt_query": "Play Arena Skatepark Bangalore", "instagram": "https://www.instagram.com/holystoked/", "ig_handle": "@holystoked", "spot_insight": "A benchmark bowl in South India. Features deep vertical walls suited for experienced bowl carvers."}, {"id": "IN-TN-01", "name": "Madras Wheelers Skatepark", "category": "indoor_academy", "category_label": "Indoor Weatherproof Academy", "state": "Tamil Nadu", "city": "Chennai", "region": "South India", "address": "Plot No. 79/80, Raju Nagar 7th Street, Thoraipakkam, OMR (Opp. AKDR Golf), Chennai, Tamil Nadu - 600097", "maps_link": "https://maps.google.com/?q=Madras+Wheelers+Skatepark+Chennai", "charges": "Paid Entry (~Rs 150-250) / Rentals & Lessons", "access_badge": "\ud83d\udcb3 Commercial Club Facility", "area_sqft": 8500, "operational_since": 2018, "builder": "100 Ramps Skatepark Builders & Holystoked", "quality": "Chennai's primary purpose-built concrete skatepark with balanced street and transition flow", "obstacles": "Bowl section with roll-in, banks, quarter pipe hips, flat rails, low-to-high ledge, euro gap, manual pad", "yt_query": "Madras Wheelers Skatepark Chennai", "instagram": "https://www.instagram.com/madraswheelers/", "ig_handle": "@madraswheelers", "spot_insight": "Active local coaching academy. Excellent place to rent pads and try a bowl for the first time."}, {"id": "IN-KL-01", "name": "Loop Skatepark", "category": "indoor_academy", "category_label": "Indoor Weatherproof Academy", "state": "Kerala", "city": "Kochi", "region": "South India", "address": "Near Kadavanthra / Panampilly Nagar, Kochi, Kerala - 682020", "maps_link": "https://maps.google.com/?q=Loop+Skatepark+Kochi", "charges": "Session pass (~Rs 150-200)", "access_badge": "\ud83d\udcb3 Commercial Club Facility", "area_sqft": 6500, "operational_since": 2023, "builder": "Professional skatepark engineers & local collective", "quality": "Sculpted concrete bowl and street features; premier urban hub in Kerala", "obstacles": "Flow bowl, mini-ramp transitions, street obstacles, flatground lounge", "yt_query": "Loop Skatepark Kochi Kerala", "instagram": "https://www.instagram.com/loopskatepark/", "ig_handle": "@loopskatepark", "spot_insight": "Very clean, aesthetic bowl design with an energetic youth skating community."}, {"id": "IN-TG-01", "name": "WallRide Park", "category": "pumptrack", "category_label": "Pump Track & Action Sports", "state": "Telangana", "city": "Hyderabad", "region": "South India", "address": "#315, Snehita Hills, Chevalla Road, Peeran Cheruvu, Hyderabad, Telangana - 500091", "maps_link": "https://maps.google.com/?q=WallRide+Park+Hyderabad", "charges": "Paid Entry / Hourly & Day passes (~Rs 200-300)", "access_badge": "\ud83d\udd04 Certified Asphalt Pump Track", "area_sqft": 10000, "operational_since": 2017, "builder": "Velosolutions & WallRide team", "quality": "Pioneering action sports hub featuring India's first asphalt pump track and wooden transition room", "obstacles": "Asphalt pump track with continuous berms and rollers, wooden mini-ramps, quarter pipes, wallride curve, spine, street flatbar", "yt_query": "WallRide Park Hyderabad pumptrack", "instagram": "https://www.instagram.com/wallridepark/", "ig_handle": "@wallridepark", "spot_insight": "Riding a pump track is the single best way to build lower-body endurance, rhythm, and quad pumping strength without pushing."}, {"id": "IN-LA-01", "name": "Disko Valley Bike Park & Skate Pump Track", "category": "pumptrack", "category_label": "Pump Track & Action Sports", "state": "Ladakh (UT)", "city": "Leh", "region": "North India", "address": "Disko Valley, Near Shanti Stupa, Leh, Ladakh - 194101", "maps_link": "https://maps.google.com/?q=Disko+Valley+Bike+Park+Leh+Ladakh", "charges": "Free Community Access", "access_badge": "\ud83d\udd04 World's Highest Pump Track", "area_sqft": 15000, "operational_since": 2021, "builder": "100 Ramps Skatepark Builders & Disko Valley Initiative", "quality": "World's highest skate & bike pump track (over 11,500 ft above sea level) with Himalayan backdrop", "obstacles": "Continuous asphalt pump track with berms and rollers, concrete bowl section, mini ramp", "yt_query": "Disko Valley Leh Ladakh pumptrack skate", "instagram": "https://www.instagram.com/100ramps/", "ig_handle": "@100ramps", "spot_insight": "High-altitude skating demands lung capacity! Take it slow on day 1 to acclimate to the 11,500 ft thin air."}, {"id": "IN-MP-01", "name": "Janwaar Castle", "category": "grassroots", "category_label": "Grassroots & Mountain Bowl", "state": "Madhya Pradesh", "city": "Janwaar (Panna)", "region": "Central India", "address": "Village Janwaar, Near Panna National Park, District Panna, Madhya Pradesh - 488441", "maps_link": "https://maps.google.com/?q=Janwaar+Castle+Panna+Madhya+Pradesh", "charges": "Free Community Access ('No School, No Skateboarding')", "access_badge": "\ud83c\udf3f India's 1st Rural Skatepark", "area_sqft": 14000, "operational_since": 2015, "builder": "Holystoked, Skate-Aid (Germany) & Maier Landschaftsarchitektur", "quality": "India's first rural skatepark; internationally acclaimed social project", "obstacles": "Huge concrete bowl with deep/shallow ends, pump transitions, rollover hips, street ledges, beginner banks", "yt_query": "Janwaar Castle skatepark Panna", "instagram": "https://www.instagram.com/janwaar_castle/", "ig_handle": "@janwaar_castle", "spot_insight": "A sacred spot in Indian skateboarding. Produced international champions from a tiny forest village."}, {"id": "IN-ML-01", "name": "Pro-Life Skatepark", "category": "grassroots", "category_label": "Grassroots & Mountain Bowl", "state": "Meghalaya", "city": "Shillong", "region": "East & North-East India", "address": "Dieng\u00efong, Upper Shillong, East Khasi Hills, Meghalaya - 793005", "maps_link": "https://maps.google.com/?q=Pro-Life+Skatepark+Diengiong+Shillong", "charges": "Free Community Access for youth", "access_badge": "\ud83c\udf3f Mountain Pine Skatepark", "area_sqft": 5000, "operational_since": 2019, "builder": "Giovani Majaw & Local Skaters (with 100 Ramps collaboration)", "quality": "Scenic mountain concrete skatepark built amidst pine trees; premier hub of North-East skateboarding", "obstacles": "A-frame rail, steep banks, stair set with handrail, manual pads, transition bowls, street ledges", "yt_query": "Pro-Life Skatepark Shillong Meghalaya", "instagram": "https://www.instagram.com/explore/tags/prolifeskatepark/", "ig_handle": "@prolifeskatepark", "spot_insight": "Surrounded by pine forests. The fresh mountain air and grippy concrete make it an unforgettable skate spot."}, {"id": "IN-TN-03", "name": "Butfire Skatepark (Ooty)", "category": "grassroots", "category_label": "Grassroots & Mountain Bowl", "state": "Tamil Nadu", "city": "Ooty", "region": "South India", "address": "Near Lovedale Road, Ooty, Nilgiris District, Tamil Nadu - 643003", "maps_link": "https://maps.google.com/?q=Butfire+Skatepark+Ooty", "charges": "Free Community Access", "access_badge": "\ud83c\udf3f High-Altitude Nilgiri Bowl", "area_sqft": 3500, "operational_since": 2021, "builder": "100 Ramps Skatepark Builders", "quality": "High-altitude mountain skatepark with scenic pine valley views", "obstacles": "Compact bowl transition, bank ramps, quarter pipe, flat rail", "yt_query": "Butfire Skatepark Ooty 100 Ramps", "instagram": "https://www.instagram.com/100ramps/", "ig_handle": "@100ramps", "spot_insight": "Cool climate year-round. Perfect for long weekend skate sessions avoiding the summer heat."}, {"id": "IN-TN-02", "name": "Mahabs Skatepark (Kamali's Skatepark)", "category": "grassroots", "category_label": "Grassroots & Mountain Bowl", "state": "Tamil Nadu", "city": "Mahabalipuram", "region": "South India", "address": "Fisherman Colony, Near Mahabalipuram Beach, Mahabalipuram, Tamil Nadu - 603104", "maps_link": "https://maps.google.com/?q=Mahabs+Skatepark+Mahabalipuram", "charges": "Free Community Access for village kids", "access_badge": "\ud83c\udf3f Coastal Village Bowl", "area_sqft": 4000, "operational_since": 2015, "builder": "Holystoked Collective", "quality": "Grassroots seaside concrete bowl that empowered Kamali Moorthy and local surf/skate culture", "obstacles": "Concrete mini-ramp and kidney bowl transition with coping, roll-in banks", "yt_query": "Mahabs Skatepark Mahabalipuram Kamali", "instagram": "https://www.instagram.com/holystoked/", "ig_handle": "@holystoked", "spot_insight": "A coastal jewel where surfing meets skateboarding on the Bay of Bengal."}, {"id": "IN-KL-02", "name": "Kovalam Skate Club / SISP Skatepark", "category": "grassroots", "category_label": "Grassroots & Mountain Bowl", "state": "Kerala", "city": "Kovalam", "region": "South India", "address": "SISP Free School Campus, Harbour Road, Vizhinjam, Kovalam, Kerala - 695521", "maps_link": "https://maps.google.com/?q=SISP+Kovalam+Skatepark+Vizhinjam", "charges": "Free for SISP students; open sessions for visitors", "access_badge": "\ud83c\udf3f School Rooftop & Ground Bowl", "area_sqft": 5000, "operational_since": 2014, "builder": "SISP & International Volunteers", "quality": "Rooftop and ground concrete mini-ramp and bowl; India's first school skatepark", "obstacles": "Wooden and concrete mini-ramps, quarter pipes, rollover spine, flatbars", "yt_query": "Kovalam skate club SISP skatepark", "instagram": "https://www.instagram.com/kovalamskateclub/", "ig_handle": "@kovalamskateclub", "spot_insight": "First school in India to incorporate skateboarding into daily education."}, {"id": "IN-PY-01", "name": "Auroville Skatepark", "category": "grassroots", "category_label": "Grassroots & Mountain Bowl", "state": "Tamil Nadu / Puducherry", "city": "Auroville", "region": "South India", "address": "Youth Center, Auroville International Township, Tamil Nadu / Puducherry - 605101", "maps_link": "https://maps.google.com/?q=Auroville+Youth+Center+Skatepark", "charges": "Free Community Access (Donation welcomed)", "access_badge": "\ud83c\udf3f Forest Sanctuary Bowl", "area_sqft": 5000, "operational_since": 2017, "builder": "Auzalan Construction & Holystoked", "quality": "Eco-friendly concrete bowl facility nestled inside the Auroville forest sanctuary", "obstacles": "Flow bowl with pool coping, hip transfer, quarter pipe waterfall, mini ramp spine", "yt_query": "Auroville Skatepark bowl", "instagram": "https://www.instagram.com/holystoked/", "ig_handle": "@holystoked", "spot_insight": "Completely quiet, forest-shaded bowl. Mindful, rhythmic skating at its finest."}, {"id": "IN-MP-02", "name": "Hilltop Skatepark (BhopalSB)", "category": "grassroots", "category_label": "Grassroots & Mountain Bowl", "state": "Madhya Pradesh", "city": "Bhopal", "region": "Central India", "address": "Mendori, Near Kerwa Dam Road, Bhopal, Madhya Pradesh - 462044", "maps_link": "https://maps.google.com/?q=Hilltop+Skatepark+Mendori+Bhopal", "charges": "Free Community Access", "access_badge": "\ud83c\udf3f Grassroots DIY Park", "area_sqft": 4500, "operational_since": 2021, "builder": "BhopalSB Community & Grassroots Skaters", "quality": "Community-built concrete skatepark and active hub for central Indian skateboarding", "obstacles": "Mini ramp, transition quarter pipes, flat rails, ledge, bank to bank, manual pad", "yt_query": "Hilltop Skatepark Bhopal BhopalSB", "instagram": "https://www.instagram.com/bhopalsb/", "ig_handle": "@bhopalsb", "spot_insight": "Passionate local community. Connect with BhopalSB on Instagram before visiting for the latest jam timings."}, {"id": "IN-MP-03", "name": "GSC Skatepark (Gwalior Sickness Centre)", "category": "cross_check", "category_label": "Cross-Check Before Visiting", "state": "Madhya Pradesh", "city": "Gwalior", "region": "Central India", "address": "Jhansi Road, Gwalior, Madhya Pradesh - 474001", "maps_link": "https://maps.google.com/?q=GSC+Skatepark+Jhansi+Road+Gwalior", "charges": "Free / Private Skateshop Hub", "access_badge": "\u26a0\ufe0f Verify Skateshop Hours First", "area_sqft": 5300, "operational_since": 2019, "builder": "100 Ramps Skatepark Builders & Angad Singh", "quality": "Custom concrete street plaza connected to a private skateshop (gscsk8.com)", "obstacles": "Quarter pipes, steep banks, low hubbas, flat rails, wallride surface, manual pads", "yt_query": "GSC Skatepark Gwalior GSCSK8", "instagram": "https://www.instagram.com/gscsk8/", "ig_handle": "@gscsk8", "spot_insight": "\u26a0\ufe0f Cross-check alert: Operated in tandem with the local skateshop. Always DM @gscsk8 on Instagram to confirm the gates are open."}, {"id": "IN-ML-02", "name": "Nokrek Skatepark", "category": "cross_check", "category_label": "Cross-Check Before Visiting", "state": "Meghalaya", "city": "Tura", "region": "East & North-East India", "address": "District Sports Complex, Dakopgre, Tura, Garo Hills, Meghalaya - 794101", "maps_link": "https://maps.google.com/?q=District+Sports+Complex+Tura+Meghalaya", "charges": "Free Public Access (Stadium Timings)", "access_badge": "\u26a0\ufe0f Subject to Stadium Gate Timings", "area_sqft": 3500, "operational_since": 2022, "builder": "District Administration & Local Youth Initiative", "quality": "Compact community concrete training ground for Garo Hills youth", "obstacles": "Quarter pipes, bank ramps, flat ground rails, grind box", "yt_query": "Tura Garo Hills Skatepark Meghalaya", "instagram": "https://www.instagram.com/explore/tags/turaskatepark/", "ig_handle": "@turaskate", "spot_insight": "\u26a0\ufe0f Cross-check alert: Sits inside the government sports complex. Subject to stadium opening/closing hours."}, {"id": "IN-GA-02", "name": "Cirrus Skate Bowl", "category": "cross_check", "category_label": "Cross-Check Before Visiting", "state": "Goa", "city": "Anjuna / Vagator", "region": "West India", "address": "Chapora-Anjuna Road, Vagator Border, North Goa, Goa - 403509", "maps_link": "https://maps.google.com/?q=Cirrus+Goa+Anjuna+Vagator", "charges": "Venue Patrons / Private Skate Jams", "access_badge": "\u26a0\ufe0f Private Venue / Event Timings", "area_sqft": 4500, "operational_since": 2014, "builder": "Holystoked Collective & 100 Ramps", "quality": "Historic underground transition bowl and DIY outdoor skate arena", "obstacles": "Deep concrete pool bowl, roll-in banks, steep transition walls, coping grind", "yt_query": "Cirrus Goa skate bowl", "instagram": "https://www.instagram.com/cirrus_goa/", "ig_handle": "@cirrus_goa", "spot_insight": "\u26a0\ufe0f Cross-check alert: Located inside a private alternative arts venue. Call or check their Instagram page before traveling."}, {"id": "IN-OD-01", "name": "Dharambandha Police Station Compound", "category": "cross_check", "category_label": "Cross-Check Before Visiting", "state": "Odisha", "city": "Dharambandha (Nuapada)", "region": "East India", "address": "Dharambandha Police Station Campus, Nuapada District, Odisha - 766106", "maps_link": "https://maps.google.com/?q=Dharambandha+Police+Station+Nuapada+Odisha", "charges": "Secured Government Campus (Not a Public Commercial Park)", "access_badge": "\ud83d\uded1 SECURED POLICE COMPOUND (Permission Required)", "area_sqft": 6725, "operational_since": 2019, "builder": "Skateable India (Community Policing Initiative)", "quality": "Smooth concrete community park built on police station campus", "obstacles": "Flat rails, ledges, hubbas, bump to curved ledge, steep bump-to-bump, quarter pipes, perimeter speedbumps", "yt_query": "Skateable India Dharambandha Odisha", "instagram": "https://www.instagram.com/skateable.in/", "ig_handle": "@skateable.in", "spot_insight": "\ud83d\uded1 IMPORTANT WARNING: Not an open public park. Built inside an active police station boundary for local tribal community outreach. Do not visit without official police clearance."}, {"id": "IN-KA-DEF-01", "name": "The Cave Skatepark (Hegde Nagar)", "category": "defunct", "category_label": "Historical Memorial (Closed)", "state": "Karnataka", "city": "Bengaluru", "region": "South India", "address": "RK Hegde Nagar / Hennur Area, Bengaluru, Karnataka (Demolished)", "maps_link": "https://maps.google.com/?q=The+Cave+Skatepark+Bangalore", "charges": "PERMANENTLY CLOSED / DEMOLISHED", "access_badge": "\ud83d\uded1 PERMANENTLY CLOSED (Demolished 2023)", "area_sqft": 8000, "operational_since": "2013 - 2023", "builder": "Holystoked Collective, Levi's & International Volunteers", "quality": "India's most iconic free DIY park; hosted Tony Hawk's foundation visits and international tours", "obstacles": "Massive concrete bowl, transition hip, spine, mini ramp, wallride, street ledges", "yt_query": "The Cave Skatepark Bangalore Holystoked", "instagram": "https://www.instagram.com/holystoked/", "ig_handle": "@holystoked", "spot_insight": "\ud83d\uded1 COMMUNITY MEMORIAL: Leased land was reclaimed by owners in 2023 and ramps were dismantled. Preserved here as a historical milestone."}, {"id": "IN-MH-DEF-01", "name": "Khar Social Indoor Skate Bowl", "category": "defunct", "category_label": "Historical Memorial (Closed)", "state": "Maharashtra", "city": "Mumbai", "region": "West India", "address": "Khar Social, Rohan Plaza, 5th Road, Khar West, Mumbai - 400052 (Repurposed)", "maps_link": "https://maps.google.com/?q=Khar+Social+Mumbai", "charges": "NO LONGER OPERATIONAL FOR SKATING", "access_badge": "\ud83d\uded1 NO LONGER ACTIVE FOR SKATING", "area_sqft": 1500, "operational_since": "2015 - 2018", "builder": "Nick Smith, Red Bull & Impresario Entertainment", "quality": "India's first indoor hospitality skate bowl embedded inside a cafe/pub", "obstacles": "Custom wooden mini bowl with pool coping inside restaurant space", "yt_query": "Khar Social skate bowl Red Bull Mumbai", "instagram": "https://www.instagram.com/socialoffline/", "ig_handle": "@socialoffline", "spot_insight": "\ud83d\uded1 HISTORICAL SPOT: The wooden bowl made headlines in 2015 as the first pub bowl in Asia, but was subsequently decommissioned for restaurant seating."}];
+    const allParks = [{"id":"IN-CH-01","name":"Chandigarh Skatepark (Tiranga Urban Park)","category":"public_mega","category_label":"Public Mega-Park","state":"Chandigarh (UT)","city":"Chandigarh","region":"North India","address":"Tiranga Urban Park, Sub. City Center, Sector 17, Chandigarh - 160017","maps_link":"https://maps.google.com/?q=Chandigarh+Skatepark+Sector+17","charges":"Free Public Access","access_badge":"🟢 Verified Public Park","area_sqft":44000,"operational_since":2022,"builder":"Municipal Corporation & Chandigarh Smart City Ltd","quality":"World-class smooth concrete facility; tied as India's largest public skatepark","obstacles":"Massive flow bowl with deep/shallow ends and pool coping, extensive street league section, 8-stair with square handrail, hubbas, euro gap, A-frame rail, manual pads, curved banks, perimeter pump line","yt_query":"\"Chandigarh Skatepark\" \"Sector 17\"","instagram":"https://www.instagram.com/chandigarhskateboarding/","ig_handle":"@chandigarhskateboarding","spot_insight":"Ideal for both speed transitions and technical inline slalom. Smooth concrete with excellent grip in dry weather."},{"id":"IN-UP-01","name":"Lohia Skatepark (Lucknow)","category":"public_mega","category_label":"Public Mega-Park","state":"Uttar Pradesh","city":"Lucknow","region":"North India","address":"Dr. Ram Manohar Lohia Park, Vipin Khand, Gomti Nagar, Lucknow, Uttar Pradesh - 226010","maps_link":"https://maps.google.com/?q=Lohia+Park+Skatepark+Gomti+Nagar+Lucknow","charges":"Park Entry (~Rs 10-20); skatepark free","access_badge":"🟢 Verified Public Park","area_sqft":44000,"operational_since":2021,"builder":"Lucknow Development Authority (LDA)","quality":"Tied with Sector 17 Chandigarh as India's largest public skatepark (44,000 sq ft)","obstacles":"Championship street course, massive deep bowl, 3-stair & 6-stair handrails, hubbas, down-ledges, A-frame, flatbars, curved banks","yt_query":"\"Lohia Park\" skatepark Lucknow","instagram":null,"ig_handle":null,"spot_insight":"Huge championship layout designed for high-speed street lines and transition air tricks."},{"id":"IN-MH-02","name":"Nerul Skatepark (Rajiv Gandhi Joggers Park)","category":"public_mega","category_label":"Public Mega-Park","state":"Maharashtra","city":"Navi Mumbai","region":"West India","address":"Rajiv Gandhi Joggers Park, Sector 10, Nerul West, Navi Mumbai, Maharashtra - 400706","maps_link":"https://maps.google.com/?q=Nerul+Skatepark+Rajiv+Gandhi+Joggers+Park+Navi+Mumbai","charges":"Free Public Access (Park entry Rs 10)","access_badge":"🟢 Verified Public Park","area_sqft":20000,"operational_since":2019,"builder":"Navi Mumbai Municipal Corporation (NMMC)","quality":"Huge concrete street and transition facility with dual connected bowls","obstacles":"Massive concrete bowl with steel coping, street plaza with multiple ledges, hubbas, flatbars, down-rails, bank-to-bank hip","yt_query":"\"Nerul Skatepark\" Navi Mumbai","instagram":null,"ig_handle":null,"spot_insight":"One of the best bowl transition lines in Western India; regular venue for state-level skating trials."},{"id":"IN-RJ-01","name":"Desert Dolphin Skatepark","category":"public_mega","category_label":"Public Mega-Park","state":"Rajasthan","city":"Khempur (near Udaipur)","region":"North India","address":"Near Ravla Khempur Heritage Hotel, Village Khempur, District Mavli, Rajasthan - 313203","maps_link":"https://maps.google.com/?q=Desert+Dolphin+Skatepark+Khempur+Rajasthan","charges":"Free Community Access (Prior note for visiting skaters)","access_badge":"🟢 Verified Public Park","area_sqft":14500,"operational_since":2018,"builder":"Desert Dolphin Project (Built for Netflix film 'Skater Girl')","quality":"Super-smooth reinforced concrete with custom desert tones; international standard clover bowl","obstacles":"Large 3-tier clover bowl with variable depths, tall vert extensions, spine transfer, mellow bowl with hubba and handrail, euro gap, pyramid","yt_query":"\"Desert Dolphin Skatepark\" Khempur","instagram":"https://www.instagram.com/desertdolphinskatepark/","ig_handle":"@desertdolphinskatepark","spot_insight":"Iconic clover bowl with smooth coping and zero seam cracks. A world-class destination facility."},{"id":"IN-GJ-01","name":"Sabarmati Riverfront Skatepark (Jal Skatepark)","category":"public_mega","category_label":"Public Mega-Park","state":"Gujarat","city":"Ahmedabad","region":"West India","address":"Sabarmati Riverfront West Promenade, Near Ellis Bridge, Ahmedabad, Gujarat - 380009","maps_link":"https://maps.google.com/?q=Sabarmati+Riverfront+Skatepark+Ahmedabad","charges":"Free Public Access","access_badge":"🟢 Verified Public Park","area_sqft":14000,"operational_since":2021,"builder":"Sabarmati Riverfront Development Corporation Ltd (SRFDCL)","quality":"Premier riverfront concrete skatepark designed to international competition standards","obstacles":"Flow bowl with variable depths, street plaza, handrails, stair sets, hubba ledges, roll-in banks, A-frame spine","yt_query":"\"Sabarmati Riverfront\" skatepark Ahmedabad","instagram":null,"ig_handle":null,"spot_insight":"Well-lit and breeze-cooled riverfront plaza; perfect for evening transition flow and technical grinds."},{"id":"IN-MH-03","name":"Namo Grand Central Park Skatepark","category":"public_mega","category_label":"Public Mega-Park","state":"Maharashtra","city":"Thane","region":"West India","address":"Kalpataru Parkcity Grand Central Park, Kolshet Road, Thane West, Maharashtra - 400607","maps_link":"https://maps.google.com/?q=Namo+Grand+Central+Park+Thane","charges":"Park Entry (~Rs 20-50); skatepark included","access_badge":"🟢 Verified Public Park","area_sqft":12000,"operational_since":2024,"builder":"Thane Municipal Corporation & Kalpataru","quality":"Modern dual bowl concrete facility with beginner and advanced transition flow","obstacles":"Mellow beginner bowl, deep pool bowl with coping, bump-to-bump, perimeter street section with ledges and flat rails","yt_query":"\"Namo Grand Central Park\" skatepark Thane","instagram":null,"ig_handle":null,"spot_insight":"Fresh high-grade concrete with low rolling resistance. The shallow bowl is excellent for practicing drop-ins."},{"id":"IN-MH-01","name":"Carter Road Skatepark ('Hype in the City')","category":"public_mega","category_label":"Public Mega-Park","state":"Maharashtra","city":"Mumbai","region":"West India","address":"Carter Road Seafront Promenade, Additional CP Office, Bandra West, Mumbai, Maharashtra - 400050","maps_link":"https://maps.google.com/?q=Carter+Road+Skatepark+Bandra+Mumbai","charges":"Free Public Access","access_badge":"🟢 Verified Public Park","area_sqft":8000,"operational_since":2018,"builder":"Bandra Collective & Architecture BRIO","quality":"Iconic seaside concrete street plaza integrated into an urban amphitheater","obstacles":"Street plaza with banks, steep quarter pipes, hubba ledges, down ledges, flat rails, manual pads","yt_query":"\"Carter Road Skatepark\" Bandra Mumbai","instagram":null,"ig_handle":null,"spot_insight":"Mumbai's spiritual skate home. Great coastal community vibe, active during sunset sessions."},{"id":"IN-GJ-02","name":"Alembic Skatepark","category":"public_mega","category_label":"Public Mega-Park","state":"Gujarat","city":"Vadodara","region":"West India","address":"Alembic City Art District, Gorwa, Vadodara, Gujarat - 390003","maps_link":"https://maps.google.com/?q=Alembic+City+Skatepark+Vadodara","charges":"Free Community Access","access_badge":"🟢 Verified Public Park","area_sqft":8000,"operational_since":2022,"builder":"Alembic Real Estate & Cultural Foundation","quality":"Industrial-chic urban concrete skatepark inside the historic Alembic Art District","obstacles":"Deep concrete bowl, transition quarter pipes, flat rails, ledges, manual pads, pyramid bank","yt_query":"\"Alembic\" skatepark Vadodara","instagram":null,"ig_handle":null,"spot_insight":"Superb artistic ambiance with smooth coping and plenty of shaded viewing areas."},{"id":"IN-AS-01","name":"NFRSA Skatepark (Guwahati)","category":"public_mega","category_label":"Public Mega-Park","state":"Assam","city":"Guwahati","region":"East & North-East India","address":"NFRSA Stadium Complex, Maligaon, Guwahati, Assam - 781011","maps_link":"https://maps.google.com/?q=NFRSA+Stadium+Maligaon+Guwahati","charges":"Free Community Access","access_badge":"🟢 Verified Public Park","area_sqft":10000,"operational_since":2023,"builder":"Northeast Frontier Railway Sports Association (NFRSA)","quality":"Largest public concrete skatepark in Northeast India with street and bowl flow","obstacles":"Smooth bowl with pool coping, down-rail, hubbas, A-frame, banked hips, manual pads, roll-in waterfall","yt_query":"\"NFRSA\" skatepark Guwahati","instagram":null,"ig_handle":null,"spot_insight":"Premier training ground for North-East athletes preparing for national competitions."},{"id":"IN-KA-02","name":"Chintamani Skatepark","category":"public_mega","category_label":"Public Mega-Park","state":"Karnataka","city":"Chintamani","region":"South India","address":"Government Municipal Stadium Complex, Chintamani, Chikkaballapur District, Karnataka - 563125","maps_link":"https://maps.google.com/?q=Chintamani+Skatepark+Karnataka","charges":"Free Public Access","access_badge":"🟢 Verified Public Park","area_sqft":6000,"operational_since":2022,"builder":"Chintamani City Municipal Council","quality":"State-of-the-art public facility built by the municipality in rural Karnataka","obstacles":"Flow bowl, banks, hubbas, down-ledges, flat rail, quarter pipe, roll-in","yt_query":"\"Chintamani\" skatepark Karnataka","instagram":null,"ig_handle":null,"spot_insight":"Inspiring grassroots municipal park that introduced modern concrete transitions to rural youth."},{"id":"IN-GA-01","name":"Youth Hostel Skatepark (Miramar)","category":"public_mega","category_label":"Public Mega-Park","state":"Goa","city":"Panaji","region":"West India","address":"Youth Hostel Campus, Miramar Beach Promenade, Panaji, Goa - 403001","maps_link":"https://maps.google.com/?q=Youth+Hostel+Miramar+Panjim+Goa","charges":"Free Public Access","access_badge":"🟢 Verified Public Park","area_sqft":6000,"operational_since":2017,"builder":"Sports Authority of Goa & SkateLifeGoa","quality":"Central gathering hub for Goa skateboarding overlooking the Mandovi River","obstacles":"Quarter pipes, flat ground rails, funbox with ledge, movable kickers, manual pad","yt_query":"\"Miramar\" skatepark \"Youth Hostel\" Goa","instagram":null,"ig_handle":null,"spot_insight":"Riverfront sea breeze makes this comfortable during early mornings and sunset sessions."},{"id":"IN-DL-02","name":"Delhi Skateboarding Academy (Delhi SB)","category":"indoor_academy","category_label":"Indoor Weatherproof Academy","state":"Delhi","city":"New Delhi","region":"North India","address":"Block A-1, Neb Sarai, Near IGNOU Road / Saket, South Delhi - 110068","maps_link":"https://goo.gl/maps/9QxqpQ8e84Wrtzjo7","charges":"Session Fee (~Rs 150-200) / Monthly Coaching Packages","access_badge":"🏢 Indoor Academy (Open 365 Days)","area_sqft":4500,"operational_since":2016,"builder":"Delhi Skateboarding Academy (Evolution of Freemotion Sk8)","quality":"Historic subterranean indoor wooden park; weatherproof haven from Delhi's heat and smog","obstacles":"Full wooden vert ramp, mini-ramp transitions, quarter pipes, flat grind rails, launch banks, dedicated core skateshop","yt_query":"\"Delhi Skateboarding Academy\" \"Neb Sarai\"","instagram":"https://www.instagram.com/delhi_sb/","ig_handle":"@delhi_sb","spot_insight":"Delhi's foundational indoor hall. Wooden surface provides forgiving fall protection when practicing advanced flips."},{"id":"IN-DL-01","name":"Backyard Skatepark & Training Center","category":"indoor_academy","category_label":"Indoor Weatherproof Academy","state":"Delhi","city":"New Delhi","region":"North India","address":"Block A1, 428, Dhankar Road, Neb Sarai, Sainik Farm, New Delhi - 110068","maps_link":"https://maps.google.com/?q=Backyard+Skatepark+Neb+Sarai+New+Delhi","charges":"Session Fee (~Rs 200) & Monthly Coaching","access_badge":"🏢 Covered / Semi-Indoor Park","area_sqft":7000,"operational_since":2019,"builder":"Backyard Skatepark Collective","quality":"Hybrid covered wooden ramp room and outdoor concrete street training park","obstacles":"Wooden mini-ramps, quarter pipes, flatbars, grind boxes, foam pit for aerial stunts, outdoor banks, ledges, kickers","yt_query":"\"Backyard Skatepark\" \"Neb Sarai\"","instagram":"https://www.instagram.com/backyardskatepark_/","ig_handle":"@backyardskatepark_","spot_insight":"The foam pit is a huge plus for freestyle skaters practicing rotational spins and flips safely."},{"id":"IN-MH-04","name":"Proper Park Hotfut (Pune)","category":"indoor_academy","category_label":"Indoor Weatherproof Academy","state":"Maharashtra","city":"Pune","region":"West India","address":"Hotfut Sports Club, Mundhwa / Koregaon Park Annexe, Pune, Maharashtra - 411036","maps_link":"https://maps.google.com/?q=Proper+Park+Skatepark+Hotfut+Pune","charges":"Session pass (~Rs 150-250)","access_badge":"💳 Commercial Club Facility","area_sqft":7500,"operational_since":2021,"builder":"Hotfut Sports Club","quality":"Well-maintained urban skate facility with smooth concrete","obstacles":"Sectional mini-ramp, kidney bowl, pyramid street hip, A-frame rail, round flatbar, low hubbas, manual pad","yt_query":"\"Proper Park\" skatepark Pune Hotfut","instagram":null,"ig_handle":null,"spot_insight":"Well-sheltered transition lines; fantastic for intermediate skaters refining pyramid transfers."},{"id":"IN-PB-01","name":"United Roller Sports Club Skatepark","category":"indoor_academy","category_label":"Indoor Weatherproof Academy","state":"Punjab","city":"Mohali","region":"North India","address":"United Roller Sports Club, Dhelpur, Near Landran Road, Mohali, Punjab - 140307","maps_link":"https://maps.google.com/?q=United+Roller+Sports+Club+Dhelpur+Mohali","charges":"Paid Membership / Academy Training","access_badge":"🏢 Covered Training Facility","area_sqft":9000,"operational_since":2022,"builder":"United Roller Sports Club Management","quality":"Covered wooden ramp training facility with modular street elements","obstacles":"Large wooden mini-ramp, quarter pipe wall, flat rails, grind boxes, bank to bank, manual pad","yt_query":"\"United Roller Sports Club\" Dhelpur Mohali skatepark","instagram":null,"ig_handle":null,"spot_insight":"Top training hub in Punjab for junior speed and freestyle skaters transitioning to street."},{"id":"IN-KA-01","name":"Play Arena Skatepark","category":"indoor_academy","category_label":"Indoor Weatherproof Academy","state":"Karnataka","city":"Bengaluru","region":"South India","address":"Play Arena Sports Complex, Silverwood Regency, Kasavanahalli, Sarjapur Road, Bengaluru, Karnataka - 560035","maps_link":"https://maps.google.com/?q=Play+Arena+Sarjapur+Road+Bangalore","charges":"Session pass (~Rs 150-250) / Rentals Available","access_badge":"💳 Commercial Sports Arena","area_sqft":10000,"operational_since":2013,"builder":"Play Arena Sports Infrastructure","quality":"One of India's foundational skateparks featuring an expansive concrete bowl and street section","obstacles":"Variable-depth concrete bowl with spine, mini-ramp, 4-stair with square handrail, hubba ledges, flatbars, curved banks","yt_query":"\"Play Arena\" skatepark Sarjapur Bangalore","instagram":null,"ig_handle":null,"spot_insight":"A benchmark bowl in South India. Features deep vertical walls suited for experienced bowl carvers."},{"id":"IN-TN-01","name":"Madras Wheelers Skatepark","category":"indoor_academy","category_label":"Indoor Weatherproof Academy","state":"Tamil Nadu","city":"Chennai","region":"South India","address":"Plot No. 79/80, Raju Nagar 7th Street, Thoraipakkam, OMR (Opp. AKDR Golf), Chennai, Tamil Nadu - 600097","maps_link":"https://maps.google.com/?q=Madras+Wheelers+Skatepark+Chennai","charges":"Paid Entry (~Rs 150-250) / Rentals & Lessons","access_badge":"💳 Commercial Club Facility","area_sqft":8500,"operational_since":2018,"builder":"Madras Wheelers Academy","quality":"Chennai's primary purpose-built concrete skatepark with balanced street and transition flow","obstacles":"Bowl section with roll-in, banks, quarter pipe hips, flat rails, low-to-high ledge, euro gap, manual pad","yt_query":"\"Madras Wheelers\" skatepark Chennai","instagram":"https://www.instagram.com/madraswheelers/","ig_handle":"@madraswheelers","spot_insight":"Active local coaching academy. Excellent place to rent pads and try a bowl for the first time."},{"id":"IN-KL-01","name":"Loop Skatepark","category":"indoor_academy","category_label":"Indoor Weatherproof Academy","state":"Kerala","city":"Kochi","region":"South India","address":"Near Kadavanthra / Panampilly Nagar, Kochi, Kerala - 682020","maps_link":"https://maps.google.com/?q=Loop+Skatepark+Kochi","charges":"Session pass (~Rs 150-200)","access_badge":"💳 Commercial Club Facility","area_sqft":6500,"operational_since":2023,"builder":"Loop Skatepark Crew","quality":"Sculpted concrete bowl and street features; premier urban hub in Kerala","obstacles":"Flow bowl, mini-ramp transitions, street obstacles, flatground lounge","yt_query":"\"Loop Skatepark\" Kochi","instagram":"https://www.instagram.com/loopskatepark/","ig_handle":"@loopskatepark","spot_insight":"Very clean, aesthetic bowl design with an energetic youth skating community."},{"id":"IN-TG-01","name":"WallRide Park","category":"pumptrack","category_label":"Pump Track & Action Sports","state":"Telangana","city":"Hyderabad","region":"South India","address":"#315, Snehita Hills, Chevalla Road, Peeran Cheruvu, Hyderabad, Telangana - 500091","maps_link":"https://maps.google.com/?q=WallRide+Park+Hyderabad","charges":"Paid Entry / Hourly & Day passes (~Rs 200-300)","access_badge":"🔄 Certified Asphalt Pump Track","area_sqft":10000,"operational_since":2017,"builder":"Velosolutions & WallRide Action Sports","quality":"Pioneering action sports hub featuring India's first asphalt pump track and wooden transition room","obstacles":"Asphalt pump track with continuous berms and rollers, wooden mini-ramps, quarter pipes, wallride curve, spine, street flatbar","yt_query":"\"WallRide Park\" Hyderabad pumptrack","instagram":"https://www.instagram.com/wallridepark/","ig_handle":"@wallridepark","spot_insight":"Riding a pump track is the single best way to build lower-body endurance, rhythm, and quad pumping strength without pushing."},{"id":"IN-LA-01","name":"Disko Valley Bike Park & Skate Pump Track","category":"pumptrack","category_label":"Pump Track & Action Sports","state":"Ladakh (UT)","city":"Leh","region":"North India","address":"Disko Valley, Near Shanti Stupa, Leh, Ladakh - 194101","maps_link":"https://maps.google.com/?q=Disko+Valley+Bike+Park+Leh+Ladakh","charges":"Free Community Access","access_badge":"🔄 World's Highest Pump Track","area_sqft":15000,"operational_since":2021,"builder":"Disko Valley Action Sports Initiative & Ladakh Sports Dept","quality":"World's highest skate & bike pump track (over 11,500 ft above sea level) with Himalayan backdrop","obstacles":"Continuous asphalt pump track with berms and rollers, concrete bowl section, mini ramp","yt_query":"\"Disko Valley\" Leh Ladakh skate","instagram":null,"ig_handle":null,"spot_insight":"High-altitude skating demands lung capacity. Acclimate properly before sustained pump sessions at 11,500 ft."},{"id":"IN-MP-01","name":"Janwaar Castle","category":"grassroots","category_label":"Grassroots & Mountain Bowl","state":"Madhya Pradesh","city":"Janwaar (Panna)","region":"Central India","address":"Village Janwaar, Near Panna National Park, District Panna, Madhya Pradesh - 488441","maps_link":"https://maps.google.com/?q=Janwaar+Castle+Panna+Madhya+Pradesh","charges":"Free Community Access ('No School, No Skateboarding')","access_badge":"🌿 India's 1st Rural Skatepark","area_sqft":14000,"operational_since":2015,"builder":"Janwaar Castle Community Organisation","quality":"India's first rural skatepark; internationally acclaimed social impact project","obstacles":"Huge concrete bowl with deep/shallow ends, pump transitions, rollover hips, street ledges, beginner banks","yt_query":"\"Janwaar Castle\" skatepark Panna","instagram":"https://www.instagram.com/janwaar_castle/","ig_handle":"@janwaar_castle","spot_insight":"A historic spot in Indian skateboarding. Cultivated national medalists from a rural farming village."},{"id":"IN-ML-01","name":"Pro-Life Skatepark","category":"grassroots","category_label":"Grassroots & Mountain Bowl","state":"Meghalaya","city":"Shillong","region":"East & North-East India","address":"Diengïong, Upper Shillong, East Khasi Hills, Meghalaya - 793005","maps_link":"https://maps.google.com/?q=Pro-Life+Skatepark+Diengiong+Shillong","charges":"Free Community Access for youth","access_badge":"🌿 Mountain Pine Skatepark","area_sqft":5000,"operational_since":2019,"builder":"Pro-Life Skaters Association Shillong","quality":"Scenic mountain concrete skatepark built amidst pine trees; premier hub of North-East skateboarding","obstacles":"A-frame rail, steep banks, stair set with handrail, manual pads, transition bowls, street ledges","yt_query":"\"Pro-Life Skatepark\" Shillong","instagram":null,"ig_handle":null,"spot_insight":"Surrounded by pine forests. The fresh mountain air and grippy concrete make it a standout session spot."},{"id":"IN-TN-03","name":"Butfire Skatepark (Ooty)","category":"grassroots","category_label":"Grassroots & Mountain Bowl","state":"Tamil Nadu","city":"Ooty","region":"South India","address":"Near Lovedale Road, Ooty, Nilgiris District, Tamil Nadu - 643003","maps_link":"https://maps.google.com/?q=Butfire+Skatepark+Ooty","charges":"Free Community Access","access_badge":"🌿 High-Altitude Nilgiri Bowl","area_sqft":3500,"operational_since":2021,"builder":"Nilgiris Action Sports Collective","quality":"High-altitude mountain skatepark with scenic pine valley views","obstacles":"Compact bowl transition, bank ramps, quarter pipe, flat rail","yt_query":"\"Butfire Skatepark\" Ooty","instagram":null,"ig_handle":null,"spot_insight":"Cool mountain climate year-round. Great for morning bowl sessions."},{"id":"IN-TN-02","name":"Mahabs Skatepark (Kamali's Skatepark)","category":"grassroots","category_label":"Grassroots & Mountain Bowl","state":"Tamil Nadu","city":"Mahabalipuram","region":"South India","address":"Fisherman Colony, Near Mahabalipuram Beach, Mahabalipuram, Tamil Nadu - 603104","maps_link":"https://maps.google.com/?q=Mahabs+Skatepark+Mahabalipuram","charges":"Free Community Access for village kids","access_badge":"🌿 Coastal Village Bowl","area_sqft":4000,"operational_since":2015,"builder":"Mahabs Community Skaters & Volunteers","quality":"Grassroots seaside concrete bowl that empowered Kamali Moorthy and local surf/skate culture","obstacles":"Concrete mini-ramp and kidney bowl transition with coping, roll-in banks","yt_query":"\"Mahabs Skatepark\" Mahabalipuram","instagram":null,"ig_handle":null,"spot_insight":"A coastal grassroots bowl where surfing culture meets skateboarding on the Coromandel Coast."},{"id":"IN-KL-02","name":"Kovalam Skate Club / SISP Skatepark","category":"grassroots","category_label":"Grassroots & Mountain Bowl","state":"Kerala","city":"Kovalam","region":"South India","address":"SISP Free School Campus, Harbour Road, Vizhinjam, Kovalam, Kerala - 695521","maps_link":"https://maps.google.com/?q=SISP+Kovalam+Skatepark+Vizhinjam","charges":"Free for SISP students; open sessions for visitors","access_badge":"🌿 School Rooftop & Ground Bowl","area_sqft":5000,"operational_since":2014,"builder":"SISP Free School & Community Volunteers","quality":"Rooftop and ground concrete mini-ramp and bowl; India's first school-integrated skatepark","obstacles":"Wooden and concrete mini-ramps, quarter pipes, rollover spine, flatbars","yt_query":"\"Kovalam Skate Club\" SISP","instagram":"https://www.instagram.com/kovalamskateclub/","ig_handle":"@kovalamskateclub","spot_insight":"First school in India to incorporate skateboarding into educational attendance initiatives."},{"id":"IN-PY-01","name":"Auroville Skatepark","category":"grassroots","category_label":"Grassroots & Mountain Bowl","state":"Tamil Nadu / Puducherry","city":"Auroville","region":"South India","address":"Youth Center, Auroville International Township, Tamil Nadu / Puducherry - 605101","maps_link":"https://maps.google.com/?q=Auroville+Youth+Center+Skatepark","charges":"Free Community Access (Donation welcomed)","access_badge":"🌿 Forest Sanctuary Bowl","area_sqft":5000,"operational_since":2017,"builder":"Auroville Youth Center","quality":"Eco-friendly concrete bowl facility nestled inside the Auroville forest sanctuary","obstacles":"Flow bowl with pool coping, hip transfer, quarter pipe waterfall, mini ramp spine","yt_query":"\"Auroville\" skatepark \"Youth Center\"","instagram":null,"ig_handle":null,"spot_insight":"Completely quiet, forest-shaded bowl. Mindful, rhythmic skating in a serene sanctuary setting."},{"id":"IN-MP-02","name":"Hilltop Skatepark (BhopalSB)","category":"grassroots","category_label":"Grassroots & Mountain Bowl","state":"Madhya Pradesh","city":"Bhopal","region":"Central India","address":"Mendori, Near Kerwa Dam Road, Bhopal, Madhya Pradesh - 462044","maps_link":"https://maps.google.com/?q=Hilltop+Skatepark+Mendori+Bhopal","charges":"Free Community Access","access_badge":"🌿 Grassroots DIY Park","area_sqft":4500,"operational_since":2021,"builder":"BhopalSB Community & Grassroots Skaters","quality":"Community-built concrete skatepark and active hub for central Indian skateboarding","obstacles":"Mini ramp, transition quarter pipes, flat rails, ledge, bank to bank, manual pad","yt_query":"\"Hilltop Skatepark\" BhopalSB Bhopal","instagram":"https://www.instagram.com/bhopalsb/","ig_handle":"@bhopalsb","spot_insight":"Passionate local community. Connect with BhopalSB on Instagram before visiting for the latest jam timings."},{"id":"IN-MP-03","name":"GSC Skatepark (Gwalior Sickness Centre)","category":"cross_check","category_label":"Cross-Check Before Visiting","state":"Madhya Pradesh","city":"Gwalior","region":"Central India","address":"Jhansi Road, Gwalior, Madhya Pradesh - 474001","maps_link":"https://maps.google.com/?q=GSC+Skatepark+Jhansi+Road+Gwalior","charges":"Free / Private Skateshop Hub","access_badge":"⚠️ Verify Skateshop Hours First","area_sqft":5300,"operational_since":2019,"builder":"GSC Skateshop Team","quality":"Custom concrete street plaza connected to a private skateshop (gscsk8.com)","obstacles":"Quarter pipes, steep banks, low hubbas, flat rails, wallride surface, manual pads","yt_query":"\"GSC Skatepark\" Gwalior","instagram":"https://www.instagram.com/gscsk8/","ig_handle":"@gscsk8","spot_insight":"⚠️ Cross-check alert: Operated in tandem with the local skateshop. Always DM @gscsk8 on Instagram to confirm gate hours."},{"id":"IN-ML-02","name":"Nokrek Skatepark","category":"cross_check","category_label":"Cross-Check Before Visiting","state":"Meghalaya","city":"Tura","region":"East & North-East India","address":"District Sports Complex, Dakopgre, Tura, Garo Hills, Meghalaya - 794101","maps_link":"https://maps.google.com/?q=District+Sports+Complex+Tura+Meghalaya","charges":"Free Public Access (Stadium Timings)","access_badge":"⚠️ Subject to Stadium Gate Timings","area_sqft":3500,"operational_since":2022,"builder":"District Administration & Local Sports Authority","quality":"Compact community concrete training ground for Garo Hills youth","obstacles":"Quarter pipes, bank ramps, flat ground rails, grind box","yt_query":"\"Nokrek Skatepark\" Tura Garo Hills","instagram":null,"ig_handle":null,"spot_insight":"⚠️ Cross-check alert: Sits inside the government sports complex. Subject to stadium opening/closing hours."},{"id":"IN-GA-02","name":"Cirrus Skate Bowl","category":"cross_check","category_label":"Cross-Check Before Visiting","state":"Goa","city":"Anjuna / Vagator","region":"West India","address":"Chapora-Anjuna Road, Vagator Border, North Goa, Goa - 403509","maps_link":"https://maps.google.com/?q=Cirrus+Goa+Anjuna+Vagator","charges":"Venue Patrons / Private Skate Jams","access_badge":"⚠️ Private Venue / Event Timings","area_sqft":4500,"operational_since":2014,"builder":"Cirrus Goa Collective","quality":"Historic underground transition bowl and DIY outdoor skate arena","obstacles":"Deep concrete pool bowl, roll-in banks, steep transition walls, coping grind","yt_query":"\"Cirrus\" \"skate bowl\" Goa","instagram":null,"ig_handle":null,"spot_insight":"⚠️ Cross-check alert: Located inside a private alternative venue. Check event schedule before traveling."},{"id":"IN-OD-01","name":"Dharambandha Police Station Compound","category":"cross_check","category_label":"Cross-Check Before Visiting","state":"Odisha","city":"Dharambandha (Nuapada)","region":"East India","address":"Dharambandha Police Station Campus, Nuapada District, Odisha - 766106","maps_link":"https://maps.google.com/?q=Dharambandha+Police+Station+Nuapada+Odisha","charges":"Secured Government Campus (Not a Public Commercial Park)","access_badge":"🛑 SECURED POLICE COMPOUND (Permission Required)","area_sqft":6725,"operational_since":2019,"builder":"Community Youth Policing Initiative","quality":"Smooth concrete community park built on police station campus","obstacles":"Flat rails, ledges, hubbas, bump to curved ledge, steep bump-to-bump, quarter pipes, perimeter speedbumps","yt_query":"\"Dharambandha\" skatepark Odisha","instagram":null,"ig_handle":null,"spot_insight":"🛑 IMPORTANT WARNING: Not an open public park. Built inside an active police station boundary for local tribal community outreach. Do not visit without official police clearance."},{"id":"IN-KA-DEF-01","name":"The Cave Skatepark (Hegde Nagar)","category":"defunct","category_label":"Historical Memorial (Closed)","state":"Karnataka","city":"Bengaluru","region":"South India","address":"RK Hegde Nagar / Hennur Area, Bengaluru, Karnataka (Demolished)","maps_link":"https://maps.google.com/?q=The+Cave+Skatepark+Bangalore","charges":"PERMANENTLY CLOSED / DEMOLISHED","access_badge":"🛑 PERMANENTLY CLOSED (Demolished 2023)","area_sqft":8000,"operational_since":"2013 - 2023","builder":"Grassroots Skaters & Community Volunteers","quality":"India's most iconic free DIY park; hosted international tours and pioneer sessions","obstacles":"Massive concrete bowl, transition hip, spine, mini ramp, wallride, street ledges","yt_query":"\"The Cave Skatepark\" Bangalore","instagram":null,"ig_handle":null,"spot_insight":"🛑 COMMUNITY MEMORIAL: Leased land was reclaimed by owners in 2023 and ramps were dismantled. Preserved here as a historical milestone."},{"id":"IN-MH-DEF-01","name":"Khar Social Indoor Skate Bowl","category":"defunct","category_label":"Historical Memorial (Closed)","state":"Maharashtra","city":"Mumbai","region":"West India","address":"Khar Social, Rohan Plaza, 5th Road, Khar West, Mumbai - 400052 (Repurposed)","maps_link":"https://maps.google.com/?q=Khar+Social+Mumbai","charges":"NO LONGER OPERATIONAL FOR SKATING","access_badge":"🛑 NO LONGER ACTIVE FOR SKATING","area_sqft":1500,"operational_since":"2015 - 2018","builder":"Hospitality Design Collaboration","quality":"India's first indoor hospitality skate bowl embedded inside a cafe/pub","obstacles":"Custom wooden mini bowl with pool coping inside restaurant space","yt_query":"\"Khar Social\" skate bowl Mumbai","instagram":null,"ig_handle":null,"spot_insight":"🛑 HISTORICAL SPOT: The wooden bowl made headlines in 2015 as the first pub bowl in Asia, but was subsequently decommissioned for restaurant seating."}];
     let activeCategory = "all";
     let activeRegion = "all";
     let searchQuery = "";
@@ -300,7 +456,11 @@
         const isCrossCheck = p.category === "cross_check";
         const isFree = (p.charges || "").toLowerCase().includes("free") && !isDefunct && !isCrossCheck;
 
-        const ytUrl = `https://www.youtube.com/results?search_query=${encodeURIComponent(p.yt_query || (p.name + ' ' + p.city + ' skatepark'))}`;
+        // Tightly targeted YouTube search query
+        const ytSearchQuery = p.yt_query || `"${p.name}" "${p.city}" skatepark`;
+        const ytUrl = `https://www.youtube.com/results?search_query=${encodeURIComponent(ytSearchQuery)}`;
+        
+        // Only show authentic park-specific Instagram if verified
         const igButton = p.instagram ? `
           <a href="${p.instagram}" target="_blank" rel="noopener noreferrer" class="px-2.5 py-1.5 rounded-lg bg-pink-500/10 text-pink-300 border border-pink-500/20 hover:bg-pink-500 hover:text-white font-medium text-[11px] transition-all inline-flex items-center gap-1">
             <span>📸 ${p.ig_handle || 'Instagram'}</span>
@@ -335,7 +495,7 @@
               <!-- Main Details -->
               <div class="space-y-1.5 text-xs text-slate-300 mb-3">
                 <p><strong class="text-slate-400">Address:</strong> ${p.address}</p>
-                <p><strong class="text-slate-400">Area:</strong> <span class="text-cyan-300 font-semibold">${p.area_sqft ? p.area_sqft.toLocaleString() + ' sq. ft.' : 'Custom Plaza'}</span> &nbsp;|&nbsp; <strong class="text-slate-400">Builder:</strong> ${p.builder}</p>
+                <p><strong class="text-slate-400">Area:</strong> <span class="text-cyan-300 font-semibold">${p.area_sqft ? p.area_sqft.toLocaleString() + ' sq. ft.' : 'Custom Plaza'}</span> &nbsp;|&nbsp; <strong class="text-slate-400">Administration:</strong> ${p.builder}</p>
                 <p><strong class="text-slate-400">Quality:</strong> ${p.quality}</p>
                 <div class="bg-slate-950/70 p-2.5 rounded-lg border border-slate-800 leading-relaxed text-[11px] my-2">
                   <strong class="text-amber-300">Obstacles:</strong> ${p.obstacles}
@@ -362,7 +522,7 @@
                 <a href="${p.maps_link}" target="_blank" rel="noopener noreferrer" class="px-2.5 py-1.5 rounded-lg bg-cyan-500/15 text-cyan-300 border border-cyan-500/30 hover:bg-cyan-500 hover:text-slate-950 font-bold text-[11px] transition-all inline-flex items-center gap-1">
                   <span>📍 Maps</span>
                 </a>
-                <a href="${ytUrl}" target="_blank" rel="noopener noreferrer" class="px-2.5 py-1.5 rounded-lg bg-slate-800 text-slate-300 border border-slate-700 hover:bg-amber-400 hover:text-slate-950 font-semibold text-[11px] transition-all inline-flex items-center gap-1">
+                <a href="${ytUrl}" target="_blank" rel="noopener noreferrer" class="px-2.5 py-1.5 rounded-lg bg-slate-800 text-slate-300 border border-slate-700 hover:bg-amber-400 hover:text-slate-950 font-semibold text-[11px] transition-all inline-flex items-center gap-1" title="Targeted search for this skatepark">
                   <span>▶ Video</span>
                 </a>
                 ${igButton}
@@ -402,7 +562,6 @@
     document.querySelectorAll(".cat-tab").forEach(tab => {
       tab.addEventListener("click", () => {
         const clickedCat = tab.dataset.category;
-        // If clicking already active tab, toggle it off to 'all'
         if (activeCategory === clickedCat && clickedCat !== "all") {
           activeCategory = "all";
         } else {
@@ -417,7 +576,6 @@
     document.querySelectorAll(".region-pill").forEach(pill => {
       pill.addEventListener("click", () => {
         const clickedReg = pill.dataset.region;
-        // If clicking already active pill, toggle it off to 'all'
         if (activeRegion === clickedReg && clickedReg !== "all") {
           activeRegion = "all";
         } else {
@@ -450,6 +608,93 @@
         renderCards();
       });
     }
+
+    // --- Content Protection & Anti-Copy Implementation ---
+    let toastTimeout;
+    function showToast(msg) {
+      const toast = document.getElementById("copy-protection-toast");
+      if (!toast) return;
+      if (msg) {
+        toast.querySelector("span:last-child").textContent = msg;
+      }
+      toast.classList.remove("translate-y-24", "opacity-0");
+      toast.classList.add("translate-y-0", "opacity-100");
+      clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
+        toast.classList.remove("translate-y-0", "opacity-100");
+        toast.classList.add("translate-y-24", "opacity-0");
+      }, 2500);
+    }
+
+    // Block right-click context menu
+    document.addEventListener("contextmenu", (e) => {
+      e.preventDefault();
+      showToast("Protected Registry • Right-click menu is disabled.");
+      return false;
+    });
+
+    // Block clipboard copy & cut
+    document.addEventListener("copy", (e) => {
+      e.preventDefault();
+      showToast("Protected Registry • Copying text is disabled.");
+      return false;
+    });
+
+    document.addEventListener("cut", (e) => {
+      e.preventDefault();
+      return false;
+    });
+
+    // Block text drag
+    document.addEventListener("dragstart", (e) => {
+      e.preventDefault();
+      return false;
+    });
+
+    // Block common save / print / inspect keyboard shortcuts
+    document.addEventListener("keydown", (e) => {
+      const isCmdOrCtrl = e.metaKey || e.ctrlKey;
+      const key = e.key.toLowerCase();
+
+      // Block Ctrl+S / Cmd+S (Save Page)
+      if (isCmdOrCtrl && key === "s") {
+        e.preventDefault();
+        showToast("Protected Registry • Saving this web page is disabled.");
+        return false;
+      }
+
+      // Block Ctrl+C / Cmd+C (Copy) outside of active input
+      if (isCmdOrCtrl && key === "c" && document.activeElement.tagName !== "INPUT") {
+        e.preventDefault();
+        showToast("Protected Registry • Copying text is disabled.");
+        return false;
+      }
+
+      // Block Ctrl+P / Cmd+P (Print / PDF)
+      if (isCmdOrCtrl && key === "p") {
+        e.preventDefault();
+        showToast("Protected Registry • Printing is disabled.");
+        return false;
+      }
+
+      // Block Ctrl+U / Cmd+U (View Source)
+      if (isCmdOrCtrl && key === "u") {
+        e.preventDefault();
+        showToast("Protected Registry • Source view is restricted.");
+        return false;
+      }
+
+      // Block F12 and DevTools shortcuts (Ctrl+Shift+I, Cmd+Opt+I, Ctrl+Shift+J)
+      if (
+        e.key === "F12" ||
+        (isCmdOrCtrl && e.shiftKey && (key === "i" || key === "j" || key === "c")) ||
+        (e.metaKey && e.altKey && (key === "i" || key === "j" || key === "c"))
+      ) {
+        e.preventDefault();
+        showToast("Protected Registry • Developer inspect tools restricted.");
+        return false;
+      }
+    });
 
     // Initial Render
     document.addEventListener("DOMContentLoaded", () => {
