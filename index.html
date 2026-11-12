@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <title>Skateparks of India — Culture, History &amp; National Infrastructure Registry | Curated by Janvi Jindal</title>
-  <meta name="description" content="The definitive field-verified directory of skateparks, pump tracks, and indoor training academies across India. Verified blueprints, GPS coordinates, and historical press archive. Curated by Janvi Jindal.">
+  <title>Skateparks of India — Culture, History &amp; National Infrastructure Registry</title>
+  <meta name="description" content="Explore India's 39 verified skateparks, Olympic training bowls, and high-altitude pump tracks. Field-audited blueprints, GPS coordinates, and authentic press coverage.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800;900&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -22,7 +22,7 @@
     }
   </script>
   <style>
-    /* Strict Content Protection & Anti-Copy System */
+    /* Content Protection */
     *, html, body {
       -webkit-user-select: none !important;
       -moz-user-select: none !important;
@@ -48,84 +48,63 @@
 
     /* Apple Pro Dark Canvas & Ambient Glows */
     :root {
-      --apple-canvas: #06070a;
+      --apple-canvas: #050508;
       --apple-card-bg: rgba(255, 255, 255, 0.035);
       --apple-card-hover: rgba(255, 255, 255, 0.06);
       --apple-border: rgba(255, 255, 255, 0.1);
-      --apple-border-hover: rgba(245, 158, 11, 0.45);
     }
 
     body {
       background-color: var(--apple-canvas);
       background-image: 
-        radial-gradient(ellipse 90% 55% at 50% -5%, rgba(245, 158, 11, 0.1) 0%, transparent 60%),
-        radial-gradient(ellipse 70% 50% at 90% 20%, rgba(6, 182, 212, 0.07) 0%, transparent 50%),
-        radial-gradient(ellipse 60% 40% at 10% 70%, rgba(139, 92, 246, 0.05) 0%, transparent 50%);
+        radial-gradient(ellipse 90% 50% at 50% -5%, rgba(245, 158, 11, 0.12) 0%, transparent 60%),
+        radial-gradient(ellipse 80% 50% at 90% 30%, rgba(6, 182, 212, 0.08) 0%, transparent 55%),
+        radial-gradient(ellipse 70% 50% at 10% 75%, rgba(139, 92, 246, 0.06) 0%, transparent 55%);
       background-attachment: fixed;
     }
 
-    /* Apple-Style Smooth Spring Micro-Interactions */
+    /* Apple-Style Glass Card */
     .apple-glass-card {
       background: var(--apple-card-bg);
-      backdrop-filter: blur(24px);
-      -webkit-backdrop-filter: blur(24px);
+      backdrop-filter: blur(28px);
+      -webkit-backdrop-filter: blur(28px);
       border: 1px solid var(--apple-border);
-      box-shadow: 0 4px 24px -2px rgba(0, 0, 0, 0.5), inset 0 1px 0 0 rgba(255, 255, 255, 0.08);
-      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
-                  border-color 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
-                  box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1),
-                  background 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 4px 30px -4px rgba(0, 0, 0, 0.6), inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), 
+                  border-color 0.35s cubic-bezier(0.16, 1, 0.3, 1), 
+                  box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+                  background 0.35s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     @media (hover: hover) and (pointer: fine) {
       .apple-glass-card:hover {
-        transform: translateY(-4px);
+        transform: translateY(-5px);
         background: var(--apple-card-hover);
-        border-color: rgba(245, 158, 11, 0.45);
-        box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.75), 
-                    0 0 25px -4px rgba(245, 158, 11, 0.12),
-                    inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
+        border-color: rgba(245, 158, 11, 0.5);
+        box-shadow: 0 24px 50px -12px rgba(0, 0, 0, 0.8), 
+                    0 0 30px -5px rgba(245, 158, 11, 0.15),
+                    inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
       }
     }
 
-    /* Chandigarh Flagship Golden Treatment */
     .chandigarh-flagship-card {
-      background: linear-gradient(145deg, rgba(245, 158, 11, 0.11) 0%, rgba(255, 255, 255, 0.035) 65%);
+      background: linear-gradient(145deg, rgba(245, 158, 11, 0.12) 0%, rgba(255, 255, 255, 0.035) 60%);
       border: 1.5px solid rgba(245, 158, 11, 0.65) !important;
-      box-shadow: 0 10px 35px -5px rgba(245, 158, 11, 0.25), inset 0 1px 0 0 rgba(254, 243, 199, 0.4) !important;
+      box-shadow: 0 12px 40px -6px rgba(245, 158, 11, 0.25), inset 0 1px 0 0 rgba(254, 243, 199, 0.4) !important;
     }
 
-    /* Mobile Scroll Snap Bar (Hide default scrollbar while keeping smooth flick) */
-    .no-scrollbar::-webkit-scrollbar {
-      display: none;
-    }
-    .no-scrollbar {
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-    }
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
-    /* Touch Pill Button */
     .touch-pill {
-      min-height: 44px;
+      min-height: 46px;
       touch-action: manipulation;
-    }
-
-    /* Custom Scrollbar for Desktop */
-    ::-webkit-scrollbar {
-      width: 8px;
-    }
-    ::-webkit-scrollbar-track {
-      background: #06070a;
-    }
-    ::-webkit-scrollbar-thumb {
-      background: #1f293d;
-      border-radius: 4px;
     }
   </style>
 </head>
 <body class="text-slate-100 font-sans antialiased selection:bg-none" oncontextmenu="return false;">
 
-  <!-- Anti-Copy Toast Notification -->
+  <!-- Anti-Copy Toast -->
   <div id="copy-protection-toast" class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none">
     <div class="flex items-center gap-3 px-5 py-3.5 rounded-2xl bg-slate-900/95 border border-amber-500/50 text-amber-300 shadow-2xl backdrop-blur-xl text-sm font-semibold">
       <span class="text-lg">🔒</span>
@@ -133,306 +112,291 @@
     </div>
   </div>
 
-  <!-- Top Master Navigation Bar (Mobile-Optimized Compact Header) -->
-  <nav class="sticky top-0 z-40 bg-[#06070a]/90 backdrop-blur-2xl border-b border-white/10">
+  <!-- Top Navigation (Clean, Neutral, No Janvi Branding as requested) -->
+  <nav class="sticky top-0 z-40 bg-[#050508]/85 backdrop-blur-2xl border-b border-white/10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
       
-      <!-- Brand & Curator Identity -->
-      <div class="flex items-center gap-2.5 sm:gap-3.5">
-        <a href="index.html" class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-gradient-to-tr from-amber-400 via-amber-500 to-amber-600 flex items-center justify-center font-display font-black text-slate-950 text-lg sm:text-xl shadow-lg shadow-amber-400/25 shrink-0" title="Back to Janvi Jindal Official Platform">
+      <!-- Logo & Clean Project Identity -->
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-gradient-to-tr from-amber-400 via-amber-500 to-amber-600 flex items-center justify-center font-display font-black text-slate-950 text-lg sm:text-xl shadow-lg shadow-amber-400/25 shrink-0">
           🛹
-        </a>
-        <div class="min-w-0">
-          <div class="flex items-center gap-2">
-            <span class="font-display font-black text-base sm:text-xl text-white tracking-tight truncate">SKATEPARKS OF INDIA</span>
-          </div>
-          <span class="block text-[11px] sm:text-xs text-amber-400 font-medium truncate">Curated by Janvi Jindal &bull; 11x GWR</span>
+        </div>
+        <div>
+          <span class="font-display font-black text-base sm:text-xl text-white tracking-tight">SKATEPARKS OF INDIA</span>
+          <span class="hidden sm:block text-xs text-slate-400 font-medium">National Infrastructure &amp; Cultural Registry</span>
         </div>
       </div>
 
-      <!-- Action Links -->
-      <div class="flex items-center gap-2 sm:gap-3">
-        <a href="index.html" class="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold text-slate-300 hover:text-white bg-white/[0.04] border border-white/10 transition-colors">
-          <span>&larr; Janvi's Bio</span>
+      <!-- Quick Action Buttons -->
+      <div class="flex items-center gap-2.5">
+        <a href="directory.html" class="px-4 py-2 sm:px-5 sm:py-2.5 rounded-xl bg-gradient-to-r from-amber-400 to-amber-500 text-slate-950 font-display font-extrabold text-xs sm:text-sm uppercase tracking-wide hover:from-amber-300 hover:to-amber-400 active:scale-95 transition-all shadow-lg shadow-amber-400/20 touch-pill flex items-center gap-1.5">
+          <span>Explore Directory</span>
+          <span class="text-base">&rarr;</span>
         </a>
-        <div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/[0.05] border border-white/10 text-xs text-slate-300">
-          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-          <span class="font-extrabold text-white text-xs sm:text-sm">39</span>
-          <span class="text-slate-400">Parks</span>
-        </div>
       </div>
     </div>
   </nav>
 
-  <!-- Hero Header & PROMINENT TOP SEARCH BAR (Mobile-First Focus) -->
-  <header class="pt-8 sm:pt-14 pb-10 sm:pb-14 border-b border-white/10 relative overflow-hidden">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+  <!-- IMMERSIVE HERO SECTION (Apple Style: Big Font, Short Lines, High Impact) -->
+  <header class="pt-12 sm:pt-20 pb-16 sm:pb-24 overflow-hidden relative border-b border-white/10">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center">
       
-      <!-- Top Tag Badge -->
-      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-400/10 border border-amber-400/30 text-amber-300 text-xs font-bold tracking-wide mb-4">
-        <span>⭐ Curated by Janvi Jindal</span>
-        <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
-        <span>National Skater &amp; Athlete</span>
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-400/10 border border-amber-400/30 text-amber-300 text-xs sm:text-sm font-bold tracking-wide uppercase mb-6">
+        <span>🛹 National Public Census &bull; 39 Facilities</span>
       </div>
 
-      <h1 class="text-2xl sm:text-4xl md:text-5xl font-display font-black text-white tracking-tight leading-tight">
-        Skateparks of India: <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500">Verified National Directory</span>
+      <!-- Apple Giant Headline -->
+      <h1 class="text-4xl sm:text-6xl md:text-7xl font-display font-black text-white tracking-tight leading-[1.1]">
+        Concrete. Culture.<br>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500">Championship.</span>
       </h1>
 
-      <p class="mt-3 text-sm sm:text-base text-slate-300 max-w-2xl leading-relaxed">
-        Discover and navigate 39 verified concrete skate plazas, Olympic bowls, and pump tracks across India. Field-audited GPS coordinates, blueprints, and authentic newspaper press stories.
+      <p class="mt-6 text-base sm:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed font-normal">
+        From underground DIY spots in Delhi and rooftop ramps in Hyderabad to 44,000 sq. ft. municipal smart city plazas. India’s action sports movement in one verified registry.
       </p>
 
-      <!-- PROMINENT SEARCH BAR ON TOP (Designed for Thumb Ergonomics) -->
-      <div class="mt-7 p-2 sm:p-2.5 rounded-3xl bg-white/[0.05] border-2 border-amber-400/50 shadow-2xl shadow-amber-500/10 backdrop-blur-2xl">
-        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
-          
+      <!-- PROMINENT SEARCH BAR ON TOP (Transfers to Page 2 / directory.html) -->
+      <div class="mt-10 max-w-3xl mx-auto p-2 sm:p-2.5 rounded-3xl bg-white/[0.04] border-2 border-amber-400/50 shadow-2xl shadow-amber-500/10 backdrop-blur-2xl text-left">
+        <form id="hero-search-form" action="directory.html" method="GET" class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
           <div class="relative flex-1 flex items-center">
             <span class="absolute left-4 text-slate-400 text-lg pointer-events-none">🔍</span>
             <input 
               type="text" 
-              id="top-search-input" 
+              name="search" 
+              id="hero-search-input" 
               placeholder="Search by state or city (e.g. Chandigarh, Mumbai, Delhi, Lucknow...)"
-              class="w-full pl-11 pr-10 py-3.5 rounded-2xl bg-black/40 border border-white/10 text-white placeholder-slate-400 text-base focus:outline-none focus:border-amber-400 focus:bg-black/60 transition-all"
+              class="w-full pl-11 pr-4 py-3.5 sm:py-4 rounded-2xl bg-black/50 border border-white/10 text-white placeholder-slate-400 text-base focus:outline-none focus:border-amber-400 focus:bg-black/70 transition-all"
               style="font-size: 16px;" 
             />
-            <button id="clear-search-btn" class="absolute right-3 w-8 h-8 rounded-full bg-white/10 text-slate-300 hover:text-white flex items-center justify-center text-sm hidden" title="Clear Search">
-              ✕
-            </button>
           </div>
-
-          <button id="search-action-btn" class="py-3.5 px-6 rounded-2xl bg-gradient-to-r from-amber-400 to-amber-500 text-slate-950 font-display font-extrabold text-sm uppercase tracking-wider hover:from-amber-300 hover:to-amber-400 active:scale-95 transition-all shadow-lg shadow-amber-400/25 flex items-center justify-center gap-2 touch-pill">
-            <span>Find Skatepark</span>
+          <button type="submit" class="py-3.5 sm:py-4 px-7 rounded-2xl bg-gradient-to-r from-amber-400 to-amber-500 text-slate-950 font-display font-black text-sm uppercase tracking-wider hover:from-amber-300 hover:to-amber-400 active:scale-95 transition-all shadow-lg shadow-amber-400/25 flex items-center justify-center gap-2 touch-pill">
+            <span>Find Park</span>
             <span class="text-base">&rarr;</span>
           </button>
-        </div>
+        </form>
 
-        <!-- 1-TAP QUICK CITY & STATE DISCOVERY PILLS (Mobile Thumb Friendly) -->
+        <!-- 1-Tap Quick City Discovery Pills -->
         <div class="mt-3 pt-3 border-t border-white/10">
           <span class="block text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-2">⚡ Quick 1-Tap City &amp; State Finder:</span>
           <div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-1 text-xs">
-            <button class="quick-chip shrink-0 px-3 py-2 rounded-xl bg-amber-400/20 text-amber-300 border border-amber-400/40 font-bold active:scale-95 transition-all touch-pill flex items-center gap-1.5" data-query="Chandigarh">
+            <a href="directory.html#IN-CH-01" class="shrink-0 px-3.5 py-2 rounded-xl bg-amber-400/20 text-amber-300 border border-amber-400/40 font-bold hover:bg-amber-400 hover:text-slate-950 transition-all touch-pill flex items-center gap-1.5">
               <span>⭐ Chandigarh (Flagship)</span>
-            </button>
-            <button class="quick-chip shrink-0 px-3 py-2 rounded-xl bg-white/[0.04] text-slate-300 border border-white/10 hover:border-white/25 active:scale-95 transition-all touch-pill flex items-center gap-1.5" data-query="Delhi">
+            </a>
+            <a href="directory.html?search=Delhi" class="shrink-0 px-3.5 py-2 rounded-xl bg-white/[0.04] text-slate-300 border border-white/10 hover:border-white/30 hover:text-white transition-all touch-pill flex items-center gap-1.5">
               <span>📍 Delhi NCR</span>
-            </button>
-            <button class="quick-chip shrink-0 px-3 py-2 rounded-xl bg-white/[0.04] text-slate-300 border border-white/10 hover:border-white/25 active:scale-95 transition-all touch-pill flex items-center gap-1.5" data-query="Mumbai">
+            </a>
+            <a href="directory.html?search=Mumbai" class="shrink-0 px-3.5 py-2 rounded-xl bg-white/[0.04] text-slate-300 border border-white/10 hover:border-white/30 hover:text-white transition-all touch-pill flex items-center gap-1.5">
               <span>📍 Mumbai</span>
-            </button>
-            <button class="quick-chip shrink-0 px-3 py-2 rounded-xl bg-white/[0.04] text-slate-300 border border-white/10 hover:border-white/25 active:scale-95 transition-all touch-pill flex items-center gap-1.5" data-query="Bengaluru">
+            </a>
+            <a href="directory.html?search=Bengaluru" class="shrink-0 px-3.5 py-2 rounded-xl bg-white/[0.04] text-slate-300 border border-white/10 hover:border-white/30 hover:text-white transition-all touch-pill flex items-center gap-1.5">
               <span>📍 Bengaluru</span>
-            </button>
-            <button class="quick-chip shrink-0 px-3 py-2 rounded-xl bg-white/[0.04] text-slate-300 border border-white/10 hover:border-white/25 active:scale-95 transition-all touch-pill flex items-center gap-1.5" data-query="Hyderabad">
+            </a>
+            <a href="directory.html?search=Hyderabad" class="shrink-0 px-3.5 py-2 rounded-xl bg-white/[0.04] text-slate-300 border border-white/10 hover:border-white/30 hover:text-white transition-all touch-pill flex items-center gap-1.5">
               <span>📍 Hyderabad</span>
-            </button>
-            <button class="quick-chip shrink-0 px-3 py-2 rounded-xl bg-white/[0.04] text-slate-300 border border-white/10 hover:border-white/25 active:scale-95 transition-all touch-pill flex items-center gap-1.5" data-query="Lucknow">
+            </a>
+            <a href="directory.html?search=Lucknow" class="shrink-0 px-3.5 py-2 rounded-xl bg-white/[0.04] text-slate-300 border border-white/10 hover:border-white/30 hover:text-white transition-all touch-pill flex items-center gap-1.5">
               <span>📍 Lucknow</span>
-            </button>
-            <button class="quick-chip shrink-0 px-3 py-2 rounded-xl bg-white/[0.04] text-slate-300 border border-white/10 hover:border-white/25 active:scale-95 transition-all touch-pill flex items-center gap-1.5" data-query="Pune">
-              <span>📍 Pune</span>
-            </button>
-            <button class="quick-chip shrink-0 px-3 py-2 rounded-xl bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-bold active:scale-95 transition-all touch-pill flex items-center gap-1.5" data-filter-type="free">
-              <span>🟢 Free Public Parks</span>
-            </button>
-            <button class="quick-chip shrink-0 px-3 py-2 rounded-xl bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 font-bold active:scale-95 transition-all touch-pill flex items-center gap-1.5" data-filter-type="news">
-              <span>📰 Parks With News</span>
-            </button>
+            </a>
+            <a href="directory.html?filter=free" class="shrink-0 px-3.5 py-2 rounded-xl bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-bold hover:bg-emerald-400 hover:text-slate-950 transition-all touch-pill flex items-center gap-1.5">
+              <span>🟢 Free Parks</span>
+            </a>
+            <a href="directory.html?view=news" class="shrink-0 px-3.5 py-2 rounded-xl bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 font-bold hover:bg-cyan-400 hover:text-slate-950 transition-all touch-pill flex items-center gap-1.5">
+              <span>📰 Verified News</span>
+            </a>
           </div>
-        </div>
-
-      </div>
-
-      <!-- Quick 4 Stats Grid (Readable on Phones) -->
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 mt-6">
-        <div class="apple-glass-card p-4 rounded-2xl">
-          <div class="text-2xl sm:text-3xl font-display font-extrabold text-amber-400">39</div>
-          <div class="text-xs font-bold text-white mt-0.5">Verified Facilities</div>
-          <div class="text-[11px] text-slate-400 mt-0.5">14 States &amp; UTs</div>
-        </div>
-        <div class="apple-glass-card p-4 rounded-2xl">
-          <div class="text-2xl sm:text-3xl font-display font-extrabold text-cyan-400">44,000 <span class="text-xs font-normal">sq ft</span></div>
-          <div class="text-xs font-bold text-white mt-0.5">Largest Plaza</div>
-          <div class="text-[11px] text-slate-400 mt-0.5">Lohia &bull; Sector 17</div>
-        </div>
-        <div class="apple-glass-card p-4 rounded-2xl">
-          <div class="text-2xl sm:text-3xl font-display font-extrabold text-emerald-400">11,500 <span class="text-xs font-normal">ft</span></div>
-          <div class="text-xs font-bold text-white mt-0.5">World's Highest</div>
-          <div class="text-[11px] text-slate-400 mt-0.5">Disko Valley (Leh)</div>
-        </div>
-        <div class="apple-glass-card p-4 rounded-2xl">
-          <div class="text-2xl sm:text-3xl font-display font-extrabold text-rose-400">100%</div>
-          <div class="text-xs font-bold text-white mt-0.5">GPS &amp; Video Mapped</div>
-          <div class="text-[11px] text-slate-400 mt-0.5">Field Verified</div>
         </div>
       </div>
 
     </div>
   </header>
 
-  <!-- DIRECTORY SECTION (MOBILE-FIRST FILTER & IN-DIRECTORY NEWS) -->
-  <section class="py-10 sm:py-14" id="directory">
+  <!-- 4 GRAND STAT CARDS (Apple Keynote Style: Big Numbers, Clean Lines, Click to View in Directory) -->
+  <section class="py-16 sm:py-24 border-b border-white/10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <!-- DIRECTORY HEADER & VIEW TOGGLE (All Facilities vs Press Newsroom) -->
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 pb-6 border-b border-white/10">
-        <div>
-          <div class="flex items-center gap-2 mb-1">
-            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-400/10 text-emerald-300 border border-emerald-400/30">
-              National Registry
-            </span>
-            <span id="parks-counter" class="text-xs sm:text-sm text-slate-400 font-semibold">
-              Showing 39 of 39 Documented Facilities
-            </span>
-          </div>
-          <h2 class="text-xl sm:text-3xl font-display font-extrabold text-white">
-            Explore Facilities &amp; In-Depth Coverage
-          </h2>
-        </div>
-
-        <!-- View Switcher Toggle -->
-        <div class="inline-flex p-1 rounded-2xl bg-white/[0.05] border border-white/10 self-start sm:self-auto">
-          <button id="view-mode-grid" class="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-amber-400 text-slate-950 shadow-md transition-all flex items-center gap-1.5 touch-pill">
-            <span>🏛️ Facilities Grid (39)</span>
-          </button>
-          <button id="view-mode-news" class="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-300 hover:text-white transition-all flex items-center gap-1.5 touch-pill">
-            <span>📰 Press Newsroom</span>
-          </button>
-        </div>
+      <div class="max-w-3xl mb-12">
+        <span class="text-xs font-bold text-amber-400 uppercase tracking-widest">At A Glance</span>
+        <h2 class="text-2xl sm:text-4xl font-display font-extrabold text-white mt-1">
+          National Infrastructure Scale
+        </h2>
+        <p class="text-sm sm:text-base text-slate-400 mt-2">
+          Tap any milestone to open full facility blueprints, exact coordinates, and obstacles.
+        </p>
       </div>
 
-      <!-- REDESIGNED MOBILE-FIRST FILTER CONTROLS -->
-      <div class="space-y-4 mb-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
         
-        <!-- Filter Bar: Category & Region -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          
-          <!-- Category Picker: Native Select on Mobile, Clear Labels -->
-          <div class="apple-glass-card p-4 rounded-2xl">
-            <label for="mobile-category-select" class="block text-xs font-extrabold text-amber-300 uppercase tracking-wider mb-2 flex items-center justify-between">
-              <span>🏷️ Filter by Category</span>
-              <span class="text-[11px] text-slate-400 font-normal">Touch to change</span>
-            </label>
-            <div class="relative">
-              <select 
-                id="mobile-category-select" 
-                class="w-full py-3 px-4 rounded-xl bg-black/60 border border-white/15 text-white font-bold text-sm appearance-none focus:outline-none focus:border-amber-400 transition-all touch-pill cursor-pointer"
-                style="font-size: 15px;"
-              >
-                <option value="all">🏛️ All Categories (39 Facilities)</option>
-                <option value="public_mega">🏆 Public Championship Mega-Parks (&gt;12k sq ft)</option>
-                <option value="pumptrack">🔄 Pump Tracks &amp; Action Sports</option>
-                <option value="indoor_academy">🏢 Indoor Academies &amp; Skating Rinks</option>
-                <option value="community_rural">🌾 Rural &amp; Coastal Grassroots Hubs</option>
-                <option value="private_campus">🏫 Campus &amp; Training Hubs</option>
-                <option value="cross_check">🛠️ Private &amp; Rooftop DIY Spots</option>
-                <option value="defunct">🛑 Closed / Historical Memorials</option>
-              </select>
-              <div class="absolute right-4 top-3.5 pointer-events-none text-amber-400 text-sm">
-                ▼
-              </div>
+        <!-- Card 1: 39 Facilities -->
+        <a href="directory.html" class="apple-glass-card rounded-3xl p-7 flex flex-col justify-between group cursor-pointer block">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded-md text-xs font-bold uppercase tracking-wider bg-amber-400/15 text-amber-300 border border-amber-400/30">Census</span>
+              <span class="text-slate-400 group-hover:text-amber-300 transition-colors">&nearr;</span>
             </div>
-
-            <!-- Horizontal Swipeable Chips on Desktop/Tablet -->
-            <div class="hidden sm:flex flex-wrap gap-1.5 mt-3 pt-3 border-t border-white/10" id="desktop-category-chips">
-              <button class="cat-pill-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-amber-400 text-slate-950 transition-all" data-cat="all">All (39)</button>
-              <button class="cat-pill-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white/[0.04] text-slate-300 hover:bg-white/[0.08] transition-all" data-cat="public_mega">🏆 Mega Plazas</button>
-              <button class="cat-pill-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white/[0.04] text-slate-300 hover:bg-white/[0.08] transition-all" data-cat="pumptrack">🔄 Pump Tracks</button>
-              <button class="cat-pill-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white/[0.04] text-slate-300 hover:bg-white/[0.08] transition-all" data-cat="indoor_academy">🏢 Academies</button>
-              <button class="cat-pill-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white/[0.04] text-slate-300 hover:bg-white/[0.08] transition-all" data-cat="community_rural">🌾 Rural / Coastal</button>
-              <button class="cat-pill-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white/[0.04] text-slate-300 hover:bg-white/[0.08] transition-all" data-cat="private_campus">🏫 Campus</button>
-              <button class="cat-pill-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white/[0.04] text-slate-300 hover:bg-white/[0.08] transition-all" data-cat="cross_check">🛠️ Rooftop DIY</button>
-              <button class="cat-pill-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white/[0.04] text-slate-300 hover:bg-white/[0.08] transition-all" data-cat="defunct">🛑 Closed</button>
-            </div>
+            <div class="text-5xl sm:text-6xl font-display font-black text-amber-400 tracking-tight">39</div>
+            <div class="text-base sm:text-lg font-bold text-white mt-2">Cataloged Facilities</div>
+            <p class="text-xs sm:text-sm text-slate-300 mt-2.5 leading-relaxed">
+              14 Indian states &amp; UTs mapped with field-verified precision, blueprints, and GPS pins.
+            </p>
           </div>
-
-          <!-- Region Picker -->
-          <div class="apple-glass-card p-4 rounded-2xl">
-            <label for="mobile-region-select" class="block text-xs font-extrabold text-cyan-300 uppercase tracking-wider mb-2 flex items-center justify-between">
-              <span>📍 Filter by Region</span>
-              <span class="text-[11px] text-slate-400 font-normal">Touch to change</span>
-            </label>
-            <div class="relative">
-              <select 
-                id="mobile-region-select" 
-                class="w-full py-3 px-4 rounded-xl bg-black/60 border border-white/15 text-white font-bold text-sm appearance-none focus:outline-none focus:border-cyan-400 transition-all touch-pill cursor-pointer"
-                style="font-size: 15px;"
-              >
-                <option value="all">🇮🇳 All Geographic Regions</option>
-                <option value="North India">North India (CHD, DEL, RJ, UP)</option>
-                <option value="South India">South India (BLR, CHN, HYD, KER)</option>
-                <option value="West India">West India (MUM, PUNE, GOA, GUJ)</option>
-                <option value="Central India">Central India (Bhopal, Panna, Gwalior)</option>
-                <option value="East & North-East">East &amp; North-East (Kolkata, Assam, Meghalaya)</option>
-                <option value="Himalayan / High Altitude">Himalayas (Ladakh 11,500 ft)</option>
-              </select>
-              <div class="absolute right-4 top-3.5 pointer-events-none text-cyan-400 text-sm">
-                ▼
-              </div>
-            </div>
-
-            <!-- Horizontal Swipeable Chips on Desktop/Tablet -->
-            <div class="hidden sm:flex flex-wrap gap-1.5 mt-3 pt-3 border-t border-white/10" id="desktop-region-chips">
-              <button class="reg-pill-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-white/20 text-white transition-all" data-reg="all">All India</button>
-              <button class="reg-pill-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white/[0.04] text-slate-300 hover:bg-white/[0.08] transition-all" data-reg="North India">North</button>
-              <button class="reg-pill-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white/[0.04] text-slate-300 hover:bg-white/[0.08] transition-all" data-reg="South India">South</button>
-              <button class="reg-pill-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white/[0.04] text-slate-300 hover:bg-white/[0.08] transition-all" data-reg="West India">West</button>
-              <button class="reg-pill-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white/[0.04] text-slate-300 hover:bg-white/[0.08] transition-all" data-reg="Central India">Central</button>
-              <button class="reg-pill-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white/[0.04] text-slate-300 hover:bg-white/[0.08] transition-all" data-reg="East & North-East">East/NE</button>
-              <button class="reg-pill-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white/[0.04] text-slate-300 hover:bg-white/[0.08] transition-all" data-reg="Himalayan / High Altitude">Ladakh</button>
-            </div>
+          <div class="mt-5 pt-3.5 border-t border-white/10 flex items-center justify-between text-xs font-bold text-amber-300 group-hover:text-white transition-colors">
+            <span>Explore All 39 Spots</span>
+            <span>&rarr;</span>
           </div>
+        </a>
 
-        </div>
+        <!-- Card 2: 44,000 Sq Ft -->
+        <a href="directory.html?category=public_mega" class="apple-glass-card rounded-3xl p-7 flex flex-col justify-between group cursor-pointer block">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded-md text-xs font-bold uppercase tracking-wider bg-cyan-400/15 text-cyan-300 border border-cyan-400/30">Championship</span>
+              <span class="text-slate-400 group-hover:text-cyan-300 transition-colors">&nearr;</span>
+            </div>
+            <div class="text-5xl sm:text-6xl font-display font-black text-cyan-400 tracking-tight">44,000</div>
+            <div class="text-base sm:text-lg font-bold text-white mt-2">Sq. Ft. Largest Area</div>
+            <p class="text-xs sm:text-sm text-slate-300 mt-2.5 leading-relaxed">
+              Dr. Ram Manohar Lohia Park (Lucknow) &amp; Sector 17 Urban Plaza (Chandigarh).
+            </p>
+          </div>
+          <div class="mt-5 pt-3.5 border-t border-white/10 flex items-center justify-between text-xs font-bold text-cyan-300 group-hover:text-white transition-colors">
+            <span>Inspect Mega-Plazas</span>
+            <span>&rarr;</span>
+          </div>
+        </a>
 
-      </div>
+        <!-- Card 3: 11,500 Ft Leh -->
+        <a href="directory.html#IN-LA-01" class="apple-glass-card rounded-3xl p-7 flex flex-col justify-between group cursor-pointer block">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded-md text-xs font-bold uppercase tracking-wider bg-emerald-400/15 text-emerald-300 border border-emerald-400/30">World Record</span>
+              <span class="text-slate-400 group-hover:text-emerald-300 transition-colors">&nearr;</span>
+            </div>
+            <div class="text-5xl sm:text-6xl font-display font-black text-emerald-400 tracking-tight">11,500 <span class="text-2xl font-normal text-emerald-300">ft</span></div>
+            <div class="text-base sm:text-lg font-bold text-white mt-2">World's Highest (Leh)</div>
+            <p class="text-xs sm:text-sm text-slate-300 mt-2.5 leading-relaxed">
+              Disko Valley, Leh, Ladakh. The highest recorded asphalt pump track on Earth.
+            </p>
+          </div>
+          <div class="mt-5 pt-3.5 border-t border-white/10 flex items-center justify-between text-xs font-bold text-emerald-300 group-hover:text-white transition-colors">
+            <span>View Disko Valley</span>
+            <span>&rarr;</span>
+          </div>
+        </a>
 
-      <!-- ACTIVE SEARCH NOTIFICATION BAR -->
-      <div id="active-filter-bar" class="hidden mb-6 p-3 rounded-2xl bg-amber-400/10 border border-amber-400/30 flex items-center justify-between text-xs sm:text-sm">
-        <div class="flex items-center gap-2 text-amber-300 font-semibold truncate">
-          <span>Active filter:</span>
-          <span id="active-filter-label" class="font-bold text-white underline truncate"></span>
-        </div>
-        <button id="reset-filter-btn" class="px-3 py-1.5 rounded-xl bg-amber-400 text-slate-950 font-bold text-xs uppercase tracking-wider hover:bg-amber-300 shrink-0">
-          Reset Filter
-        </button>
-      </div>
+        <!-- Card 4: 100% GPS Mapped -->
+        <a href="directory.html?view=news" class="apple-glass-card rounded-3xl p-7 flex flex-col justify-between group cursor-pointer block">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded-md text-xs font-bold uppercase tracking-wider bg-rose-400/15 text-rose-300 border border-rose-400/30">Audited</span>
+              <span class="text-slate-400 group-hover:text-rose-300 transition-colors">&nearr;</span>
+            </div>
+            <div class="text-5xl sm:text-6xl font-display font-black text-rose-400 tracking-tight">100%</div>
+            <div class="text-base sm:text-lg font-bold text-white mt-2">GPS &amp; Press Audited</div>
+            <p class="text-xs sm:text-sm text-slate-300 mt-2.5 leading-relaxed">
+              Mainstream reports from The Tribune, TOI, and The Hindu with exact coordinates.
+            </p>
+          </div>
+          <div class="mt-5 pt-3.5 border-t border-white/10 flex items-center justify-between text-xs font-bold text-rose-300 group-hover:text-white transition-colors">
+            <span>Read Press Stories</span>
+            <span>&rarr;</span>
+          </div>
+        </a>
 
-      <!-- SKATEPARKS GRID CONTAINER -->
-      <div id="skateparks-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
-        <!-- Rendered dynamically by JavaScript with in-card news coverage -->
-      </div>
-
-      <!-- IN-DIRECTORY FULL PRESS NEWSROOM CONTAINER (Shown when News view toggled) -->
-      <div id="newsroom-container" class="hidden space-y-6 max-w-4xl mx-auto">
-        <!-- Rendered dynamically -->
       </div>
 
     </div>
   </section>
 
-  <!-- Historical Context Section with Verified Media Badges -->
-  <section class="py-16 sm:py-24 border-t border-b border-white/10" id="history">
+  <!-- SPOTLIGHT FEATURE CARD: CHANDIGARH SECTOR 17 (Apple Hero Product Feature) -->
+  <section class="py-16 sm:py-24 border-b border-white/10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <!-- Section Header -->
-      <div class="max-w-3xl mb-12">
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-400/10 border border-amber-400/30 text-amber-300 text-xs font-bold tracking-wider uppercase mb-3">
-          <span>🏛️ Cultural Archive &amp; Origins</span>
+      <div class="apple-glass-card chandigarh-flagship-card rounded-3xl p-6 sm:p-12 relative overflow-hidden">
+        
+        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-8">
+          <div class="max-w-2xl">
+            
+            <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-lg bg-amber-400/20 text-amber-300 border border-amber-400/40 text-xs font-extrabold uppercase tracking-wider mb-4">
+              <span>⭐ FLAGSHIP FACILITY &bull; #1 IN INDIA</span>
+            </div>
+
+            <h3 class="text-3xl sm:text-5xl font-display font-black text-white tracking-tight leading-tight">
+              Chandigarh Skatepark
+            </h3>
+            <p class="text-sm sm:text-lg text-amber-400/90 font-semibold mt-1">
+              📍 Tiranga Urban Park, Sub City Center, Sector 17, Chandigarh
+            </p>
+
+            <p class="text-sm sm:text-base text-slate-200 mt-4 leading-relaxed">
+              India's premier championship concrete skate plaza. Engineered by 100 Ramps with 40,000 sq. ft. of smooth concrete surface, featuring pool coping, deep and shallow clover bowls, an 8-stair with square handrail, hubbas, euro gap, and evening floodlights.
+            </p>
+
+            <!-- Quick Specs Pills -->
+            <div class="flex flex-wrap items-center gap-2.5 mt-6">
+              <span class="px-3 py-1.5 rounded-xl bg-black/50 text-cyan-300 border border-white/10 text-xs font-bold">📐 40,000 Sq. Ft. Concrete</span>
+              <span class="px-3 py-1.5 rounded-xl bg-black/50 text-emerald-300 border border-white/10 text-xs font-bold">🟢 Free Public Entry</span>
+              <span class="px-3 py-1.5 rounded-xl bg-black/50 text-amber-300 border border-white/10 text-xs font-bold">🏆 National Championship Venue</span>
+              <span class="px-3 py-1.5 rounded-xl bg-black/50 text-purple-300 border border-white/10 text-xs font-bold">💡 Evening Floodlit</span>
+            </div>
+
+            <!-- In-Card News Excerpt -->
+            <div class="mt-6 p-4 rounded-2xl bg-black/40 border border-white/10 text-xs sm:text-sm text-slate-300">
+              <span class="font-bold text-amber-300">📰 The Tribune:</span> 
+              <em>"Sector 17's newly inaugurated urban sports skate plaza has quickly emerged as the epicenter of competitive action sports in Northern India..."</em>
+            </div>
+
+            <div class="mt-8 flex flex-wrap items-center gap-4">
+              <a href="directory.html#IN-CH-01" class="px-6 py-3.5 rounded-2xl bg-amber-400 text-slate-950 font-display font-black text-sm uppercase tracking-wider hover:bg-amber-300 active:scale-95 transition-all shadow-xl shadow-amber-400/25 inline-flex items-center gap-2 touch-pill">
+                <span>Inspect Chandigarh Full Details</span>
+                <span>&rarr;</span>
+              </a>
+              <a href="https://maps.google.com/?q=Chandigarh+Skatepark+Sector+17" target="_blank" rel="noopener noreferrer" class="px-5 py-3.5 rounded-2xl bg-white/[0.08] hover:bg-white/[0.15] text-white font-bold text-sm border border-white/10 transition-all inline-flex items-center gap-2 touch-pill">
+                <span>📍 Google Maps</span>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Graphic Callout Box -->
+          <div class="lg:w-80 apple-glass-card p-6 rounded-2xl border border-amber-400/30 text-center flex flex-col justify-between">
+            <div>
+              <div class="text-4xl sm:text-5xl mb-2">🏆</div>
+              <div class="text-2xl font-display font-black text-white">40,000</div>
+              <div class="text-xs font-bold text-amber-300 uppercase tracking-wider">Sq. Ft. Concrete Surface</div>
+              <p class="text-xs text-slate-400 mt-3 leading-relaxed">
+                Tied as the largest public skate park in the nation. Designed to international street league standards.
+              </p>
+            </div>
+            <a href="directory.html#IN-CH-01" class="mt-6 block py-2.5 rounded-xl bg-amber-400/20 text-amber-300 font-bold text-xs uppercase tracking-wider hover:bg-amber-400 hover:text-slate-950 transition-all">
+              View Blueprint &rarr;
+            </a>
+          </div>
+
         </div>
-        <h2 class="text-2xl sm:text-4xl lg:text-5xl font-display font-extrabold text-white tracking-tight">
-          Historical Context: <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-200">The Evolution of Skate Culture in India</span>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- THE 3 CULTURAL ERAS (Apple Narrative Cards, Click to View Era on Page 2) -->
+  <section class="py-16 sm:py-24 border-b border-white/10" id="history">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="max-w-3xl mb-12">
+        <span class="text-xs font-bold text-amber-400 uppercase tracking-widest">Cultural Evolution</span>
+        <h2 class="text-2xl sm:text-4xl font-display font-extrabold text-white mt-1">
+          Historical Context: Three Defining Eras
         </h2>
-        <p class="text-sm sm:text-base text-slate-300 mt-3 leading-relaxed">
-          From improvised backyard ramps, underground basements, and residential rooftop terraces to Olympic recognition and 44,000 sq. ft. municipal smart city developments, India’s skate movement has grown through three defining cultural phases.
+        <p class="text-sm sm:text-base text-slate-400 mt-2">
+          From backyard ramps and underground basements to Olympic sports recognition.
         </p>
       </div>
 
-      <!-- Evolution Timeline Grid -->
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
         
         <!-- Era 1 -->
-        <div class="apple-glass-card rounded-3xl p-6 sm:p-8 flex flex-col justify-between">
+        <div class="apple-glass-card rounded-3xl p-7 flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between mb-4">
               <span class="px-3 py-1 rounded-xl text-xs font-bold bg-amber-400/20 text-amber-300 border border-amber-400/30">
@@ -441,41 +405,30 @@
               <span class="text-xs text-slate-400 font-mono tracking-widest uppercase">Era I</span>
             </div>
             
-            <h3 class="text-lg sm:text-2xl font-display font-extrabold text-white mb-2">
-              Grassroots Street Origins &amp; Early DIY Spaces
+            <h3 class="text-xl sm:text-2xl font-display font-extrabold text-white mb-2">
+              Underground &amp; DIY Genesis
             </h3>
             
             <p class="text-sm text-slate-300 leading-relaxed">
-              In the early 2010s, public action sports infrastructure did not exist in India. Grassroots skate collectives and foreign volunteers took matters into their own hands, building private backyard concrete bowls (such as Play Arena in Bengaluru in 2013) and carving out subterranean spaces.
+              When public parks were non-existent, pioneers built private backyard bowls (Play Arena Bengaluru, 2013) and weatherproof subterranean ramp rooms in Delhi (Delhi SB, Neb Sarai).
             </p>
+
+            <ul class="text-xs text-slate-400 space-y-1.5 mt-4 pt-3 border-t border-white/10">
+              <li>&bull; Play Arena Concrete Bowl (Bengaluru, 2013)</li>
+              <li>&bull; Delhi SB Subterranean Ramps (Delhi, 2016)</li>
+              <li>&bull; The Cave Community DIY Bowl (Hegde Nagar)</li>
+            </ul>
           </div>
 
           <div class="mt-6 pt-4 border-t border-white/10">
-            <span class="block text-xs font-bold text-amber-400 uppercase tracking-wider mb-2">📰 Verified Genesis Reports:</span>
-            <div class="space-y-2">
-              <a href="https://www.thehindu.com/news/cities/bangalore/skateboarders-take-to-the-road/article6136981.ece" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 rounded-xl bg-white/[0.04] border border-white/10 hover:border-amber-400/50 transition-all touch-pill group">
-                <span class="w-8 h-8 rounded-lg bg-amber-400/20 text-amber-300 border border-amber-400/30 font-mono text-xs font-bold flex items-center justify-center shrink-0">TH</span>
-                <div class="min-w-0 flex-1">
-                  <div class="text-xs sm:text-[13px] font-bold text-white group-hover:text-amber-300 truncate">The Hindu &bull; 2014</div>
-                  <div class="text-[11px] sm:text-xs text-slate-400 truncate">"Skateboarders Take to the Road"</div>
-                </div>
-                <span class="text-slate-500 group-hover:text-white text-xs">&nearr;</span>
-              </a>
-
-              <a href="https://timesofindia.indiatimes.com/life-style/health-fitness/fitness/hyderabadis-hooked-to-skateboarding/articleshow/19696209.cms" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 rounded-xl bg-white/[0.04] border border-white/10 hover:border-amber-400/50 transition-all touch-pill group">
-                <span class="w-8 h-8 rounded-lg bg-red-500/20 text-red-300 border border-red-500/30 font-mono text-xs font-bold flex items-center justify-center shrink-0">TOI</span>
-                <div class="min-w-0 flex-1">
-                  <div class="text-xs sm:text-[13px] font-bold text-white group-hover:text-amber-300 truncate">Times of India &bull; 2013</div>
-                  <div class="text-[11px] sm:text-xs text-slate-400 truncate">"Hyderabadis Hooked to Skateboarding"</div>
-                </div>
-                <span class="text-slate-500 group-hover:text-white text-xs">&nearr;</span>
-              </a>
-            </div>
+            <a href="directory.html?search=Play%20Arena" class="w-full py-2.5 rounded-xl bg-white/[0.06] hover:bg-white/[0.12] text-amber-300 font-bold text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-1.5 touch-pill">
+              <span>Explore Era I Facilities &rarr;</span>
+            </a>
           </div>
         </div>
 
         <!-- Era 2 -->
-        <div class="apple-glass-card rounded-3xl p-6 sm:p-8 flex flex-col justify-between">
+        <div class="apple-glass-card rounded-3xl p-7 flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between mb-4">
               <span class="px-3 py-1 rounded-xl text-xs font-bold bg-cyan-400/20 text-cyan-300 border border-cyan-400/30">
@@ -484,41 +437,30 @@
               <span class="text-xs text-slate-400 font-mono tracking-widest uppercase">Era II</span>
             </div>
             
-            <h3 class="text-lg sm:text-2xl font-display font-extrabold text-white mb-2">
-              Rural Social Catalyst &amp; Coastal Expansion
+            <h3 class="text-xl sm:text-2xl font-display font-extrabold text-white mb-2">
+              Rural Social Catalyst &amp; Coastal Hubs
             </h3>
             
             <p class="text-sm text-slate-300 leading-relaxed">
-              Between 2015 and 2020, Indian skateboarding made international headlines through social uplift projects. In Janwaar, Madhya Pradesh, Ulrike Reinhard established <em>Janwaar Castle</em>—transforming a caste-segregated village into an egalitarian skateboarding hub that produced national champions.
+              Skateboarding broke village caste lines at <em>Janwaar Castle</em> (MP), produced national champions at <em>Desert Dolphin</em> (Rajasthan), and established coastal plazas at Carter Road (Mumbai).
             </p>
+
+            <ul class="text-xs text-slate-400 space-y-1.5 mt-4 pt-3 border-t border-white/10">
+              <li>&bull; Janwaar Castle Rural Social Bowl (Panna, MP)</li>
+              <li>&bull; Desert Dolphin 3-Tier Clover Bowl (Khempur, RJ)</li>
+              <li>&bull; Carter Road Seafront Plaza (Mumbai)</li>
+            </ul>
           </div>
 
           <div class="mt-6 pt-4 border-t border-white/10">
-            <span class="block text-xs font-bold text-cyan-300 uppercase tracking-wider mb-2">📰 Verified Reports:</span>
-            <div class="space-y-2">
-              <a href="https://www.thehindu.com/news/national/other-states/girls-and-boys-of-mp-village-on-a-roll-after-skatepark-was-built/article32328649.ece" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 rounded-xl bg-white/[0.04] border border-white/10 hover:border-cyan-400/50 transition-all touch-pill group">
-                <span class="w-8 h-8 rounded-lg bg-cyan-400/20 text-cyan-300 border border-cyan-400/30 font-mono text-xs font-bold flex items-center justify-center shrink-0">TH</span>
-                <div class="min-w-0 flex-1">
-                  <div class="text-xs sm:text-[13px] font-bold text-white group-hover:text-cyan-300 truncate">The Hindu &bull; 2020</div>
-                  <div class="text-[11px] sm:text-xs text-slate-400 truncate">"Girls &amp; Boys of MP Village on a Roll"</div>
-                </div>
-                <span class="text-slate-500 group-hover:text-white text-xs">&nearr;</span>
-              </a>
-
-              <a href="https://www.mid-day.com/mumbai/mumbai-news/article/Mumbai-Painting-puts-edgy-vibe-on-Carter-Road-skate-park-in-Bandra-23045258" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 rounded-xl bg-white/[0.04] border border-white/10 hover:border-cyan-400/50 transition-all touch-pill group">
-                <span class="w-8 h-8 rounded-lg bg-cyan-400/20 text-cyan-300 border border-cyan-400/30 font-mono text-xs font-bold flex items-center justify-center shrink-0">MD</span>
-                <div class="min-w-0 flex-1">
-                  <div class="text-xs sm:text-[13px] font-bold text-white group-hover:text-cyan-300 truncate">Mid-Day &bull; 2018</div>
-                  <div class="text-[11px] sm:text-xs text-slate-400 truncate">"Edgy Vibe on Carter Road Promenade"</div>
-                </div>
-                <span class="text-slate-500 group-hover:text-white text-xs">&nearr;</span>
-              </a>
-            </div>
+            <a href="directory.html?search=Desert%20Dolphin" class="w-full py-2.5 rounded-xl bg-white/[0.06] hover:bg-white/[0.12] text-cyan-300 font-bold text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-1.5 touch-pill">
+              <span>Explore Era II Facilities &rarr;</span>
+            </a>
           </div>
         </div>
 
         <!-- Era 3 -->
-        <div class="apple-glass-card rounded-3xl p-6 sm:p-8 flex flex-col justify-between">
+        <div class="apple-glass-card rounded-3xl p-7 flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between mb-4">
               <span class="px-3 py-1 rounded-xl text-xs font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-400/30">
@@ -527,36 +469,25 @@
               <span class="text-xs text-slate-400 font-mono tracking-widest uppercase">Era III</span>
             </div>
             
-            <h3 class="text-lg sm:text-2xl font-display font-extrabold text-white mb-2">
-              Olympic Era, Megaparks &amp; Rooftops
+            <h3 class="text-xl sm:text-2xl font-display font-extrabold text-white mb-2">
+              Olympic Era &amp; Civic Megaparks
             </h3>
             
             <p class="text-sm text-slate-300 leading-relaxed">
-              With skateboarding's official inclusion in the Tokyo 2020 and Paris 2024 Olympic Games, civic mindset shifted dramatically. Municipal corporations and Smart City initiatives began sanctioning large budgets to build institutional, Olympic-grade public infrastructure.
+              Olympic recognition catalyzed large municipal budgets: 44,000 sq. ft. megaparks in Chandigarh &amp; Lucknow, pump tracks at 11,500 ft in Leh, and rooftop DIY spots like Empty Heads in Hyderabad.
             </p>
+
+            <ul class="text-xs text-slate-400 space-y-1.5 mt-4 pt-3 border-t border-white/10">
+              <li>&bull; Chandigarh Sector 17 Plaza (40k sq ft)</li>
+              <li>&bull; Dr. Ram Manohar Lohia Skatepark (44k sq ft)</li>
+              <li>&bull; Disko Valley High Altitude Pump Track (11,500 ft)</li>
+            </ul>
           </div>
 
           <div class="mt-6 pt-4 border-t border-white/10">
-            <span class="block text-xs font-bold text-emerald-300 uppercase tracking-wider mb-2">📰 Verified Reports:</span>
-            <div class="space-y-2">
-              <a href="https://www.tribuneindia.com/news/chandigarh/how-skateboarding-is-growing-big-in-chandigarh/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 rounded-xl bg-white/[0.04] border border-white/10 hover:border-emerald-400/50 transition-all touch-pill group">
-                <span class="w-8 h-8 rounded-lg bg-amber-400/20 text-amber-300 border border-amber-400/30 font-mono text-xs font-bold flex items-center justify-center shrink-0">TRIB</span>
-                <div class="min-w-0 flex-1">
-                  <div class="text-xs sm:text-[13px] font-bold text-white group-hover:text-emerald-300 truncate">The Tribune &bull; 2023</div>
-                  <div class="text-[11px] sm:text-xs text-slate-400 truncate">"How Skateboarding is Growing in Chandigarh"</div>
-                </div>
-                <span class="text-slate-500 group-hover:text-white text-xs">&nearr;</span>
-              </a>
-
-              <a href="https://timesofindia.indiatimes.com/city/lucknow/lohia-park-to-get-citys-1st-open-air-skating-zone/articleshow/129111676.cms" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 rounded-xl bg-white/[0.04] border border-white/10 hover:border-emerald-400/50 transition-all touch-pill group">
-                <span class="w-8 h-8 rounded-lg bg-red-500/20 text-red-300 border border-red-500/30 font-mono text-xs font-bold flex items-center justify-center shrink-0">TOI</span>
-                <div class="min-w-0 flex-1">
-                  <div class="text-xs sm:text-[13px] font-bold text-white group-hover:text-emerald-300 truncate">Times of India &bull; 2024</div>
-                  <div class="text-[11px] sm:text-xs text-slate-400 truncate">"Lohia Park 1st Open-Air Skating Zone"</div>
-                </div>
-                <span class="text-slate-500 group-hover:text-white text-xs">&nearr;</span>
-              </a>
-            </div>
+            <a href="directory.html#IN-CH-01" class="w-full py-2.5 rounded-xl bg-white/[0.06] hover:bg-white/[0.12] text-emerald-300 font-bold text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-1.5 touch-pill">
+              <span>Explore Era III Facilities &rarr;</span>
+            </a>
           </div>
         </div>
 
@@ -565,467 +496,40 @@
     </div>
   </section>
 
-  <!-- Clean Apple-Style Footer -->
+  <!-- QUICK ACTION CTA TO PAGE 2 (DIRECTORY) -->
+  <section class="py-16 sm:py-20 text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl sm:text-5xl font-display font-black text-white">
+        Ready to Explore All 39 Facilities?
+      </h2>
+      <p class="mt-3 text-base text-slate-300 max-w-xl mx-auto">
+        Filter by city, state, obstacle types, view direct GPS directions, and watch verified videos.
+      </p>
+      <div class="mt-8">
+        <a href="directory.html" class="px-8 py-4 rounded-2xl bg-gradient-to-r from-amber-400 to-amber-500 text-slate-950 font-display font-black text-base uppercase tracking-wider hover:from-amber-300 hover:to-amber-400 active:scale-95 transition-all shadow-xl shadow-amber-400/25 inline-flex items-center gap-2 touch-pill">
+          <span>Open National Directory</span>
+          <span class="text-lg">&rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (Neutral, Clean) -->
   <footer class="py-12 border-t border-white/10 text-center text-xs sm:text-sm text-slate-400">
     <div class="max-w-7xl mx-auto px-4">
-      <div class="flex items-center justify-center gap-2 mb-3">
-        <span class="w-2 h-2 rounded-full bg-amber-400"></span>
-        <span class="font-bold text-white tracking-wide">Janvi Jindal &bull; Official Sports Platform</span>
-      </div>
       <p>&copy; 2026 Skateparks of India &bull; National Action Sports Infrastructure Registry</p>
       <div class="mt-4 flex items-center justify-center gap-4 text-xs font-semibold text-slate-400">
-        <a href="index.html" class="hover:text-amber-400 transition-colors">Janvi Jindal Bio</a>
+        <a href="directory.html" class="hover:text-amber-400 transition-colors">National Directory (39 Parks)</a>
         <span>&bull;</span>
-        <a href="news.html" class="hover:text-cyan-400 transition-colors">Dedicated Press Archive</a>
+        <a href="directory.html?view=news" class="hover:text-cyan-400 transition-colors">Verified Newsroom</a>
         <span>&bull;</span>
-        <a href="#history" class="hover:text-amber-400 transition-colors">Historical Timeline</a>
+        <a href="#history" class="hover:text-amber-400 transition-colors">Historical Eras</a>
       </div>
     </div>
   </footer>
 
-  <!-- CLIENT-SIDE LOGIC: SEARCH, FILTERS & IN-DIRECTORY NEWS -->
+  <!-- Content Protection Script -->
   <script>
-    const allParks = [{"id":"IN-CH-01","name":"Chandigarh Skatepark (Tiranga Urban Park)","category":"public_mega","category_label":"Public Mega-Park","state":"Chandigarh (UT)","city":"Chandigarh","region":"North India","address":"Tiranga Urban Park, Sub. City Center, Sector 17, Chandigarh - 160017","maps_link":"https://maps.google.com/?q=Chandigarh+Skatepark+Sector+17","charges":"Free Public Access","access_badge":"🟢 Verified Public Park","area_sqft":40000,"operational_since":2022,"builder":"Municipal Corporation & Chandigarh Smart City Ltd","quality":"Championship concrete plaza (40,000 sq. ft. skateable concrete surface engineered by 100 Ramps inside a 44,000 sq. ft. municipal park parcel)","obstacles":"Massive flow bowl with deep/shallow ends and pool coping, extensive street league section, 8-stair with square handrail, hubbas, euro gap, A-frame rail, manual pads, curved banks, perimeter pump line","yt_query":"\"Chandigarh Skatepark\" \"Sector 17\"","has_news":true,"news_id":"IN-CH-01","spot_insight":"Ideal for both speed transitions and technical inline slalom. Smooth concrete with excellent grip in dry weather.","news_publication":"The Tribune","news_pub_badge":"TRIB","news_date":"Sept 2023","news_headline":"How skateboarding is growing big in Chandigarh","news_quote":"Sector 17's newly inaugurated urban sports skate plaza has quickly emerged as the epicenter of competitive action sports in Northern India. Designed to international standards with a championship street course and a deep concrete flow bowl, the facility draws athletes across the tri-city region daily...","news_link":"https://www.tribuneindia.com/news/chandigarh/how-skateboarding-is-growing-big-in-chandigarh/","secondary_publication":"Hindustan Times","secondary_link":"https://www.hindustantimes.com/cities/chandigarh-news/national-roller-skating-championship-to-be-held-in-chandigarh-chennai-from-dec-11-101702250144996.html"},{"id":"IN-UP-01","name":"Lohia Skatepark (Lucknow)","category":"public_mega","category_label":"Public Mega-Park","state":"Uttar Pradesh","city":"Lucknow","region":"North India","address":"Dr. Ram Manohar Lohia Park, Vipin Khand, Gomti Nagar, Lucknow, Uttar Pradesh - 226010","maps_link":"https://maps.google.com/?q=Lohia+Park+Skatepark+Gomti+Nagar+Lucknow","charges":"Park Entry (~Rs 10-20); skatepark free","access_badge":"🟢 Verified Public Park","area_sqft":44000,"operational_since":2021,"builder":"Lucknow Development Authority (LDA)","quality":"Tied with Sector 17 Chandigarh as India's largest public skatepark (44,000 sq ft)","obstacles":"Championship street course, massive deep bowl, 3-stair & 6-stair handrails, hubbas, down-ledges, A-frame, flatbars, curved banks","yt_query":"\"Lohia Park\" skatepark Lucknow","has_news":true,"news_id":"IN-UP-01","spot_insight":"Huge championship layout designed for high-speed street lines and transition air tricks.","news_publication":"The Times of India","news_pub_badge":"TOI","news_date":"Oct 2024","news_headline":"Lohia Park to get city’s 1st open-air skating zone","news_quote":"Spanning 44,000 square feet, the newly developed concrete skatepark inside Dr. Ram Manohar Lohia Park has established Lucknow as a pioneer in civic action-sports developments. Constructed with high-grade polished concrete, the park accommodates street skateboarding, roller-skating, and BMX...","news_link":"https://timesofindia.indiatimes.com/city/lucknow/lohia-park-to-get-citys-1st-open-air-skating-zone/articleshow/129111676.cms","secondary_publication":"Hindustan Times","secondary_link":"https://www.hindustantimes.com/cities/lucknow-news/defunct-lohia-park-water-body-in-lko-turned-into-sports-hub-101774281747909.html"},{"id":"IN-MH-02","name":"Nerul Skatepark (Rajiv Gandhi Joggers Park)","category":"public_mega","category_label":"Public Mega-Park","state":"Maharashtra","city":"Navi Mumbai","region":"West India","address":"Rajiv Gandhi Joggers Park, Sector 10, Nerul West, Navi Mumbai, Maharashtra - 400706","maps_link":"https://maps.google.com/?q=Nerul+Skatepark+Rajiv+Gandhi+Joggers+Park+Navi+Mumbai","charges":"Free Public Access (Park entry Rs 10)","access_badge":"🟢 Verified Public Park","area_sqft":20000,"operational_since":2019,"builder":"Navi Mumbai Municipal Corporation (NMMC)","quality":"Huge concrete street and transition facility with dual connected bowls","obstacles":"Massive concrete bowl with steel coping, street plaza with multiple ledges, hubbas, flatbars, down-rails, bank-to-bank hip","yt_query":"\"Nerul Skatepark\" Navi Mumbai","has_news":true,"news_id":"IN-MH-02","spot_insight":"One of the best bowl transition lines in Western India; regular venue for state-level skating trials.","news_publication":"The Times of India","news_pub_badge":"TOI","news_date":"Civic Blueprint","news_headline":"Navi Mumbai's civic body plans skating park at Nerul on lines of Florida-based model","news_quote":"Nerul's massive 20,000 sq ft concrete facility in Rajiv Gandhi Joggers Park was conceptualized by the Navi Mumbai Municipal Corporation (NMMC) modelled on international American standards. Featuring connected deep bowls and a comprehensive street league setup, it remains the premier training venue in the MMR...","news_link":"https://timesofindia.indiatimes.com/city/navi-mumbai/navi-mumbais-civic-body-plans-skating-park-at-nerul-on-lines-of-florida-based-model/articleshow/47288309.cms"},{"id":"IN-RJ-01","name":"Desert Dolphin Skatepark","category":"public_mega","category_label":"Public Mega-Park","state":"Rajasthan","city":"Khempur (near Udaipur)","region":"North India","address":"Near Ravla Khempur Heritage Hotel, Village Khempur, District Mavli, Rajasthan - 313203","maps_link":"https://maps.google.com/?q=Desert+Dolphin+Skatepark+Khempur+Rajasthan","charges":"Free Community Access (Prior note for visiting skaters)","access_badge":"🟢 Verified Public Park","area_sqft":14790,"operational_since":2018,"builder":"Desert Dolphin Project (Built for Netflix film 'Skater Girl')","quality":"Super-smooth reinforced concrete with custom desert tones; international standard clover bowl","obstacles":"Large 3-tier clover bowl with variable depths, tall vert extensions, spine transfer, mellow bowl with hubba and handrail, euro gap, pyramid","yt_query":"\"Desert Dolphin Skatepark\" Khempur","has_news":true,"news_id":"IN-RJ-01","spot_insight":"Iconic clover bowl with smooth coping and zero seam cracks. A world-class destination facility.","news_publication":"The Better India","news_pub_badge":"TBI","news_date":"June 2021","news_headline":"How a Village in Rajasthan Got a 14,500 Sq Ft Skatepark & Champions","news_quote":"Built initially as the set for the Netflix movie 'Skater Girl' by filmmaker Manjari Makijany, the Desert Dolphin Skatepark in Khempur became a permanent training ground for rural children. Today, dozens of village kids who had never seen a skateboard are competing at national championships...","news_link":"https://thebetterindia.com/257745/khempur-village-rajasthan-skating-park-children-national-championships/"},{"id":"IN-GJ-01","name":"Sabarmati Riverfront Skatepark (Jal Skatepark)","category":"public_mega","category_label":"Public Mega-Park","state":"Gujarat","city":"Ahmedabad","region":"West India","address":"Sabarmati Riverfront West Promenade, Near Ellis Bridge, Ahmedabad, Gujarat - 380009","maps_link":"https://maps.google.com/?q=Sabarmati+Riverfront+Skatepark+Ahmedabad","charges":"Free Public Access","access_badge":"🟢 Verified Public Park","area_sqft":20000,"operational_since":2021,"builder":"Sabarmati Riverfront Development Corporation Ltd (SRFDCL)","quality":"Premier riverfront concrete skatepark designed to international competition standards","obstacles":"Flow bowl with variable depths, street plaza, handrails, stair sets, hubba ledges, roll-in banks, A-frame spine","yt_query":"\"Sabarmati Riverfront\" skatepark Ahmedabad","has_news":true,"news_id":"IN-GJ-01","spot_insight":"Well-lit and breeze-cooled riverfront plaza; perfect for evening transition flow and technical grinds."},{"id":"IN-MH-03","name":"Namo Grand Central Park Skatepark","category":"public_mega","category_label":"Public Mega-Park","state":"Maharashtra","city":"Thane","region":"West India","address":"Kalpataru Parkcity Grand Central Park, Kolshet Road, Thane West, Maharashtra - 400607","maps_link":"https://maps.google.com/?q=Namo+Grand+Central+Park+Thane","charges":"Park Entry (~Rs 20-50); skatepark included","access_badge":"🟢 Verified Public Park","area_sqft":12000,"operational_since":2024,"builder":"Thane Municipal Corporation & Kalpataru","quality":"Modern dual bowl concrete facility with beginner and advanced transition flow","obstacles":"Mellow beginner bowl, deep pool bowl with coping, bump-to-bump, perimeter street section with ledges and flat rails","yt_query":"\"Namo Grand Central Park\" skatepark Thane","has_news":false,"news_id":null,"spot_insight":"Fresh high-grade concrete with low rolling resistance. The shallow bowl is excellent for practicing drop-ins."},{"id":"IN-MH-01","name":"Carter Road Skatepark ('Hype in the City')","category":"public_mega","category_label":"Public Mega-Park","state":"Maharashtra","city":"Mumbai","region":"West India","address":"Carter Road Seafront Promenade, Additional CP Office, Bandra West, Mumbai, Maharashtra - 400050","maps_link":"https://maps.google.com/?q=Carter+Road+Skatepark+Bandra+Mumbai","charges":"Free Public Access","access_badge":"🟢 Verified Public Park","area_sqft":7200,"operational_since":2018,"builder":"Bandra Collective & Architecture BRIO","quality":"Iconic seaside concrete street plaza integrated into an urban amphitheater","obstacles":"Street plaza with banks, steep quarter pipes, hubba ledges, down ledges, flat rails, manual pads","yt_query":"\"Carter Road Skatepark\" Bandra Mumbai","has_news":true,"news_id":"IN-MH-01","spot_insight":"Mumbai's spiritual skate home. Great coastal community vibe, active during sunset sessions.","news_publication":"Mid-Day","news_pub_badge":"MD","news_date":"Dec 2018","news_headline":"Mumbai: Painting puts edgy vibe on Carter Road skate park in Bandra","news_quote":"The skatepark nestled on the Carter Road promenade has transformed the Bandra seafront. Built by Bombay SB in partnership with the Bandra Collective, it is Mumbai’s prime street skating hub facing the Arabian Sea...","news_link":"https://www.mid-day.com/mumbai/mumbai-news/article/Mumbai-Painting-puts-edgy-vibe-on-Carter-Road-skate-park-in-Bandra-23045258"},{"id":"IN-GJ-02","name":"Alembic Skatepark","category":"public_mega","category_label":"Public Mega-Park","state":"Gujarat","city":"Vadodara","region":"West India","address":"Alembic City Art District, Gorwa, Vadodara, Gujarat - 390003","maps_link":"https://maps.google.com/?q=Alembic+City+Skatepark+Vadodara","charges":"Free Community Access","access_badge":"🟢 Verified Public Park","area_sqft":6600,"operational_since":2022,"builder":"Alembic Real Estate & Cultural Foundation","quality":"Industrial-chic urban concrete skatepark inside the historic Alembic Art District","obstacles":"Deep concrete bowl, transition quarter pipes, flat rails, ledges, manual pads, pyramid bank","yt_query":"\"Alembic\" skatepark Vadodara","has_news":false,"news_id":null,"spot_insight":"Superb artistic ambiance with smooth coping and plenty of shaded viewing areas."},{"id":"IN-AS-01","name":"NFRSA Skatepark (Guwahati)","category":"public_mega","category_label":"Public Mega-Park","state":"Assam","city":"Guwahati","region":"East & North-East India","address":"NFRSA Stadium Complex, Maligaon, Guwahati, Assam - 781011","maps_link":"https://maps.google.com/?q=NFRSA+Stadium+Maligaon+Guwahati","charges":"Free Community Access","access_badge":"🟢 Verified Public Park","area_sqft":11000,"operational_since":2023,"builder":"Northeast Frontier Railway Sports Association (NFRSA)","quality":"Largest public concrete skatepark in Northeast India with street and bowl flow","obstacles":"Smooth bowl with pool coping, down-rail, hubbas, A-frame, banked hips, manual pads, roll-in waterfall","yt_query":"\"NFRSA\" skatepark Guwahati","has_news":false,"news_id":null,"spot_insight":"Premier training ground for North-East athletes preparing for national competitions."},{"id":"IN-KA-02","name":"Chintamani Skatepark","category":"public_mega","category_label":"Public Mega-Park","state":"Karnataka","city":"Chintamani","region":"South India","address":"Government Municipal Stadium Complex, Chintamani, Chikkaballapur District, Karnataka - 563125","maps_link":"https://maps.google.com/?q=Chintamani+Skatepark+Karnataka","charges":"Free Public Access","access_badge":"🟢 Verified Public Park","area_sqft":11000,"operational_since":2022,"builder":"Chintamani City Municipal Council","quality":"State-of-the-art public facility built by the municipality in rural Karnataka","obstacles":"Flow bowl, banks, hubbas, down-ledges, flat rail, quarter pipe, roll-in","yt_query":"\"Chintamani\" skatepark Karnataka","has_news":false,"news_id":null,"spot_insight":"Inspiring grassroots municipal park that introduced modern concrete transitions to rural youth."},{"id":"IN-GA-01","name":"Youth Hostel Skatepark (Miramar)","category":"public_mega","category_label":"Public Mega-Park","state":"Goa","city":"Panaji","region":"West India","address":"Youth Hostel Campus, Miramar Beach Promenade, Panaji, Goa - 403001","maps_link":"https://maps.google.com/?q=Youth+Hostel+Miramar+Panjim+Goa","charges":"Free Public Access","access_badge":"🟢 Verified Public Park","area_sqft":6000,"operational_since":2017,"builder":"Sports Authority of Goa & SkateLifeGoa","quality":"Central gathering hub for Goa skateboarding overlooking the Mandovi River","obstacles":"Quarter pipes, flat ground rails, funbox with ledge, movable kickers, manual pad","yt_query":"\"Miramar\" skatepark \"Youth Hostel\" Goa","has_news":false,"news_id":null,"spot_insight":"Riverfront sea breeze makes this comfortable during early mornings and sunset sessions."},{"id":"IN-DL-02","name":"Delhi Skateboarding Academy (Delhi SB)","category":"indoor_academy","category_label":"Indoor Weatherproof Academy","state":"Delhi","city":"New Delhi","region":"North India","address":"Block A-1, Neb Sarai, Near IGNOU Road / Saket, South Delhi - 110068","maps_link":"https://maps.google.com/?q=Delhi+Skateboarding+Academy+Neb+Sarai+New+Delhi","charges":"Session Fee (~Rs 150-200) / Monthly Coaching Packages","access_badge":"🏢 Indoor Academy (Open 365 Days)","area_sqft":4500,"operational_since":2016,"builder":"Delhi Skateboarding Academy (Evolution of Freemotion Sk8)","quality":"Historic subterranean indoor wooden park; weatherproof haven from Delhi's heat and smog","obstacles":"Full wooden vert ramp, mini-ramp transitions, quarter pipes, flat grind rails, launch banks, dedicated core skateshop","yt_query":"\"Delhi Skateboarding Academy\" \"Neb Sarai\"","has_news":true,"news_id":"IN-DL-02","spot_insight":"Delhi's foundational indoor hall. Wooden surface provides forgiving fall protection when practicing advanced flips."},{"id":"IN-DL-01","name":"Backyard Skatepark & Training Center","category":"indoor_academy","category_label":"Indoor Weatherproof Academy","state":"Delhi","city":"New Delhi","region":"North India","address":"Block A1, 428, Dhankar Road, Neb Sarai, Sainik Farm, New Delhi - 110068","maps_link":"https://maps.google.com/?q=Backyard+Skatepark+Neb+Sarai+New+Delhi","charges":"Session Fee (~Rs 200) & Monthly Coaching","access_badge":"🏢 Covered / Semi-Indoor Park","area_sqft":7000,"operational_since":2019,"builder":"Backyard Skatepark Collective","quality":"Hybrid covered wooden ramp room and outdoor concrete street training park","obstacles":"Wooden mini-ramps, quarter pipes, flatbars, grind boxes, foam pit for aerial stunts, outdoor banks, ledges, kickers","yt_query":"\"Backyard Skatepark\" \"Neb Sarai\"","has_news":false,"news_id":null,"spot_insight":"The foam pit is a huge plus for freestyle skaters practicing rotational spins and flips safely."},{"id":"IN-MH-04","name":"Proper Park Hotfut (Pune)","category":"indoor_academy","category_label":"Indoor Weatherproof Academy","state":"Maharashtra","city":"Pune","region":"West India","address":"Hotfut Sports Club, Mundhwa / Koregaon Park Annexe, Pune, Maharashtra - 411036","maps_link":"https://maps.google.com/?q=Proper+Park+Skatepark+Hotfut+Pune","charges":"Session pass (~Rs 150-250)","access_badge":"💳 Commercial Club Facility","area_sqft":13790,"operational_since":2021,"builder":"Hotfut Sports Club","quality":"Well-maintained urban skate facility with smooth concrete","obstacles":"Sectional mini-ramp, kidney bowl, pyramid street hip, A-frame rail, round flatbar, low hubbas, manual pad","yt_query":"\"Proper Park\" skatepark Pune Hotfut","has_news":false,"news_id":null,"spot_insight":"Well-sheltered transition lines; fantastic for intermediate skaters refining pyramid transfers."},{"id":"IN-PB-01","name":"United Roller Sports Club Skatepark","category":"indoor_academy","category_label":"Indoor Weatherproof Academy","state":"Punjab","city":"Mohali","region":"North India","address":"United Roller Sports Club, Dhelpur, Near Landran Road, Mohali, Punjab - 140307","maps_link":"https://maps.google.com/?q=United+Roller+Sports+Club+Dhelpur+Mohali","charges":"Paid Membership / Academy Training","access_badge":"🏢 Covered Training Facility","area_sqft":9000,"operational_since":2022,"builder":"United Roller Sports Club Management","quality":"Covered wooden ramp training facility with modular street elements","obstacles":"Large wooden mini-ramp, quarter pipe wall, flat rails, grind boxes, bank to bank, manual pad","yt_query":"\"United Roller Sports Club\" Dhelpur Mohali skatepark","has_news":false,"news_id":null,"spot_insight":"Top training hub in Punjab for junior speed and freestyle skaters transitioning to street."},{"id":"IN-KA-01","name":"Play Arena Skatepark","category":"indoor_academy","category_label":"Indoor Weatherproof Academy","state":"Karnataka","city":"Bengaluru","region":"South India","address":"Play Arena Sports Complex, Silverwood Regency, Kasavanahalli, Sarjapur Road, Bengaluru, Karnataka - 560035","maps_link":"https://maps.google.com/?q=Play+Arena+Sarjapur+Road+Bangalore","charges":"Session pass (~Rs 150-250) / Rentals Available","access_badge":"💳 Commercial Sports Arena","area_sqft":10000,"operational_since":2013,"builder":"Play Arena Sports Infrastructure","quality":"One of India's foundational skateparks featuring an expansive concrete bowl and street section","obstacles":"Variable-depth concrete bowl with spine, mini-ramp, 4-stair with square handrail, hubba ledges, flatbars, curved banks","yt_query":"\"Play Arena\" skatepark Sarjapur Bangalore","has_news":false,"news_id":null,"spot_insight":"A benchmark bowl in South India. Features deep vertical walls suited for experienced bowl carvers."},{"id":"IN-TN-01","name":"Madras Wheelers Skatepark","category":"indoor_academy","category_label":"Indoor Weatherproof Academy","state":"Tamil Nadu","city":"Chennai","region":"South India","address":"Plot No. 79/80, Raju Nagar 7th Street, Thoraipakkam, OMR (Opp. AKDR Golf), Chennai, Tamil Nadu - 600097","maps_link":"https://maps.google.com/?q=Madras+Wheelers+Skatepark+Chennai","charges":"Paid Entry (~Rs 150-250) / Rentals & Lessons","access_badge":"💳 Commercial Club Facility","area_sqft":5000,"operational_since":2018,"builder":"Madras Wheelers Academy","quality":"Chennai's primary purpose-built concrete skatepark with balanced street and transition flow","obstacles":"Bowl section with roll-in, banks, quarter pipe hips, flat rails, low-to-high ledge, euro gap, manual pad","yt_query":"\"Madras Wheelers\" skatepark Chennai","has_news":false,"news_id":null,"spot_insight":"Active local coaching academy. Excellent place to rent pads and try a bowl for the first time."},{"id":"IN-KL-01","name":"Loop Skatepark","category":"indoor_academy","category_label":"Indoor Weatherproof Academy","state":"Kerala","city":"Kochi","region":"South India","address":"Near Kadavanthra / Panampilly Nagar, Kochi, Kerala - 682020","maps_link":"https://maps.google.com/?q=Loop+Skatepark+Kochi","charges":"Session pass (~Rs 150-200)","access_badge":"💳 Commercial Club Facility","area_sqft":6500,"operational_since":2023,"builder":"Loop Skatepark Crew","quality":"Sculpted concrete bowl and street features; premier urban hub in Kerala","obstacles":"Flow bowl, mini-ramp transitions, street obstacles, flatground lounge","yt_query":"\"Loop Skatepark\" Kochi","has_news":false,"news_id":null,"spot_insight":"Very clean, aesthetic bowl design with an energetic youth skating community."},{"id":"IN-TG-01","name":"WallRide Park","category":"pumptrack","category_label":"Pump Track & Action Sports","state":"Telangana","city":"Hyderabad","region":"South India","address":"#315, Snehita Hills, Chevalla Road, Peeran Cheruvu, Hyderabad, Telangana - 500091","maps_link":"https://maps.google.com/?q=WallRide+Park+Hyderabad","charges":"Paid Entry / Hourly & Day passes (~Rs 200-300)","access_badge":"🔄 Certified Asphalt Pump Track","area_sqft":10000,"operational_since":2017,"builder":"Velosolutions & WallRide Action Sports","quality":"Pioneering action sports hub featuring India's first asphalt pump track and wooden transition room","obstacles":"Asphalt pump track with continuous berms and rollers, wooden mini-ramps, quarter pipes, wallride curve, spine, street flatbar","yt_query":"\"WallRide Park\" Hyderabad pumptrack","has_news":true,"news_id":"IN-TG-01","spot_insight":"Riding a pump track builds lower-body endurance, rhythm, and quad pumping strength without pushing.","news_publication":"Telangana Today","news_pub_badge":"TT","news_date":"Sports Feature","news_headline":"Ride, roll and skate at this park in Hyderabad","news_quote":"WallRide Park on Chevalla Road holds the distinction of building India's first asphalt pump track matching international cycling and skateboarding standards. Founded by Hamza Khan, it has hosted official Red Bull national qualifiers...","news_link":"https://telanganatoday.com/ride-roll-and-skate-at-this-park-in-hyderabad"},{"id":"IN-LA-01","name":"Disko Valley Bike Park & Skate Pump Track","category":"pumptrack","category_label":"Pump Track & Action Sports","state":"Ladakh (UT)","city":"Leh","region":"North India","address":"Disko Valley, Near Shanti Stupa, Leh, Ladakh - 194101","maps_link":"https://maps.google.com/?q=Disko+Valley+Bike+Park+Leh+Ladakh","charges":"Free Community Access","access_badge":"🔄 World's Highest Pump Track","area_sqft":15000,"operational_since":2021,"builder":"Disko Valley Action Sports Initiative & Ladakh Sports Dept","quality":"World's highest skate & bike pump track (over 11,500 ft above sea level) with Himalayan backdrop","obstacles":"Continuous asphalt pump track with berms and rollers, concrete bowl section, mini ramp","yt_query":"\"Disko Valley\" Leh Ladakh skate","has_news":true,"news_id":"IN-LA-01","spot_insight":"High-altitude skating demands lung capacity. Acclimate properly before sustained pump sessions at 11,500 ft.","news_publication":"The Hindu","news_pub_badge":"TH","news_date":"Life & Style","news_headline":"South Asia's highest 'land art' festival set in Ladakh reflects on climate change","news_quote":"Perched over 11,500 feet above sea level in the high-altitude desert of Leh, the Disko Valley Bike Park and Skate Pump Track represents a pioneering fusion of Himalayan eco-tourism and action sports. Engineered to withstand sub-zero freeze-thaw cycles...","news_link":"https://www.thehindu.com/life-and-style/south-asias-highest-land-art-festival-set-in-ladakh-reflects-on-climate-change/article68207143.ece"},{"id":"IN-MP-01","name":"Janwaar Castle","category":"grassroots","category_label":"Grassroots & Mountain Bowl","state":"Madhya Pradesh","city":"Janwaar (Panna)","region":"Central India","address":"Village Janwaar, Near Panna National Park, District Panna, Madhya Pradesh - 488441","maps_link":"https://maps.google.com/?q=Janwaar+Castle+Panna+Madhya+Pradesh","charges":"Free Community Access ('No School, No Skateboarding')","access_badge":"🌿 India's 1st Rural Skatepark","area_sqft":14000,"operational_since":2015,"builder":"Janwaar Castle Community Organisation","quality":"India's first rural skatepark; internationally acclaimed social impact project","obstacles":"Huge concrete bowl with deep/shallow ends, pump transitions, rollover hips, street ledges, beginner banks","yt_query":"\"Janwaar Castle\" skatepark Panna","has_news":true,"news_id":"IN-MP-01","spot_insight":"A historic spot in Indian skateboarding. Cultivated national medalists from a rural farming village.","news_publication":"The Hindu","news_pub_badge":"TH","news_date":"Aug 2020","news_headline":"Girls and boys of MP village on a roll after skatepark was built","news_quote":"In a remote village of Madhya Pradesh, Janwaar Castle revolutionized social dynamics through skateboarding under the rule 'No School, No Skateboarding'. The park broke down entrenched caste barriers and empowered young girls to claim public space...","news_link":"https://www.thehindu.com/news/national/other-states/girls-and-boys-of-mp-village-on-a-roll-after-skatepark-was-built/article32328649.ece"},{"id":"IN-ML-01","name":"Pro-Life Skatepark","category":"grassroots","category_label":"Grassroots & Mountain Bowl","state":"Meghalaya","city":"Shillong","region":"East & North-East India","address":"Diengïong, Upper Shillong, East Khasi Hills, Meghalaya - 793005","maps_link":"https://maps.google.com/?q=Pro-Life+Skatepark+Diengiong+Shillong","charges":"Free Community Access for youth","access_badge":"🌿 Mountain Pine Skatepark","area_sqft":5000,"operational_since":2019,"builder":"Pro-Life Skaters Association Shillong","quality":"Scenic mountain concrete skatepark built amidst pine trees; premier hub of North-East skateboarding","obstacles":"A-frame rail, steep banks, stair set with handrail, manual pads, transition bowls, street ledges","yt_query":"\"Pro-Life Skatepark\" Shillong","has_news":false,"news_id":null,"spot_insight":"Surrounded by pine forests. The fresh mountain air and grippy concrete make it a standout session spot."},{"id":"IN-TN-03","name":"Butfire Skatepark (Ooty)","category":"grassroots","category_label":"Grassroots & Mountain Bowl","state":"Tamil Nadu","city":"Ooty","region":"South India","address":"Near Lovedale Road, Ooty, Nilgiris District, Tamil Nadu - 643003","maps_link":"https://maps.google.com/?q=Butfire+Skatepark+Ooty","charges":"Free Community Access","access_badge":"🌿 High-Altitude Nilgiri Bowl","area_sqft":3500,"operational_since":2021,"builder":"Nilgiris Action Sports Collective","quality":"High-altitude mountain skatepark with scenic pine valley views","obstacles":"Compact bowl transition, bank ramps, quarter pipe, flat rail","yt_query":"\"Butfire Skatepark\" Ooty","has_news":false,"news_id":null,"spot_insight":"Cool mountain climate year-round. Great for morning bowl sessions."},{"id":"IN-TN-02","name":"Mahabs Skatepark (Kamali's Skatepark)","category":"grassroots","category_label":"Grassroots & Mountain Bowl","state":"Tamil Nadu","city":"Mahabalipuram","region":"South India","address":"Fisherman Colony, Near Mahabalipuram Beach, Mahabalipuram, Tamil Nadu - 603104","maps_link":"https://maps.google.com/?q=Mahabs+Skatepark+Mahabalipuram","charges":"Free Community Access for village kids","access_badge":"🌿 Coastal Village Bowl","area_sqft":4000,"operational_since":2015,"builder":"Mahabs Community Skaters & Volunteers","quality":"Grassroots seaside concrete bowl that empowered Kamali Moorthy and local surf/skate culture","obstacles":"Concrete mini-ramp and kidney bowl transition with coping, roll-in banks","yt_query":"\"Mahabs Skatepark\" Mahabalipuram","has_news":false,"news_id":null,"spot_insight":"A coastal grassroots bowl where surfing culture meets skateboarding on the Coromandel Coast."},{"id":"IN-KL-02","name":"Kovalam Skate Club / SISP Skatepark","category":"grassroots","category_label":"Grassroots & Mountain Bowl","state":"Kerala","city":"Kovalam","region":"South India","address":"SISP Free School Campus, Harbour Road, Vizhinjam, Kovalam, Kerala - 695521","maps_link":"https://maps.google.com/?q=SISP+Kovalam+Skatepark+Vizhinjam","charges":"Free for SISP students; open sessions for visitors","access_badge":"🌿 School Rooftop & Ground Bowl","area_sqft":5000,"operational_since":2014,"builder":"SISP Free School & Community Volunteers","quality":"Rooftop and ground concrete mini-ramp and bowl; India's first school-integrated skatepark","obstacles":"Wooden and concrete mini-ramps, quarter pipes, rollover spine, flatbars","yt_query":"\"Kovalam Skate Club\" SISP","has_news":true,"news_id":"IN-KL-02","spot_insight":"First school in India to incorporate skateboarding into educational attendance initiatives.","news_publication":"The New Indian Express","news_pub_badge":"NIE","news_date":"Jan 2020","news_headline":"Skating on the world to change","news_quote":"At Kovalam, the SISP rooftop skatepark has provided coastal village children with an alternative pathway to sports and personal empowerment, integrating free skateboarding education with regular academic attendance...","news_link":"https://www.newindianexpress.com/cities/kochi/2020/Jan/16/skating-on-the-world-to-change-2090012.html"},{"id":"IN-PY-01","name":"Auroville Skatepark","category":"grassroots","category_label":"Grassroots & Mountain Bowl","state":"Tamil Nadu / Puducherry","city":"Auroville","region":"South India","address":"Youth Center, Auroville International Township, Tamil Nadu / Puducherry - 605101","maps_link":"https://maps.google.com/?q=Auroville+Youth+Center+Skatepark","charges":"Free Community Access (Donation welcomed)","access_badge":"🌿 Forest Sanctuary Bowl","area_sqft":5000,"operational_since":2017,"builder":"Auroville Youth Center","quality":"Eco-friendly concrete bowl facility nestled inside the Auroville forest sanctuary","obstacles":"Flow bowl with pool coping, hip transfer, quarter pipe waterfall, mini ramp spine","yt_query":"\"Auroville\" skatepark \"Youth Center\"","has_news":false,"news_id":null,"spot_insight":"Completely quiet, forest-shaded bowl. Mindful, rhythmic skating in a serene sanctuary setting."},{"id":"IN-MP-02","name":"Hilltop Skatepark (BhopalSB)","category":"grassroots","category_label":"Grassroots & Mountain Bowl","state":"Madhya Pradesh","city":"Bhopal","region":"Central India","address":"Mendori, Near Kerwa Dam Road, Bhopal, Madhya Pradesh - 462044","maps_link":"https://maps.google.com/?q=Hilltop+Skatepark+Mendori+Bhopal","charges":"Free Community Access","access_badge":"🌿 Grassroots DIY Park","area_sqft":4500,"operational_since":2021,"builder":"BhopalSB Community & Grassroots Skaters","quality":"Community-built concrete skatepark and active hub for central Indian skateboarding","obstacles":"Mini ramp, transition quarter pipes, flat rails, ledge, bank to bank, manual pad","yt_query":"\"Hilltop Skatepark\" BhopalSB Bhopal","has_news":false,"news_id":null,"spot_insight":"Passionate local community. Connect with BhopalSB before visiting for the latest jam timings."},{"id":"IN-TG-02","name":"Empty Heads Rooftop Skatepark","category":"cross_check","category_label":"Private DIY / Rooftop Spot","state":"Telangana","city":"Secunderabad / Hyderabad","region":"South India","address":"Rooftop Terrace, Venkatapuram, Alwal, Secunderabad, Telangana - 500010","maps_link":"https://maps.google.com/?q=Alwal+Venkatapuram+Secunderabad","charges":"Private / Prior Permission Required (Free Community)","access_badge":"🏠 Private Rooftop DIY Spot","area_sqft":2000,"operational_since":2021,"builder":"Empty Heads Skaters Crew","quality":"Hand-built wooden mini-ramps and DIY flat rails on residential terrace","obstacles":"Wooden mini-ramps, quarter pipes, flat grind rails, launch bank, creative subculture lounge","yt_query":"\"Empty Heads\" skatepark Hyderabad","has_news":true,"news_id":"IN-TG-02","spot_insight":"⚠️ PRIVATE DIY ROOFTOP: Built by local skaters on a residential terrace to combat the municipal skatepark shortage. Not a commercial walk-in facility. Permission required.","news_publication":"The Times of India","news_pub_badge":"TOI","news_date":"Oct 2024","news_headline":"Skateboarding making inroads into Hyderabad","news_quote":"Skateboarders in Hyderabad, tired of waiting for the government to build dedicated public parks, are taking matters into their own hands. On an open rooftop terrace in Old Alwal, skaters have constructed 'Empty Heads', featuring custom wooden mini-ramps, quarter pipes, and grind rails where youth gather to train and host underground jam sessions...","news_link":"https://timesofindia.indiatimes.com/city/hyderabad/skateboarding-making-inroads-into-hyderabad/articleshow/123476837.cms"},{"id":"IN-MP-03","name":"GSC Skatepark (Gwalior Sickness Centre)","category":"cross_check","category_label":"Cross-Check Before Visiting","state":"Madhya Pradesh","city":"Gwalior","region":"Central India","address":"Jhansi Road, Gwalior, Madhya Pradesh - 474001","maps_link":"https://maps.google.com/?q=GSC+Skatepark+Jhansi+Road+Gwalior","charges":"Free / Private Skateshop Hub","access_badge":"⚠️ Verify Skateshop Hours First","area_sqft":5300,"operational_since":2019,"builder":"GSC Skateshop Team","quality":"Custom concrete street plaza connected to a private skateshop (gscsk8.com)","obstacles":"Quarter pipes, steep banks, low hubbas, flat rails, wallride surface, manual pads","yt_query":"\"GSC Skatepark\" Gwalior","has_news":false,"news_id":null,"spot_insight":"⚠️ Cross-check alert: Operated in tandem with the local skateshop. Confirm opening hours before traveling."},{"id":"IN-ML-02","name":"Nokrek Skatepark","category":"cross_check","category_label":"Cross-Check Before Visiting","state":"Meghalaya","city":"Tura","region":"East & North-East India","address":"District Sports Complex, Dakopgre, Tura, Garo Hills, Meghalaya - 794101","maps_link":"https://maps.google.com/?q=District+Sports+Complex+Tura+Meghalaya","charges":"Free Public Access (Stadium Timings)","access_badge":"⚠️ Subject to Stadium Gate Timings","area_sqft":3500,"operational_since":2022,"builder":"District Administration & Local Sports Authority","quality":"Compact community concrete training ground for Garo Hills youth","obstacles":"Quarter pipes, bank ramps, flat ground rails, grind box","yt_query":"\"Nokrek Skatepark\" Tura Garo Hills","has_news":false,"news_id":null,"spot_insight":"⚠️ Cross-check alert: Sits inside the government sports complex. Subject to stadium opening/closing hours."},{"id":"IN-GA-02","name":"Cirrus Skate Bowl","category":"cross_check","category_label":"Cross-Check Before Visiting","state":"Goa","city":"Anjuna / Vagator","region":"West India","address":"Chapora-Anjuna Road, Vagator Border, North Goa, Goa - 403509","maps_link":"https://maps.google.com/?q=Cirrus+Goa+Anjuna+Vagator","charges":"Venue Patrons / Private Skate Jams","access_badge":"⚠️ Private Venue / Event Timings","area_sqft":4000,"operational_since":2014,"builder":"Cirrus Goa Collective","quality":"Historic underground transition bowl and DIY outdoor skate arena","obstacles":"Deep concrete pool bowl, roll-in banks, steep transition walls, coping grind","yt_query":"\"Cirrus\" \"skate bowl\" Goa","has_news":false,"news_id":null,"spot_insight":"⚠️ Cross-check alert: Located inside a private alternative venue. Check event schedule before traveling."},{"id":"IN-OD-01","name":"Dharambandha Police Station Compound","category":"cross_check","category_label":"Cross-Check Before Visiting","state":"Odisha","city":"Dharambandha (Nuapada)","region":"East India","address":"Dharambandha Police Station Campus, Nuapada District, Odisha - 766106","maps_link":"https://maps.google.com/?q=Dharambandha+Police+Station+Nuapada+Odisha","charges":"Secured Government Campus (Not a Public Commercial Park)","access_badge":"🛑 SECURED POLICE COMPOUND (Permission Required)","area_sqft":6725,"operational_since":2019,"builder":"Community Youth Policing Initiative","quality":"Smooth concrete community park built on police station campus","obstacles":"Flat rails, ledges, hubbas, bump to curved ledge, steep bump-to-bump, quarter pipes, perimeter speedbumps","yt_query":"\"Dharambandha\" skatepark Odisha","has_news":false,"news_id":null,"spot_insight":"🛑 IMPORTANT WARNING: Not an open public park. Built inside an active police station boundary for local tribal community outreach. Do not visit without official police clearance."},{"id":"IN-UP-02","name":"Bikonic Bike Park & Pump Track","category":"pumptrack","category_label":"Pump Track & Action Sports","state":"Uttar Pradesh","city":"Greater Noida (Delhi NCR)","region":"North India","address":"Near Appetito Fiesta, Knowledge Park / Sector 1, Greater Noida, Uttar Pradesh - 201310","maps_link":"https://maps.google.com/?q=Bikonic+Pump+Track+Greater+Noida","charges":"Track Entry / Session Passes","access_badge":"🔄 100 Ramps Certified Track","area_sqft":12000,"operational_since":2020,"builder":"100 Ramps Skatepark Builders (Nov 2020)","quality":"Large 12,000 sq. ft. continuous asphalt pump track catering to mountain bikes, BMX, and skateboards","obstacles":"Continuous berms, rhythmic rollers, banked turns, tabletop jump lines, beginner pump loop","yt_query":"\"Bikonic\" pump track Greater Noida","has_news":false,"news_id":null,"spot_insight":"Delhi NCR's largest dedicated pump track. Designed for speed generation purely through body pumping without pedaling."},{"id":"IN-KA-03","name":"CV Raman Skatepark (Power Track)","category":"indoor_academy","category_label":"Academy & Community Rink","state":"Karnataka","city":"Bengaluru","region":"South India","address":"Power Track Skating Rink, Versova Layout, Kaggadasapura, CV Raman Nagar, Bengaluru, Karnataka - 560093","maps_link":"https://maps.google.com/?q=Power+Track+Skating+CV+Raman+Nagar+Bangalore","charges":"Academy Coaching & Public Session Passes","access_badge":"🏢 100 Ramps Built Rink","area_sqft":5650,"operational_since":2022,"builder":"100 Ramps Skatepark Builders (Oct 2022)","quality":"Custom smooth concrete training rink and skate course built specifically for Power Track Skating","obstacles":"Curved banks, transition ledges, beginner roll-in slopes, flatground training oval, low rails","yt_query":"\"CV Raman\" skatepark Bangalore Power Track","has_news":false,"news_id":null,"spot_insight":"Dedicated youth training facility in East Bengaluru with high-grip polished concrete."},{"id":"IN-MH-05","name":"FlowState Bike Park & Pump Track","category":"pumptrack","category_label":"Pump Track & Action Sports","state":"Maharashtra","city":"Pune","region":"West India","address":"Near Mundhwa / Hadapsar Outskirts, Pune, Maharashtra - 411036","maps_link":"https://maps.google.com/?q=FlowState+Bike+Park+Pune","charges":"Session Pass (~Rs 150-250)","access_badge":"🔄 100 Ramps Built Track","area_sqft":7500,"operational_since":2021,"builder":"100 Ramps Skatepark Builders","quality":"7,500 sq. ft. technical pump track layout with steep berms and rhythmic transitions","obstacles":"Dual-direction asphalt rollers, high-speed berms, transfer hips, pump curves","yt_query":"\"FlowState\" pump track Pune","has_news":false,"news_id":null,"spot_insight":"Excellent lower-body endurance track in Pune; heavily used by local BMX and skateboard riders."},{"id":"IN-KA-04","name":"The School of Raya Skatepark","category":"private_campus","category_label":"Campus & Training Facility","state":"Karnataka","city":"Bengaluru","region":"South India","address":"The School of Raya Campus, Hennur-Bagalur Main Road, Dasanayakanahalli, Bengaluru, Karnataka - 562149","maps_link":"https://maps.google.com/?q=The+School+of+Raya+Bangalore","charges":"Campus Students & Community Invitational Jams","access_badge":"🏫 100 Ramps Campus Hub","area_sqft":14440,"operational_since":2021,"builder":"100 Ramps Skatepark Builders","quality":"One of India's largest school skateparks (14,440 sq. ft.) featuring integrated street course and transition bowl","obstacles":"Curved transition bowl, pyramid hip, street ledges, flatbars, A-frame bank, roll-in banks, evening floodlights","yt_query":"\"School of Raya\" skatepark Bangalore","has_news":true,"news_id":"IN-KA-04","spot_insight":"Host venue for national grassroots skateboard series (Rumble skate series). Built to foster junior youth talent."},{"id":"IN-TG-03","name":"The Shri Ram Academy Skate Bowl","category":"private_campus","category_label":"Campus & Training Facility","state":"Telangana","city":"Hyderabad","region":"South India","address":"The Shri Ram Academy, Financial District, Nanakramguda, Hyderabad, Telangana - 500032","maps_link":"https://maps.google.com/?q=The+Shri+Ram+Academy+Financial+District+Hyderabad","charges":"School Students & Scheduled Workshops","access_badge":"🏫 100 Ramps School Bowl","area_sqft":6700,"operational_since":2022,"builder":"100 Ramps Skatepark Builders","quality":"Custom 6,700 sq. ft. smooth concrete skate bowl engineered directly into school sports infrastructure","obstacles":"Flowing multi-depth concrete bowl, smooth transition corners, steel coping, entry pump roll-ins","yt_query":"\"Shri Ram\" academy skate bowl Hyderabad","has_news":false,"news_id":null,"spot_insight":"Pioneering private school sports installation bringing concrete bowl skating into mainstream school curriculum."},{"id":"IN-KA-DEF-01","name":"The Cave Skatepark (Hegde Nagar)","category":"defunct","category_label":"Historical Memorial (Closed)","state":"Karnataka","city":"Bengaluru","region":"South India","address":"RK Hegde Nagar / Hennur Area, Bengaluru, Karnataka (Demolished)","maps_link":"https://maps.google.com/?q=The+Cave+Skatepark+Bangalore","charges":"PERMANENTLY CLOSED / DEMOLISHED","access_badge":"🛑 PERMANENTLY CLOSED (Demolished 2023)","area_sqft":8000,"operational_since":"2013 - 2023","builder":"Grassroots Skaters & Community Volunteers","quality":"India's most iconic free DIY park; hosted international tours and pioneer sessions","obstacles":"Massive concrete bowl, transition hip, spine, mini ramp, wallride, street ledges","yt_query":"\"The Cave Skatepark\" Bangalore","has_news":false,"news_id":null,"spot_insight":"🛑 COMMUNITY MEMORIAL: Leased land was reclaimed by owners in 2023 and ramps were dismantled. Preserved here as a historical milestone."},{"id":"IN-MH-DEF-01","name":"Khar Social Indoor Skate Bowl","category":"defunct","category_label":"Historical Memorial (Closed)","state":"Maharashtra","city":"Mumbai","region":"West India","address":"Khar Social, Rohan Plaza, 5th Road, Khar West, Mumbai - 400052 (Repurposed)","maps_link":"https://maps.google.com/?q=Khar+Social+Mumbai","charges":"NO LONGER OPERATIONAL FOR SKATING","access_badge":"🛑 NO LONGER ACTIVE FOR SKATING","area_sqft":1500,"operational_since":"2015 - 2018","builder":"Hospitality Design Collaboration","quality":"India's first indoor hospitality skate bowl embedded inside a cafe/pub","obstacles":"Custom wooden mini bowl with pool coping inside restaurant space","yt_query":"\"Khar Social\" skate bowl Mumbai","has_news":false,"news_id":null,"spot_insight":"🛑 HISTORICAL SPOT: The wooden bowl made headlines in 2015 as the first pub bowl in Asia, but was subsequently decommissioned for restaurant seating."}];
-    let activeCategory = "all";
-    let activeRegion = "all";
-    let searchQuery = "";
-    let filterType = "all"; // 'all', 'free', 'news'
-    let currentViewMode = "grid"; // 'grid' or 'news'
-
-    const searchInput = document.getElementById("top-search-input");
-    const clearBtn = document.getElementById("clear-search-btn");
-    const searchActionBtn = document.getElementById("search-action-btn");
-    const mobileCatSelect = document.getElementById("mobile-category-select");
-    const mobileRegSelect = document.getElementById("mobile-region-select");
-    const activeFilterBar = document.getElementById("active-filter-bar");
-    const activeFilterLabel = document.getElementById("active-filter-label");
-    const resetFilterBtn = document.getElementById("reset-filter-btn");
-
-    function renderCards() {
-      const grid = document.getElementById("skateparks-grid");
-      const newsroom = document.getElementById("newsroom-container");
-      const counter = document.getElementById("parks-counter");
-      if (!grid) return;
-
-      // Filter list
-      let list = allParks.filter(p => {
-        const matchCat = activeCategory === "all" || p.category === activeCategory;
-        const matchReg = activeRegion === "all" || p.region === activeRegion;
-        
-        let matchSpecial = true;
-        if (filterType === "free") {
-          matchSpecial = (p.charges || "").toLowerCase().includes("free") && p.category !== "defunct" && p.category !== "cross_check";
-        } else if (filterType === "news") {
-          matchSpecial = p.has_news === true;
-        }
-
-        const q = searchQuery.toLowerCase().trim();
-        const matchSearch = !q || (
-          (p.name || "").toLowerCase().includes(q) ||
-          (p.city || "").toLowerCase().includes(q) ||
-          (p.state || "").toLowerCase().includes(q) ||
-          (p.builder || "").toLowerCase().includes(q) ||
-          (p.obstacles || "").toLowerCase().includes(q)
-        );
-        return matchCat && matchReg && matchSpecial && matchSearch;
-      });
-
-      if (counter) {
-        counter.textContent = "Showing " + list.length + " of " + allParks.length + " Facilities";
-      }
-
-      // Update active filter bar
-      const hasFilter = activeCategory !== "all" || activeRegion !== "all" || filterType !== "all" || searchQuery !== "";
-      if (activeFilterBar) {
-        if (hasFilter) {
-          activeFilterBar.classList.remove("hidden");
-          const labels = [];
-          if (searchQuery) labels.push('Search: "' + searchQuery + '"');
-          if (filterType === "free") labels.push('Free Entry');
-          if (filterType === "news") labels.push('Has Verified News');
-          if (activeCategory !== "all") {
-            const catOpt = mobileCatSelect.querySelector('option[value="' + activeCategory + '"]');
-            labels.push(catOpt ? catOpt.text.split('(')[0].trim() : activeCategory);
-          }
-          if (activeRegion !== "all") labels.push(activeRegion);
-          activeFilterLabel.textContent = labels.join(" &bull; ");
-        } else {
-          activeFilterBar.classList.add("hidden");
-        }
-      }
-
-      // Switch view mode if needed
-      if (currentViewMode === "news") {
-        grid.classList.add("hidden");
-        newsroom.classList.remove("hidden");
-        renderNewsroom(list.filter(p => p.has_news));
-        return;
-      } else {
-        grid.classList.remove("hidden");
-        newsroom.classList.add("hidden");
-      }
-
-      if (list.length === 0) {
-        grid.innerHTML = `
-          <div class="col-span-full py-14 text-center apple-glass-card rounded-3xl p-6 sm:p-8">
-            <div class="text-3xl mb-2">🔍</div>
-            <p class="text-lg font-bold text-white">No facilities match your search criteria.</p>
-            <p class="text-sm text-slate-400 mt-1">Try typing a city name like "Chandigarh", "Mumbai", "Lucknow", or clear filters.</p>
-            <button id="reset-in-empty-btn" class="mt-4 px-5 py-3 rounded-xl bg-amber-400 text-slate-950 font-bold text-xs uppercase tracking-wider hover:bg-amber-300 transition-all touch-pill">
-              Clear All Filters
-            </button>
-          </div>
-        `;
-        const rBtn = document.getElementById("reset-in-empty-btn");
-        if (rBtn) rBtn.addEventListener("click", resetAllFilters);
-        return;
-      }
-
-      grid.innerHTML = list.map(p => {
-        const isChandigarh = p.id === "IN-CH-01";
-        const isDefunct = p.category === "defunct";
-        const isCrossCheck = p.category === "cross_check";
-        const isFree = (p.charges || "").toLowerCase().includes("free") && !isDefunct && !isCrossCheck;
-
-        // Targeted YouTube query
-        const ytQuery = p.yt_query || ('"' + p.name + '" "' + p.city + '" skatepark');
-        const ytUrl = "https://www.youtube.com/results?search_query=" + encodeURIComponent(ytQuery);
-
-        // IN-CARD VERIFIED NEWS SECTION (Embedded right in the directory!)
-        let newsCardlet = "";
-        if (p.has_news && p.news_headline) {
-          newsCardlet = `
-            <div class="my-3.5 p-3.5 rounded-2xl bg-amber-400/[0.08] border border-amber-400/30 text-xs sm:text-sm">
-              <div class="flex items-center justify-between gap-2 mb-1.5">
-                <span class="inline-flex items-center gap-1 font-bold text-amber-300 uppercase tracking-wide text-[11px]">
-                  <span>📰 Verified Press:</span>
-                  <span class="underline decoration-amber-400/50">${p.news_publication}</span>
-                  ${p.news_date ? '<span class="text-slate-400 font-normal">(' + p.news_date + ')</span>' : ''}
-                </span>
-                <span class="text-[10px] font-mono font-bold text-emerald-400 bg-emerald-500/20 px-1.5 py-0.5 rounded border border-emerald-500/30">100% AUTHENTIC</span>
-              </div>
-              <div class="font-bold text-white text-xs sm:text-[13.5px] leading-snug mb-1">
-                ${p.news_headline}
-              </div>
-              <p class="text-xs text-slate-300/90 italic leading-relaxed mb-2.5">
-                "${p.news_quote.substring(0, 160)}..."
-              </p>
-              <div class="flex items-center gap-2">
-                <a href="${p.news_link}" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-lg bg-amber-400 text-slate-950 font-bold text-xs inline-flex items-center gap-1 hover:bg-amber-300 transition-all touch-pill">
-                  <span>Read on ${p.news_publication} &nearr;</span>
-                </a>
-                ${p.secondary_link ? `
-                  <a href="${p.secondary_link}" target="_blank" rel="noopener noreferrer" class="px-2.5 py-1.5 rounded-lg bg-white/10 text-cyan-300 hover:text-white font-semibold text-xs inline-flex items-center gap-1 transition-all touch-pill">
-                    <span>${p.secondary_publication} &nearr;</span>
-                  </a>
-                ` : ''}
-              </div>
-            </div>
-          `;
-        }
-
-        const cardClass = isChandigarh 
-          ? "apple-glass-card chandigarh-flagship-card rounded-3xl p-5 sm:p-7 flex flex-col justify-between group relative" 
-          : (isDefunct 
-              ? "apple-glass-card rounded-3xl p-5 sm:p-7 flex flex-col justify-between group opacity-80 border-dashed border-red-500/30" 
-              : "apple-glass-card rounded-3xl p-5 sm:p-7 flex flex-col justify-between group relative");
-
-        return `
-          <div class="${cardClass}">
-            <div>
-              ${isChandigarh ? `
-                <!-- Flagship Banner -->
-                <div class="mb-3 pb-2.5 border-b border-amber-400/30 flex items-center justify-between">
-                  <span class="text-xs font-black uppercase tracking-wider text-amber-300 flex items-center gap-1.5">
-                    <span>⭐ FLAGSHIP FACILITY &bull; JANVI JINDAL HOME TURF</span>
-                  </span>
-                  <span class="text-[10px] font-mono font-bold px-2 py-0.5 rounded bg-amber-400/20 text-amber-300 border border-amber-400/40">#1 IN INDIA</span>
-                </div>
-              ` : ''}
-
-              <!-- Top Status Badges -->
-              <div class="flex items-center justify-between mb-2.5">
-                <span class="px-2.5 py-1 text-xs font-bold uppercase tracking-wider rounded-lg ${
-                  isDefunct 
-                    ? 'bg-red-500/20 text-red-300 border border-red-500/40' 
-                    : (isCrossCheck 
-                        ? 'bg-amber-500/20 text-amber-300 border border-amber-500/40' 
-                        : (isFree 
-                            ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30' 
-                            : 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/30'))
-                }">
-                  ${p.access_badge || p.category_label}
-                </span>
-                <span class="text-xs text-slate-400 font-mono font-medium">${p.id}</span>
-              </div>
-
-              <!-- Title & Location (Mobile-Optimized Sizes) -->
-              <h3 class="text-xl sm:text-2xl font-display font-extrabold text-white group-hover:text-amber-300 transition-colors mb-1 leading-snug">
-                ${p.name}
-              </h3>
-              <p class="text-sm font-semibold text-amber-400/90 mb-3">📍 ${p.city}, ${p.state}</p>
-
-              <!-- In-Card Verified News (Directly in Directory) -->
-              ${newsCardlet}
-
-              <!-- Main Details -->
-              <div class="space-y-1.5 text-xs sm:text-sm text-slate-300 mb-3">
-                <p><strong class="text-slate-400 font-semibold">Address:</strong> ${p.address}</p>
-                <p><strong class="text-slate-400 font-semibold">Area:</strong> <span class="text-cyan-300 font-bold">${p.area_sqft ? p.area_sqft.toLocaleString() + ' sq. ft.' : 'Custom Plaza'}</span> &nbsp;|&nbsp; <strong class="text-slate-400 font-semibold">Admin:</strong> ${p.builder}</p>
-                <p><strong class="text-slate-400 font-semibold">Quality:</strong> ${p.quality}</p>
-                
-                <div class="bg-black/50 p-3 rounded-xl border border-white/10 text-xs sm:text-[13px] my-2 leading-relaxed">
-                  <strong class="text-amber-300 font-semibold">Obstacles:</strong> ${p.obstacles}
-                </div>
-              </div>
-
-              ${p.spot_insight ? `
-                <div class="mb-3 text-xs sm:text-[13px] text-slate-300/95 italic bg-white/[0.02] p-2.5 rounded-xl border border-white/5">
-                  💡 <span class="font-medium">${p.spot_insight}</span>
-                </div>
-              ` : ''}
-            </div>
-
-            <!-- Card Action Footer (Large Thumb Targets) -->
-            <div class="pt-3 border-t border-white/10 flex items-center justify-between gap-2 mt-2">
-              <a href="${p.maps_link}" target="_blank" rel="noopener noreferrer" class="flex-1 py-2.5 px-3 rounded-xl bg-white/[0.06] text-white hover:bg-white/[0.12] text-xs font-semibold border border-white/10 transition-all flex items-center justify-center gap-1.5 touch-pill" title="View location on Google Maps">
-                <span>📍 GPS Map</span>
-              </a>
-              <a href="${ytUrl}" target="_blank" rel="noopener noreferrer" class="flex-1 py-2.5 px-3 rounded-xl bg-red-500/15 text-red-300 hover:bg-red-500 hover:text-white text-xs font-semibold border border-red-500/30 transition-all flex items-center justify-center gap-1.5 touch-pill" title="Watch verified park skate videos">
-                <span>▶️ Videos</span>
-              </a>
-            </div>
-          </div>
-        `;
-      }).join("");
-    }
-
-    // Render Full Newsroom View when toggled
-    function renderNewsroom(newsParks) {
-      const newsroom = document.getElementById("newsroom-container");
-      if (!newsroom) return;
-
-      if (newsParks.length === 0) {
-        newsroom.innerHTML = `
-          <div class="py-12 text-center apple-glass-card rounded-3xl p-6">
-            <p class="text-base font-bold text-white">No facilities with verified press articles match your filter.</p>
-            <button id="reset-news-filter-btn" class="mt-4 px-4 py-2 rounded-xl bg-amber-400 text-slate-950 font-bold text-xs uppercase">Reset Filter</button>
-          </div>
-        `;
-        const rBtn = document.getElementById("reset-news-filter-btn");
-        if (rBtn) rBtn.addEventListener("click", resetAllFilters);
-        return;
-      }
-
-      newsroom.innerHTML = newsParks.map(p => {
-        return `
-          <article class="apple-glass-card ${p.id === 'IN-CH-01' ? 'chandigarh-flagship-card' : ''} rounded-3xl p-6 sm:p-8 relative">
-            <div class="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2.5 border-b border-white/10">
-              <div class="flex items-center gap-2">
-                <span class="px-2.5 py-1 rounded-md text-xs font-bold uppercase tracking-wider bg-amber-400/20 text-amber-300 border border-amber-400/30">
-                  ${p.news_publication}
-                </span>
-                <span class="text-xs text-slate-400">${p.news_date || ''}</span>
-              </div>
-              <span class="text-xs font-semibold text-amber-400">📍 ${p.city}, ${p.state}</span>
-            </div>
-
-            <h3 class="text-xl sm:text-2xl font-display font-extrabold text-white mb-2 leading-snug">
-              ${p.news_headline}
-            </h3>
-
-            <p class="text-xs sm:text-sm font-semibold text-slate-400 mb-3">Facility: <span class="text-white">${p.name}</span></p>
-
-            <div class="bg-black/50 p-4 rounded-2xl border border-white/10 text-xs sm:text-sm text-slate-200 leading-relaxed mb-4">
-              "${p.news_quote}"
-            </div>
-
-            <div class="flex flex-wrap items-center gap-3 pt-3 border-t border-white/10">
-              <a href="${p.news_link}" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl bg-amber-400 text-slate-950 font-bold text-xs uppercase tracking-wide hover:bg-amber-300 transition-all inline-flex items-center gap-1.5 touch-pill">
-                <span>Read Full Article on ${p.news_publication} &nearr;</span>
-              </a>
-              ${p.secondary_link ? `
-                <a href="${p.secondary_link}" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-xl bg-white/10 text-cyan-300 font-semibold text-xs hover:text-white transition-all inline-flex items-center gap-1.5 touch-pill">
-                  <span>${p.secondary_publication} &nearr;</span>
-                </a>
-              ` : ''}
-              <a href="${p.maps_link}" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-xl bg-white/[0.05] text-slate-300 hover:text-white text-xs font-semibold transition-all inline-flex items-center gap-1 touch-pill">
-                <span>📍 Map</span>
-              </a>
-            </div>
-          </article>
-        `;
-      }).join("");
-    }
-
-    // View Mode Toggle Handlers
-    const gridBtn = document.getElementById("view-mode-grid");
-    const newsBtn = document.getElementById("view-mode-news");
-
-    gridBtn.addEventListener("click", () => {
-      currentViewMode = "grid";
-      gridBtn.className = "px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-amber-400 text-slate-950 shadow-md transition-all flex items-center gap-1.5 touch-pill";
-      newsBtn.className = "px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-300 hover:text-white transition-all flex items-center gap-1.5 touch-pill";
-      renderCards();
-    });
-
-    newsBtn.addEventListener("click", () => {
-      currentViewMode = "news";
-      newsBtn.className = "px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-amber-400 text-slate-950 shadow-md transition-all flex items-center gap-1.5 touch-pill";
-      gridBtn.className = "px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-300 hover:text-white transition-all flex items-center gap-1.5 touch-pill";
-      renderCards();
-    });
-
-    // Reset All Filters
-    function resetAllFilters() {
-      activeCategory = "all";
-      activeRegion = "all";
-      searchQuery = "";
-      filterType = "all";
-      if (searchInput) searchInput.value = "";
-      if (clearBtn) clearBtn.classList.add("hidden");
-      if (mobileCatSelect) mobileCatSelect.value = "all";
-      if (mobileRegSelect) mobileRegSelect.value = "all";
-      updateDesktopChips();
-      updateQuickChips();
-      renderCards();
-    }
-
-    if (resetFilterBtn) resetFilterBtn.addEventListener("click", resetAllFilters);
-
-    // Search Input Logic
-    function handleSearchInput() {
-      searchQuery = searchInput.value.trim();
-      if (searchQuery.length > 0) {
-        clearBtn.classList.remove("hidden");
-      } else {
-        clearBtn.classList.add("hidden");
-      }
-      filterType = "all";
-      updateQuickChips();
-      renderCards();
-    }
-
-    if (searchInput) {
-      searchInput.addEventListener("input", handleSearchInput);
-      searchInput.addEventListener("keydown", (e) => {
-        if (e.key === "Enter") {
-          e.preventDefault();
-          handleSearchInput();
-          document.getElementById("directory").scrollIntoView({ behavior: "smooth" });
-        }
-      });
-    }
-
-    if (clearBtn) {
-      clearBtn.addEventListener("click", () => {
-        searchInput.value = "";
-        searchQuery = "";
-        clearBtn.classList.add("hidden");
-        renderCards();
-      });
-    }
-
-    if (searchActionBtn) {
-      searchActionBtn.addEventListener("click", () => {
-        handleSearchInput();
-        document.getElementById("directory").scrollIntoView({ behavior: "smooth" });
-      });
-    }
-
-    // Quick City & State Discovery Chips
-    function updateQuickChips() {
-      document.querySelectorAll(".quick-chip").forEach(chip => {
-        const q = chip.getAttribute("data-query");
-        const f = chip.getAttribute("data-filter-type");
-        const isMatchQ = q && searchQuery.toLowerCase() === q.toLowerCase();
-        const isMatchF = f && filterType === f;
-        if (isMatchQ || isMatchF) {
-          chip.classList.add("ring-2", "ring-amber-400", "bg-amber-400", "text-slate-950");
-        } else {
-          chip.classList.remove("ring-2", "ring-amber-400", "bg-amber-400", "text-slate-950");
-        }
-      });
-    }
-
-    document.querySelectorAll(".quick-chip").forEach(chip => {
-      chip.addEventListener("click", () => {
-        const q = chip.getAttribute("data-query");
-        const f = chip.getAttribute("data-filter-type");
-        if (q) {
-          searchQuery = q;
-          if (searchInput) searchInput.value = q;
-          if (clearBtn) clearBtn.classList.remove("hidden");
-          filterType = "all";
-        } else if (f) {
-          filterType = f;
-          searchQuery = "";
-          if (searchInput) searchInput.value = "";
-          if (clearBtn) clearBtn.classList.add("hidden");
-        }
-        updateQuickChips();
-        renderCards();
-        document.getElementById("directory").scrollIntoView({ behavior: "smooth" });
-      });
-    });
-
-    // Mobile Select Dropdown Handlers
-    if (mobileCatSelect) {
-      mobileCatSelect.addEventListener("change", (e) => {
-        activeCategory = e.target.value;
-        updateDesktopChips();
-        renderCards();
-      });
-    }
-
-    if (mobileRegSelect) {
-      mobileRegSelect.addEventListener("change", (e) => {
-        activeRegion = e.target.value;
-        updateDesktopChips();
-        renderCards();
-      });
-    }
-
-    // Desktop Chips Handlers
-    function updateDesktopChips() {
-      document.querySelectorAll(".cat-pill-btn").forEach(btn => {
-        const cat = btn.getAttribute("data-cat");
-        if (cat === activeCategory) {
-          btn.className = "cat-pill-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-amber-400 text-slate-950 transition-all";
-        } else {
-          btn.className = "cat-pill-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white/[0.04] text-slate-300 hover:bg-white/[0.08] transition-all";
-        }
-      });
-
-      document.querySelectorAll(".reg-pill-btn").forEach(btn => {
-        const reg = btn.getAttribute("data-reg");
-        if (reg === activeRegion) {
-          btn.className = "reg-pill-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-white/20 text-white transition-all";
-        } else {
-          btn.className = "reg-pill-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white/[0.04] text-slate-300 hover:bg-white/[0.08] transition-all";
-        }
-      });
-    }
-
-    document.querySelectorAll(".cat-pill-btn").forEach(btn => {
-      btn.addEventListener("click", () => {
-        activeCategory = btn.getAttribute("data-cat");
-        if (mobileCatSelect) mobileCatSelect.value = activeCategory;
-        updateDesktopChips();
-        renderCards();
-      });
-    });
-
-    document.querySelectorAll(".reg-pill-btn").forEach(btn => {
-      btn.addEventListener("click", () => {
-        activeRegion = btn.getAttribute("data-reg");
-        if (mobileRegSelect) mobileRegSelect.value = activeRegion;
-        updateDesktopChips();
-        renderCards();
-      });
-    });
-
-    // Content Protection
     let toastTimeout;
     function showToast(msg) {
       const toast = document.getElementById("copy-protection-toast");
@@ -1039,7 +543,6 @@
         toast.classList.add("translate-y-24", "opacity-0");
       }, 2500);
     }
-
     document.addEventListener("contextmenu", (e) => { e.preventDefault(); showToast("Protected Registry • Right-click menu is disabled."); return false; });
     document.addEventListener("copy", (e) => { e.preventDefault(); showToast("Protected Registry • Copying text is disabled."); return false; });
     document.addEventListener("cut", (e) => { e.preventDefault(); return false; });
@@ -1048,19 +551,13 @@
       const isCmdOrCtrl = e.metaKey || e.ctrlKey;
       const key = e.key.toLowerCase();
       if (isCmdOrCtrl && key === "s") { e.preventDefault(); showToast("Protected Registry • Saving this web page is disabled."); return false; }
-      if (isCmdOrCtrl && key === "c" && document.activeElement.tagName !== "INPUT" && document.activeElement.tagName !== "SELECT") { e.preventDefault(); showToast("Protected Registry • Copying text is disabled."); return false; }
+      if (isCmdOrCtrl && key === "c" && document.activeElement.tagName !== "INPUT") { e.preventDefault(); showToast("Protected Registry • Copying text is disabled."); return false; }
       if (isCmdOrCtrl && key === "p") { e.preventDefault(); showToast("Protected Registry • Printing is disabled."); return false; }
       if (isCmdOrCtrl && key === "u") { e.preventDefault(); showToast("Protected Registry • Source view is restricted."); return false; }
       if (e.key === "F12" || (isCmdOrCtrl && e.shiftKey && (key === "i" || key === "j" || key === "c")) || (e.metaKey && e.altKey && (key === "i" || key === "j" || key === "c"))) {
         e.preventDefault(); showToast("Protected Registry • Developer inspect tools restricted."); return false;
       }
     });
-
-    document.addEventListener("DOMContentLoaded", () => {
-      updateDesktopChips();
-      renderCards();
-    });
   </script>
-
 </body>
 </html>
