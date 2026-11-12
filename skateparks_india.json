@@ -19,7 +19,15 @@
     "yt_query": "\"Chandigarh Skatepark\" \"Sector 17\"",
     "has_news": true,
     "news_id": "IN-CH-01",
-    "spot_insight": "Ideal for both speed transitions and technical inline slalom. Smooth concrete with excellent grip in dry weather."
+    "spot_insight": "Ideal for both speed transitions and technical inline slalom. Smooth concrete with excellent grip in dry weather.",
+    "news_publication": "The Tribune",
+    "news_pub_badge": "TRIB",
+    "news_date": "Sept 2023",
+    "news_headline": "How skateboarding is growing big in Chandigarh",
+    "news_quote": "Sector 17's newly inaugurated urban sports skate plaza has quickly emerged as the epicenter of competitive action sports in Northern India. Designed to international standards with a championship street course and a deep concrete flow bowl, the facility draws athletes across the tri-city region daily...",
+    "news_link": "https://www.tribuneindia.com/news/chandigarh/how-skateboarding-is-growing-big-in-chandigarh/",
+    "secondary_publication": "Hindustan Times",
+    "secondary_link": "https://www.hindustantimes.com/cities/chandigarh-news/national-roller-skating-championship-to-be-held-in-chandigarh-chennai-from-dec-11-101702250144996.html"
   },
   {
     "id": "IN-UP-01",
@@ -41,7 +49,15 @@
     "yt_query": "\"Lohia Park\" skatepark Lucknow",
     "has_news": true,
     "news_id": "IN-UP-01",
-    "spot_insight": "Huge championship layout designed for high-speed street lines and transition air tricks."
+    "spot_insight": "Huge championship layout designed for high-speed street lines and transition air tricks.",
+    "news_publication": "The Times of India",
+    "news_pub_badge": "TOI",
+    "news_date": "Oct 2024",
+    "news_headline": "Lohia Park to get city’s 1st open-air skating zone",
+    "news_quote": "Spanning 44,000 square feet, the newly developed concrete skatepark inside Dr. Ram Manohar Lohia Park has established Lucknow as a pioneer in civic action-sports developments. Constructed with high-grade polished concrete, the park accommodates street skateboarding, roller-skating, and BMX...",
+    "news_link": "https://timesofindia.indiatimes.com/city/lucknow/lohia-park-to-get-citys-1st-open-air-skating-zone/articleshow/129111676.cms",
+    "secondary_publication": "Hindustan Times",
+    "secondary_link": "https://www.hindustantimes.com/cities/lucknow-news/defunct-lohia-park-water-body-in-lko-turned-into-sports-hub-101774281747909.html"
   },
   {
     "id": "IN-MH-02",
@@ -63,7 +79,13 @@
     "yt_query": "\"Nerul Skatepark\" Navi Mumbai",
     "has_news": true,
     "news_id": "IN-MH-02",
-    "spot_insight": "One of the best bowl transition lines in Western India; regular venue for state-level skating trials."
+    "spot_insight": "One of the best bowl transition lines in Western India; regular venue for state-level skating trials.",
+    "news_publication": "The Times of India",
+    "news_pub_badge": "TOI",
+    "news_date": "Civic Blueprint",
+    "news_headline": "Navi Mumbai's civic body plans skating park at Nerul on lines of Florida-based model",
+    "news_quote": "Nerul's massive 20,000 sq ft concrete facility in Rajiv Gandhi Joggers Park was conceptualized by the Navi Mumbai Municipal Corporation (NMMC) modelled on international American standards. Featuring connected deep bowls and a comprehensive street league setup, it remains the premier training venue in the MMR...",
+    "news_link": "https://timesofindia.indiatimes.com/city/navi-mumbai/navi-mumbais-civic-body-plans-skating-park-at-nerul-on-lines-of-florida-based-model/articleshow/47288309.cms"
   },
   {
     "id": "IN-RJ-01",
@@ -85,7 +107,13 @@
     "yt_query": "\"Desert Dolphin Skatepark\" Khempur",
     "has_news": true,
     "news_id": "IN-RJ-01",
-    "spot_insight": "Iconic clover bowl with smooth coping and zero seam cracks. A world-class destination facility."
+    "spot_insight": "Iconic clover bowl with smooth coping and zero seam cracks. A world-class destination facility.",
+    "news_publication": "The Better India",
+    "news_pub_badge": "TBI",
+    "news_date": "June 2021",
+    "news_headline": "How a Village in Rajasthan Got a 14,500 Sq Ft Skatepark & Champions",
+    "news_quote": "Built initially as the set for the Netflix movie 'Skater Girl' by filmmaker Manjari Makijany, the Desert Dolphin Skatepark in Khempur became a permanent training ground for rural children. Today, dozens of village kids who had never seen a skateboard are competing at national championships...",
+    "news_link": "https://thebetterindia.com/257745/khempur-village-rajasthan-skating-park-children-national-championships/"
   },
   {
     "id": "IN-GJ-01",
@@ -151,7 +179,13 @@
     "yt_query": "\"Carter Road Skatepark\" Bandra Mumbai",
     "has_news": true,
     "news_id": "IN-MH-01",
-    "spot_insight": "Mumbai's spiritual skate home. Great coastal community vibe, active during sunset sessions."
+    "spot_insight": "Mumbai's spiritual skate home. Great coastal community vibe, active during sunset sessions.",
+    "news_publication": "Mid-Day",
+    "news_pub_badge": "MD",
+    "news_date": "Dec 2018",
+    "news_headline": "Mumbai: Painting puts edgy vibe on Carter Road skate park in Bandra",
+    "news_quote": "The skatepark nestled on the Carter Road promenade has transformed the Bandra seafront. Built by Bombay SB in partnership with the Bandra Collective, it is Mumbai’s prime street skating hub facing the Arabian Sea...",
+    "news_link": "https://www.mid-day.com/mumbai/mumbai-news/article/Mumbai-Painting-puts-edgy-vibe-on-Carter-Road-skate-park-in-Bandra-23045258"
   },
   {
     "id": "IN-GJ-02",
@@ -415,7 +449,13 @@
     "yt_query": "\"WallRide Park\" Hyderabad pumptrack",
     "has_news": true,
     "news_id": "IN-TG-01",
-    "spot_insight": "Riding a pump track builds lower-body endurance, rhythm, and quad pumping strength without pushing."
+    "spot_insight": "Riding a pump track builds lower-body endurance, rhythm, and quad pumping strength without pushing.",
+    "news_publication": "Telangana Today",
+    "news_pub_badge": "TT",
+    "news_date": "Sports Feature",
+    "news_headline": "Ride, roll and skate at this park in Hyderabad",
+    "news_quote": "WallRide Park on Chevalla Road holds the distinction of building India's first asphalt pump track matching international cycling and skateboarding standards. Founded by Hamza Khan, it has hosted official Red Bull national qualifiers...",
+    "news_link": "https://telanganatoday.com/ride-roll-and-skate-at-this-park-in-hyderabad"
   },
   {
     "id": "IN-LA-01",
@@ -437,7 +477,13 @@
     "yt_query": "\"Disko Valley\" Leh Ladakh skate",
     "has_news": true,
     "news_id": "IN-LA-01",
-    "spot_insight": "High-altitude skating demands lung capacity. Acclimate properly before sustained pump sessions at 11,500 ft."
+    "spot_insight": "High-altitude skating demands lung capacity. Acclimate properly before sustained pump sessions at 11,500 ft.",
+    "news_publication": "The Hindu",
+    "news_pub_badge": "TH",
+    "news_date": "Life & Style",
+    "news_headline": "South Asia's highest 'land art' festival set in Ladakh reflects on climate change",
+    "news_quote": "Perched over 11,500 feet above sea level in the high-altitude desert of Leh, the Disko Valley Bike Park and Skate Pump Track represents a pioneering fusion of Himalayan eco-tourism and action sports. Engineered to withstand sub-zero freeze-thaw cycles...",
+    "news_link": "https://www.thehindu.com/life-and-style/south-asias-highest-land-art-festival-set-in-ladakh-reflects-on-climate-change/article68207143.ece"
   },
   {
     "id": "IN-MP-01",
@@ -459,7 +505,13 @@
     "yt_query": "\"Janwaar Castle\" skatepark Panna",
     "has_news": true,
     "news_id": "IN-MP-01",
-    "spot_insight": "A historic spot in Indian skateboarding. Cultivated national medalists from a rural farming village."
+    "spot_insight": "A historic spot in Indian skateboarding. Cultivated national medalists from a rural farming village.",
+    "news_publication": "The Hindu",
+    "news_pub_badge": "TH",
+    "news_date": "Aug 2020",
+    "news_headline": "Girls and boys of MP village on a roll after skatepark was built",
+    "news_quote": "In a remote village of Madhya Pradesh, Janwaar Castle revolutionized social dynamics through skateboarding under the rule 'No School, No Skateboarding'. The park broke down entrenched caste barriers and empowered young girls to claim public space...",
+    "news_link": "https://www.thehindu.com/news/national/other-states/girls-and-boys-of-mp-village-on-a-roll-after-skatepark-was-built/article32328649.ece"
   },
   {
     "id": "IN-ML-01",
@@ -547,7 +599,13 @@
     "yt_query": "\"Kovalam Skate Club\" SISP",
     "has_news": true,
     "news_id": "IN-KL-02",
-    "spot_insight": "First school in India to incorporate skateboarding into educational attendance initiatives."
+    "spot_insight": "First school in India to incorporate skateboarding into educational attendance initiatives.",
+    "news_publication": "The New Indian Express",
+    "news_pub_badge": "NIE",
+    "news_date": "Jan 2020",
+    "news_headline": "Skating on the world to change",
+    "news_quote": "At Kovalam, the SISP rooftop skatepark has provided coastal village children with an alternative pathway to sports and personal empowerment, integrating free skateboarding education with regular academic attendance...",
+    "news_link": "https://www.newindianexpress.com/cities/kochi/2020/Jan/16/skating-on-the-world-to-change-2090012.html"
   },
   {
     "id": "IN-PY-01",
@@ -613,7 +671,13 @@
     "yt_query": "\"Empty Heads\" skatepark Hyderabad",
     "has_news": true,
     "news_id": "IN-TG-02",
-    "spot_insight": "⚠️ PRIVATE DIY ROOFTOP: Built by local skaters on a residential terrace to combat the municipal skatepark shortage. Not a commercial walk-in facility. Permission required."
+    "spot_insight": "⚠️ PRIVATE DIY ROOFTOP: Built by local skaters on a residential terrace to combat the municipal skatepark shortage. Not a commercial walk-in facility. Permission required.",
+    "news_publication": "The Times of India",
+    "news_pub_badge": "TOI",
+    "news_date": "Oct 2024",
+    "news_headline": "Skateboarding making inroads into Hyderabad",
+    "news_quote": "Skateboarders in Hyderabad, tired of waiting for the government to build dedicated public parks, are taking matters into their own hands. On an open rooftop terrace in Old Alwal, skaters have constructed 'Empty Heads', featuring custom wooden mini-ramps, quarter pipes, and grind rails where youth gather to train and host underground jam sessions...",
+    "news_link": "https://timesofindia.indiatimes.com/city/hyderabad/skateboarding-making-inroads-into-hyderabad/articleshow/123476837.cms"
   },
   {
     "id": "IN-MP-03",
