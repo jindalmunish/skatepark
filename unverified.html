@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Under Investigation &bull; Unverified Skateparks Registry India</title>
+  <meta name="description" content="Development & Research Hub: Catalog of unverified skateparks, civic proposals, community DIY spots, and private ramps across India undergoing ground verification.">
+  <meta name="robots" content="noindex, follow">
+
+  <!-- Typography & Framework -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            display: ['"Space Grotesk"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              gold: '#F59E0B',
+              amber: '#D97706',
+              cyan: '#06B6D4',
+              surface: '#0B0D14',
+              surfaceCard: '#121624',
+              border: 'rgba(255, 255, 255, 0.08)'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Protection & Anti-Copy Rules */
+    body {
+      -webkit-user-select: none !important;
+      -moz-user-select: none !important;
+      -ms-user-select: none !important;
+      user-select: none !important;
+      -webkit-touch-callout: none !important;
+    }
+    input, textarea, select {
+      -webkit-user-select: auto !important;
+      user-select: auto !important;
+    }
+    img {
+      -webkit-user-drag: none !important;
+      pointer-events: none !important;
+    }
+    @media print {
+      html, body {
+        display: none !important;
+        visibility: hidden !important;
+      }
+    }
+
+    /* Apple Pro Dark Canvas */
+    :root {
+      --apple-canvas: #050508;
+      --apple-card-bg: rgba(255, 255, 255, 0.035);
+      --apple-card-hover: rgba(255, 255, 255, 0.06);
+      --apple-border: rgba(255, 255, 255, 0.1);
+    }
+
+    body {
+      background-color: var(--apple-canvas);
+      background-image: 
+        radial-gradient(ellipse 90% 55% at 50% -5%, rgba(245, 158, 11, 0.09) 0%, transparent 60%),
+        radial-gradient(ellipse 70% 50% at 90% 25%, rgba(6, 182, 212, 0.07) 0%, transparent 50%),
+        radial-gradient(ellipse 60% 40% at 10% 70%, rgba(239, 68, 68, 0.05) 0%, transparent 50%);
+      background-attachment: fixed;
+    }
+
+    .apple-glass-card {
+      background: var(--apple-card-bg);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid var(--apple-border);
+      box-shadow: 0 4px 24px -2px rgba(0, 0, 0, 0.5), inset 0 1px 0 0 rgba(255, 255, 255, 0.08);
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
+                  border-color 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
+                  box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+                  background 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      .apple-glass-card:hover {
+        transform: translateY(-4px);
+        background: var(--apple-card-hover);
+        border-color: rgba(245, 158, 11, 0.4);
+        box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.75), 
+                    0 0 25px -4px rgba(245, 158, 11, 0.1),
+                    inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
+      }
+    }
+
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+    .touch-pill {
+      min-height: 44px;
+      touch-action: manipulation;
+    }
+  </style>
+</head>
+<body class="text-slate-100 font-sans antialiased selection:bg-none" oncontextmenu="return false;">
+
+  <!-- Anti-Copy Toast -->
+  <div id="copy-protection-toast" class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none">
+    <div class="flex items-center gap-3 px-5 py-3.5 rounded-2xl bg-slate-900/95 border border-amber-500/50 text-amber-300 shadow-2xl backdrop-blur-xl text-sm font-semibold">
+      <span class="text-lg">🔒</span>
+      <span>Protected Registry &bull; Content copying and downloading are disabled.</span>
+    </div>
+  </div>
+
+  <!-- Top Sticky Navigation Bar -->
+  <nav class="sticky top-0 z-40 bg-[#050508]/90 backdrop-blur-2xl border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
+      
+      <!-- Back to Directory / Overview -->
+      <div class="flex items-center gap-3">
+        <a href="directory.html" class="px-3.5 py-2 rounded-xl bg-white/[0.06] hover:bg-white/[0.12] border border-white/10 text-xs sm:text-sm font-bold text-slate-200 transition-all flex items-center gap-1.5 touch-pill" title="Back to Facilities Directory">
+          <span>&larr; Verified Directory</span>
+        </a>
+        <div class="min-w-0">
+          <span class="font-display font-black text-base sm:text-lg text-white tracking-tight truncate block">
+            UNVERIFIED LEADS REGISTRY
+          </span>
+          <span class="hidden sm:block text-[11px] text-amber-400 font-medium">Development &amp; Investigation Hub</span>
+        </div>
+      </div>
+
+      <!-- Live Leads Counter -->
+      <div class="flex items-center gap-2">
+        <div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-xs text-amber-300">
+          <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+          <span id="leads-counter-pill" class="font-bold text-white">12</span>
+          <span class="text-slate-400">Under Review</span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTAINER -->
+  <main class="py-8 sm:py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- DEVELOPMENT STAGE NOTICE BANNER -->
+      <div class="apple-glass-card p-5 sm:p-7 rounded-3xl border-2 border-amber-400/40 bg-gradient-to-r from-amber-500/10 via-black/40 to-cyan-500/10 mb-8 sm:mb-10">
+        <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-5">
+          <div class="space-y-2">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-400/20 text-amber-300 text-xs font-black uppercase tracking-wider">
+              <span>⚠️ Development &amp; Research Stage</span>
+            </div>
+            <h1 class="text-2xl sm:text-3xl font-display font-black text-white">
+              Under-Investigation Spots &amp; Community Leads
+            </h1>
+            <p class="text-sm sm:text-base text-slate-300 max-w-3xl leading-relaxed">
+              To guarantee 100% integrity on the primary <a href="directory.html" class="text-amber-400 font-bold underline">Verified Directory</a>, an entry requires verified GPS coordinates, builder confirmation (such as 100 Ramps), civic tenders, or verified news. The <span class="text-white font-bold">12 locations</span> below represent community-reported DIY spots, unconfirmed municipal announcements, and private setups awaiting ground proof.
+            </p>
+          </div>
+          <div class="shrink-0 flex flex-col gap-2 w-full md:w-auto">
+            <a href="#how-to-verify" class="px-4 py-2.5 rounded-xl bg-amber-400 text-slate-950 font-bold text-xs uppercase tracking-wider text-center hover:bg-amber-300 transition-all shadow-md touch-pill flex items-center justify-center gap-2">
+              <span>📋 Verification Checklist</span>
+            </a>
+            <a href="directory.html" class="px-4 py-2.5 rounded-xl bg-white/[0.08] hover:bg-white/[0.14] text-white font-bold text-xs uppercase tracking-wider text-center border border-white/10 transition-all touch-pill flex items-center justify-center gap-2">
+              <span>🏛️ Back to 39 Verified Spots</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 4 Essential Proof Criteria -->
+        <div class="mt-6 pt-5 border-t border-white/10 grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
+          <div class="p-3 rounded-xl bg-black/40 border border-white/10">
+            <span class="block text-amber-400 font-bold mb-0.5">1. Exact GPS Pin</span>
+            <span class="text-slate-400 text-[11px]">Google Maps satellite coordinate or live pin.</span>
+          </div>
+          <div class="p-3 rounded-xl bg-black/40 border border-white/10">
+            <span class="block text-cyan-400 font-bold mb-0.5">2. Transition Photos</span>
+            <span class="text-slate-400 text-[11px]">Ground/drone photo of concrete bowl or ramps.</span>
+          </div>
+          <div class="p-3 rounded-xl bg-black/40 border border-white/10">
+            <span class="block text-emerald-400 font-bold mb-0.5">3. Builder / Tender</span>
+            <span class="text-slate-400 text-[11px]">Contractor identity, tender notice, or press report.</span>
+          </div>
+          <div class="p-3 rounded-xl bg-black/40 border border-white/10">
+            <span class="block text-purple-400 font-bold mb-0.5">4. Access Rules</span>
+            <span class="text-slate-400 text-[11px]">Free public, academy fees, or private property.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- SEARCH & FILTER BAR FOR UNVERIFIED LEADS -->
+      <div class="p-2 sm:p-2.5 rounded-3xl bg-white/[0.04] border border-white/15 backdrop-blur-2xl mb-8">
+        <div class="relative flex items-center">
+          <span class="absolute left-4 text-slate-400 text-lg pointer-events-none">🔍</span>
+          <input 
+            type="text" 
+            id="unv-search-input" 
+            placeholder="Search leads by city, state, or name (e.g. Bangalore, Goa, Surat, Decathlon...)"
+            class="w-full pl-11 pr-10 py-3.5 rounded-2xl bg-black/60 border border-white/10 text-white placeholder-slate-400 text-base focus:outline-none focus:border-amber-400 transition-all"
+            style="font-size: 16px;" 
+          />
+          <button id="unv-clear-btn" class="absolute right-3 w-8 h-8 rounded-full bg-white/10 text-slate-300 hover:text-white flex items-center justify-center text-sm hidden">
+            ✕
+          </button>
+        </div>
+
+        <!-- Filter Chips -->
+        <div class="mt-3 pt-3 border-t border-white/10 flex items-center gap-2 overflow-x-auto no-scrollbar py-1 text-xs">
+          <button class="unv-chip shrink-0 px-3.5 py-2 rounded-xl font-bold bg-amber-400 text-slate-950 transition-all touch-pill flex items-center gap-1" data-filter="all">
+            <span>🔍 All Leads (12)</span>
+          </button>
+          <button class="unv-chip shrink-0 px-3.5 py-2 rounded-xl font-semibold bg-white/[0.05] text-slate-300 border border-white/10 hover:border-amber-400/50 hover:text-white transition-all touch-pill flex items-center gap-1" data-filter="civic">
+            <span>🏛️ Municipal Proposals</span>
+          </button>
+          <button class="unv-chip shrink-0 px-3.5 py-2 rounded-xl font-semibold bg-white/[0.05] text-slate-300 border border-white/10 hover:border-amber-400/50 hover:text-white transition-all touch-pill flex items-center gap-1" data-filter="diy">
+            <span>🛠️ Grassroots / DIY</span>
+          </button>
+          <button class="unv-chip shrink-0 px-3.5 py-2 rounded-xl font-semibold bg-white/[0.05] text-slate-300 border border-white/10 hover:border-amber-400/50 hover:text-white transition-all touch-pill flex items-center gap-1" data-filter="retail">
+            <span>🏢 Retail &amp; Commercial</span>
+          </button>
+          <button class="unv-chip shrink-0 px-3.5 py-2 rounded-xl font-semibold bg-white/[0.05] text-slate-300 border border-white/10 hover:border-amber-400/50 hover:text-white transition-all touch-pill flex items-center gap-1" data-filter="private">
+            <span>🏡 Private Setups</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- LEADS GRID -->
+      <div id="unv-leads-grid" class="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6">
+        <!-- Rendered Dynamically -->
+      </div>
+
+      <!-- HOW TO VERIFY & SUBMIT SECTION -->
+      <section id="how-to-verify" class="mt-14 pt-10 border-t border-white/10">
+        <div class="apple-glass-card p-6 sm:p-8 rounded-3xl border border-white/15">
+          <div class="max-w-3xl">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-400/20 text-cyan-300 text-xs font-bold uppercase tracking-wider mb-3">
+              <span>🤝 Community Collaboration</span>
+            </div>
+            <h2 class="text-xl sm:text-2xl font-display font-black text-white">
+              Know of Another Park or Have Ground Proof?
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
+              If you skate at any of the unverified locations above, or know of a new public skatepark, concrete bowl, or pump track anywhere in India that is not yet on our registry, help us document it.
+            </p>
+            <div class="mt-4 p-4 rounded-2xl bg-black/50 border border-white/10 text-xs space-y-2">
+              <p class="text-slate-300"><strong class="text-white">Required for verification:</strong> 1. Exact Google Maps Pin &bull; 2. Ground photos or video of the ramps &bull; 3. Builder name (if known) &bull; 4. Whether access is public/free or paid.</p>
+              <p class="text-amber-400 font-semibold">Once verified, the spot will be assigned an official National Facility Code (e.g. IN-KA-05) and published directly to the master directory.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Clean Footer -->
+  <footer class="py-12 border-t border-white/10 text-center text-xs sm:text-sm text-slate-400">
+    <div class="max-w-7xl mx-auto px-4">
+      <p>&copy; 2026 Skateparks of India &bull; National Action Sports Infrastructure Registry</p>
+      <div class="mt-4 flex items-center justify-center gap-4 text-xs font-semibold text-slate-400">
+        <a href="index.html" class="hover:text-amber-400 transition-colors">&larr; Main Overview</a>
+        <span>&bull;</span>
+        <a href="directory.html" class="hover:text-amber-400 transition-colors">Verified Facilities Directory (39)</a>
+        <span>&bull;</span>
+        <a href="news.html" class="hover:text-amber-400 transition-colors">Press Archive</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- INVESTIGATION DATABASE & CLIENT SCRIPT -->
+  <script>
+    const unverifiedLeads = [
+      {
+        id: "UNV-KA-01",
+        name: "Decathlon Anubhava Skatepark & Pumptrack",
+        city: "Bengaluru",
+        state: "Karnataka",
+        region: "South India",
+        type: "retail",
+        type_label: "Commercial Brand Area",
+        status: "Needs Recent Ground Photo Proof",
+        status_color: "amber",
+        clues: "Multiple Bengaluru skaters mention outdoor asphalt/concrete pump contours and ramp structures situated behind Decathlon Anubhava on Airport Road (Chikkajala). Need confirmation if it remains operational or was repurposed for retail parking.",
+        what_is_needed: "Recent geotagged photo of skateable surface, confirmation if public entry is open during store hours.",
+        search_query: "Decathlon Anubhava skatepark Bangalore",
+        maps_query: "Decathlon Anubhava Chikkajala Bangalore",
+        yt_query: "Decathlon Anubhava skatepark Bangalore"
+      },
+      {
+        id: "UNV-HR-01",
+        name: "Decathlon Sohna Road Wooden Ramps",
+        city: "Gurugram",
+        state: "Haryana",
+        region: "North India",
+        type: "retail",
+        type_label: "Commercial Retail Ramps",
+        status: "Needs Operational Status Check",
+        status_color: "amber",
+        clues: "Skaters in NCR reported a wooden mini ramp and flatground practice box installed in the rear lot of Decathlon Sohna Road. Unclear if it is permanently maintained or dismantled.",
+        what_is_needed: "Confirmation whether wooden ramps still exist on site, or if removed.",
+        search_query: "Decathlon Sohna Road skate ramp Gurgaon",
+        maps_query: "Decathlon Sohna Road Sector 48 Gurgaon",
+        yt_query: "Decathlon Gurgaon skate ramp"
+      },
+      {
+        id: "UNV-WB-01",
+        name: "Salt Lake Stadium Outer Concourse / Karunamoyee DIY",
+        city: "Kolkata",
+        state: "West Bengal",
+        region: "East & North-East India",
+        type: "diy",
+        type_label: "Grassroots DIY Street Spot",
+        status: "Street Meetup (No Permanent Concrete Park)",
+        status_color: "cyan",
+        clues: "Active Kolkata skateboarding scene meets regularly on the smooth stone concourses around Salt Lake Stadium and Karunamoyee. Skaters bring movable flatbars and wooden kickers.",
+        what_is_needed: "Verification whether Kolkata Municipal Corporation or sports authority has sanctioned any permanent concrete obstacles.",
+        search_query: "Kolkata skateboarding Salt Lake stadium",
+        maps_query: "Salt Lake Stadium Kolkata",
+        yt_query: "Kolkata skateboarders Salt Lake Karunamoyee"
+      },
+      {
+        id: "UNV-PY-01",
+        name: "Pondicherry Promenade Beach DIY Ledges",
+        city: "Puducherry",
+        state: "Puducherry (UT)",
+        region: "South India",
+        type: "diy",
+        type_label: "Coastal Street Spot",
+        status: "Unenclosed Public Promenade",
+        status_color: "cyan",
+        clues: "Promenade Beach / Goubert Avenue offers a long vehicle-free pedestrian stretch during mornings and evenings. Coastal skaters use municipal granite ledges and steps.",
+        what_is_needed: "Confirmation whether any designated municipal skate bowl exists in Pondicherry urban plans.",
+        search_query: "Pondicherry skateboarding Promenade Beach",
+        maps_query: "Promenade Beach White Town Pondicherry",
+        yt_query: "skateboarding Pondicherry beach"
+      },
+      {
+        id: "UNV-GA-01",
+        name: "Arambol & Morjim Private Guesthouse Bowls",
+        city: "North Goa (Morjim / Arambol)",
+        state: "Goa",
+        region: "West India",
+        type: "private",
+        type_label: "Private Backyard Bowls",
+        status: "Unconfirmed Private Properties",
+        status_color: "purple",
+        clues: "Multiple backpacker blogs reference 1-2 small concrete micro-bowls hand-poured in the backyards of bohemian guesthouses along the Arambol/Morjim beach belt by visiting European skateboarders.",
+        what_is_needed: "Specific property or cafe names, GPS location, and confirmation if current owners permit public or patron skating.",
+        search_query: "Goa Arambol Morjim backyard skate bowl",
+        maps_query: "Arambol Goa skate bowl",
+        yt_query: "Arambol skate bowl Goa"
+      },
+      {
+        id: "UNV-GJ-01",
+        name: "Surat Smart City Action Sports Complex",
+        city: "Surat",
+        state: "Gujarat",
+        region: "West India",
+        type: "civic",
+        type_label: "Municipal Civic Proposal",
+        status: "Tender Stage / Under Civic Review",
+        status_color: "amber",
+        clues: "Surat Municipal Corporation (SMC) floated blueprints for a multi-discipline outdoor sports complex along Dumas Road / Vesu that included a dedicated roller-skating rink and skateboarding transition bowl.",
+        what_is_needed: "Tender execution status, ground construction photos to determine if concrete bowl has been poured.",
+        search_query: "Surat Smart City skatepark tender Dumas road",
+        maps_query: "Surat Municipal Corporation Sports Complex Vesu",
+        yt_query: "Surat skatepark construction Dumas"
+      },
+      {
+        id: "UNV-MP-01",
+        name: "Indore Smart City Sports Plaza",
+        city: "Indore",
+        state: "Madhya Pradesh",
+        region: "Central India",
+        type: "civic",
+        type_label: "Civic Smart City Proposal",
+        status: "Municipal Planning Stage",
+        status_color: "amber",
+        clues: "Indore Smart City Development Limited announced plans to incorporate youth adventure zones and skateable concrete contours in upcoming public parks around Pipliyapala / Nehru Park.",
+        what_is_needed: "Official Smart City Indore tender copy or ground photos confirming if construction has commenced.",
+        search_query: "Indore Smart City skatepark proposal",
+        maps_query: "Regional Park Pipliyapala Indore",
+        yt_query: "Indore skateboarders sports park"
+      },
+      {
+        id: "UNV-TN-01",
+        name: "VOC Park Roller Skating Rink DIY",
+        city: "Coimbatore",
+        state: "Tamil Nadu",
+        region: "South India",
+        type: "diy",
+        type_label: "Municipal Rink with Community Additions",
+        status: "Speed Rink (Need Transition Verification)",
+        status_color: "cyan",
+        clues: "The historic VOC Park grounds house a municipal roller skating speed ring. Local skateboarders have reportedly introduced movable steel flat rails for street practice.",
+        what_is_needed: "Confirmation if any permanent transition ramps or bowls exist, or strictly flat oval speed track.",
+        search_query: "VOC Park skating rink Coimbatore skateboarding",
+        maps_query: "VOC Park and Zoo Coimbatore",
+        yt_query: "Coimbatore skating rink VOC park"
+      },
+      {
+        id: "UNV-RJ-01",
+        name: "Mansarovar City Park Skate Zone Proposal",
+        city: "Jaipur",
+        state: "Rajasthan",
+        region: "North India",
+        type: "civic",
+        type_label: "Jaipur Development Authority (JDA)",
+        status: "Civic Proposal Phase 2",
+        status_color: "amber",
+        clues: "Jaipur Development Authority (JDA) announced Phase 2 recreational additions for the prestigious Mansarovar City Park, mentioning a dedicated youth action-sports court.",
+        what_is_needed: "Site inspection to verify if concrete ramps or pump waves have been constructed in Phase 2.",
+        search_query: "Jaipur Mansarovar City Park skateboarding JDA",
+        maps_query: "City Park Mansarovar Jaipur",
+        yt_query: "Mansarovar City Park Jaipur sports"
+      },
+      {
+        id: "UNV-KL-01",
+        name: "Marine Drive Waterfront Street Spot",
+        city: "Kochi",
+        state: "Kerala",
+        region: "South India",
+        type: "diy",
+        type_label: "Urban Waterfront Street Spot",
+        status: "Pedestrian Walkway (Informal)",
+        status_color: "cyan",
+        clues: "Kochi skateboarders and inline skaters frequent the broad tiled promenade along Marine Drive overlooking the backwaters. Active street scene but no designated enclosed skatepark.",
+        what_is_needed: "Information on whether Cochin Smart Mission Limited (CSML) has planned a dedicated concrete skatepark in Ernakulam.",
+        search_query: "Kochi Marine Drive skateboarding CSML",
+        maps_query: "Marine Drive Walkway Kochi Ernakulam",
+        yt_query: "Kochi skateboarders Marine Drive"
+      },
+      {
+        id: "UNV-AP-01",
+        name: "Visakhapatnam Seafront Action Sports Plaza",
+        city: "Visakhapatnam",
+        state: "Andhra Pradesh",
+        region: "South India",
+        type: "civic",
+        type_label: "GVMC Civic Proposal",
+        status: "Pre-Tender Feasibility",
+        status_color: "amber",
+        clues: "Greater Visakhapatnam Municipal Corporation (GVMC) mooted plans for coastal youth amenities along Sagar Nagar and RK Beach, including an action-sports plaza for roller skaters and skateboarders.",
+        what_is_needed: "Verification whether municipal funding was sanctioned and if civil engineering work commenced.",
+        search_query: "Vizag GVMC skatepark RK beach Sagar Nagar",
+        maps_query: "RK Beach Visakhapatnam",
+        yt_query: "Vizag skateboarders Beach road"
+      },
+      {
+        id: "UNV-UK-01",
+        name: "Dehradun Rajpur Road Academy Transition Bowl",
+        city: "Dehradun",
+        state: "Uttarakhand",
+        region: "North India",
+        type: "private",
+        type_label: "Private Academy Installation",
+        status: "Private Sports Facility (Verify Access)",
+        status_color: "purple",
+        clues: "Local reports describe a sports training center off Rajpur Road building a concrete transition bowl for roller speed and freestyle training in the Doon valley.",
+        what_is_needed: "Academy name, owner contact, confirmation of whether bowl is accessible to public or academy trainees only.",
+        search_query: "Dehradun Rajpur road skating rink bowl",
+        maps_query: "Rajpur Road Dehradun sports academy",
+        yt_query: "Dehradun skateboarders Rajpur"
+      }
+    ];
+
+    let activeFilter = "all";
+    let searchQuery = "";
+
+    const searchInput = document.getElementById("unv-search-input");
+    const clearBtn = document.getElementById("unv-clear-btn");
+    const filterChips = document.querySelectorAll(".unv-chip");
+    const grid = document.getElementById("unv-leads-grid");
+    const counterPill = document.getElementById("leads-counter-pill");
+
+    function renderLeads() {
+      if (!grid) return;
+
+      const q = searchQuery.toLowerCase().trim();
+      const filtered = unverifiedLeads.filter(lead => {
+        const matchFilter = activeFilter === "all" || lead.type === activeFilter;
+        const matchSearch = !q || (
+          lead.name.toLowerCase().includes(q) ||
+          lead.city.toLowerCase().includes(q) ||
+          lead.state.toLowerCase().includes(q) ||
+          lead.clues.toLowerCase().includes(q) ||
+          lead.id.toLowerCase().includes(q)
+        );
+        return matchFilter && matchSearch;
+      });
+
+      if (counterPill) counterPill.textContent = filtered.length;
+
+      if (filtered.length === 0) {
+        grid.innerHTML = `
+          <div class="col-span-full py-12 text-center apple-glass-card rounded-3xl p-6">
+            <div class="text-3xl mb-2">🔍</div>
+            <p class="text-lg font-bold text-white">No unverified leads match your search.</p>
+            <p class="text-xs text-slate-400 mt-1">Try searching for "Bangalore", "Goa", "Tender", or clear filters.</p>
+            <button id="reset-unv-btn" class="mt-4 px-4 py-2 rounded-xl bg-amber-400 text-slate-950 font-bold text-xs uppercase hover:bg-amber-300 touch-pill">
+              Clear Filters
+            </button>
+          </div>
+        `;
+        const rBtn = document.getElementById("reset-unv-btn");
+        if (rBtn) {
+          rBtn.addEventListener("click", () => {
+            searchQuery = "";
+            activeFilter = "all";
+            searchInput.value = "";
+            clearBtn.classList.add("hidden");
+            updateFilterChips();
+            renderLeads();
+          });
+        }
+        return;
+      }
+
+      grid.innerHTML = filtered.map(item => {
+        const googleNewsUrl = "https://www.google.com/search?q=" + encodeURIComponent(item.search_query) + "&tbm=nws";
+        const googleMapsUrl = "https://maps.google.com/?q=" + encodeURIComponent(item.maps_query);
+        const ytUrl = "https://www.youtube.com/results?search_query=" + encodeURIComponent(item.yt_query);
+
+        return `
+          <div class="apple-glass-card p-5 sm:p-6 rounded-3xl flex flex-col justify-between">
+            <div>
+              <!-- Top Badges -->
+              <div class="flex items-center justify-between gap-2 mb-2.5">
+                <span class="font-mono text-xs font-bold text-amber-400 bg-amber-400/10 px-2 py-0.5 rounded border border-amber-400/20">
+                  ${item.id}
+                </span>
+                <span class="text-[11px] font-bold px-2 py-0.5 rounded-full bg-amber-500/15 text-amber-300 border border-amber-500/30">
+                  🟡 ${item.status}
+                </span>
+              </div>
+
+              <!-- Title & Location -->
+              <h3 class="text-lg sm:text-xl font-display font-extrabold text-white leading-snug">
+                ${item.name}
+              </h3>
+              <p class="text-xs sm:text-sm text-cyan-300 font-semibold mt-0.5">
+                📍 ${item.city}, ${item.state} &bull; <span class="text-slate-400">${item.region}</span>
+              </p>
+
+              <!-- Category Tag -->
+              <div class="mt-2.5 inline-block text-[11px] font-bold px-2.5 py-1 rounded-lg bg-white/[0.06] text-slate-300 border border-white/10">
+                🏷️ Category: ${item.type_label}
+              </div>
+
+              <!-- Clues Box -->
+              <div class="mt-3.5 p-3 rounded-2xl bg-black/40 border border-white/10 text-xs">
+                <span class="block text-slate-400 font-bold uppercase tracking-wider text-[10px] mb-1">
+                  🕵️ Background &amp; Community Clues:
+                </span>
+                <p class="text-slate-300 leading-relaxed">
+                  ${item.clues}
+                </p>
+              </div>
+
+              <!-- Proof Needed -->
+              <div class="mt-2.5 p-3 rounded-2xl bg-amber-500/[0.07] border border-amber-500/20 text-xs">
+                <span class="block text-amber-300 font-bold uppercase tracking-wider text-[10px] mb-0.5">
+                  📋 Evidence Needed to Verify:
+                </span>
+                <p class="text-slate-300 text-[11.5px] leading-relaxed">
+                  ${item.what_is_needed}
+                </p>
+              </div>
+            </div>
+
+            <!-- Action Buttons for Verification Research -->
+            <div class="mt-5 pt-4 border-t border-white/10 flex flex-wrap items-center gap-2">
+              <a href="${googleNewsUrl}" target="_blank" rel="noopener noreferrer" class="flex-1 min-w-[120px] py-2.5 px-3 rounded-xl bg-white/[0.06] hover:bg-white/[0.12] border border-white/10 text-white font-bold text-xs inline-flex items-center justify-center gap-1.5 transition-all touch-pill" title="Search Google News">
+                <span>📰 Google News</span>
+                <span class="text-[10px]">&nearr;</span>
+              </a>
+              <a href="${googleMapsUrl}" target="_blank" rel="noopener noreferrer" class="flex-1 min-w-[120px] py-2.5 px-3 rounded-xl bg-cyan-500/10 hover:bg-cyan-500/20 border border-cyan-500/30 text-cyan-300 font-bold text-xs inline-flex items-center justify-center gap-1.5 transition-all touch-pill" title="Search Google Maps">
+                <span>📍 Google Maps</span>
+                <span class="text-[10px]">&nearr;</span>
+              </a>
+              <a href="${ytUrl}" target="_blank" rel="noopener noreferrer" class="flex-1 min-w-[120px] py-2.5 px-3 rounded-xl bg-red-500/10 hover:bg-red-500/20 border border-red-500/30 text-red-300 font-bold text-xs inline-flex items-center justify-center gap-1.5 transition-all touch-pill" title="Search YouTube Videos">
+                <span>▶️ YouTube</span>
+                <span class="text-[10px]">&nearr;</span>
+              </a>
+            </div>
+          </div>
+        `;
+      }).join("");
+    }
+
+    function updateFilterChips() {
+      filterChips.forEach(chip => {
+        const val = chip.getAttribute("data-filter");
+        if (val === activeFilter) {
+          chip.className = "unv-chip shrink-0 px-3.5 py-2 rounded-xl font-bold bg-amber-400 text-slate-950 transition-all touch-pill flex items-center gap-1 shadow-md";
+        } else {
+          chip.className = "unv-chip shrink-0 px-3.5 py-2 rounded-xl font-semibold bg-white/[0.05] text-slate-300 border border-white/10 hover:border-amber-400/50 hover:text-white transition-all touch-pill flex items-center gap-1";
+        }
+      });
+    }
+
+    // Search Input Listeners
+    searchInput.addEventListener("input", (e) => {
+      searchQuery = e.target.value;
+      if (searchQuery.length > 0) {
+        clearBtn.classList.remove("hidden");
+      } else {
+        clearBtn.classList.add("hidden");
+      }
+      renderLeads();
+    });
+
+    clearBtn.addEventListener("click", () => {
+      searchQuery = "";
+      searchInput.value = "";
+      clearBtn.classList.add("hidden");
+      renderLeads();
+    });
+
+    filterChips.forEach(chip => {
+      chip.addEventListener("click", () => {
+        activeFilter = chip.getAttribute("data-filter");
+        updateFilterChips();
+        renderLeads();
+      });
+    });
+
+    // Anti-Copy & Content Security
+    document.addEventListener("contextmenu", (e) => {
+      e.preventDefault();
+      showToast();
+      return false;
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if ((e.ctrlKey || e.metaKey) && (e.key === "c" || e.key === "u" || e.key === "s" || e.key === "p" || e.key === "a")) {
+        e.preventDefault();
+        showToast();
+        return false;
+      }
+    });
+
+    function showToast() {
+      const toast = document.getElementById("copy-protection-toast");
+      if (!toast) return;
+      toast.classList.remove("translate-y-24", "opacity-0");
+      setTimeout(() => {
+        toast.classList.add("translate-y-24", "opacity-0");
+      }, 2500);
+    }
+
+    // Initial render
+    renderLeads();
+  </script>
+</body>
+</html>
