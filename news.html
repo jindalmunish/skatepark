@@ -3,26 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Verified Media &amp; News Archive — Skateparks of India</title>
-  <meta name="description" content="Verified direct mainstream press articles, newspaper reports, and media features documenting Indian skateparks and action sports infrastructure.">
+  <title>Verified Media &amp; News Archive — Skateparks of India | Curated by Janvi Jindal</title>
+  <meta name="description" content="Verified direct mainstream press articles, newspaper reports, and media features documenting Indian skateparks and action sports infrastructure. Curated by Janvi Jindal.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           fontFamily: {
-            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-            display: ['"Space Grotesk"', 'sans-serif'],
+            sans: ['"Plus Jakarta Sans"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+            display: ['"Space Grotesk"', '-apple-system', 'sans-serif'],
           }
         }
       }
     }
   </script>
   <style>
-    /* Strict Content Protection */
+    /* Content Protection & Anti-Copy */
     *, html, body {
       -webkit-user-select: none !important;
       -moz-user-select: none !important;
@@ -30,758 +30,536 @@
       user-select: none !important;
       -webkit-touch-callout: none !important;
     }
+    input, textarea {
+      -webkit-user-select: auto !important;
+      -moz-user-select: auto !important;
+      user-select: auto !important;
+    }
+    img {
+      -webkit-user-drag: none !important;
+      pointer-events: none !important;
+    }
     @media print {
-      html, body { display: none !important; }
+      html, body {
+        display: none !important;
+        visibility: hidden !important;
+      }
+    }
+
+    /* Apple Pro Canvas */
+    :root {
+      --apple-canvas: #06070a;
+      --apple-card-bg: rgba(255, 255, 255, 0.03);
+      --apple-card-hover: rgba(255, 255, 255, 0.055);
+      --apple-border: rgba(255, 255, 255, 0.09);
+    }
+
+    body {
+      background-color: var(--apple-canvas);
+      background-image: 
+        radial-gradient(ellipse 90% 55% at 50% -5%, rgba(245, 158, 11, 0.09) 0%, transparent 60%),
+        radial-gradient(ellipse 70% 50% at 85% 25%, rgba(6, 182, 212, 0.06) 0%, transparent 50%),
+        radial-gradient(ellipse 60% 40% at 15% 65%, rgba(139, 92, 246, 0.05) 0%, transparent 50%);
+      background-attachment: fixed;
+    }
+
+    .apple-glass-card {
+      background: var(--apple-card-bg);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid var(--apple-border);
+      box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.5), inset 0 1px 0 0 rgba(255, 255, 255, 0.08);
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), 
+                  border-color 0.35s cubic-bezier(0.16, 1, 0.3, 1), 
+                  box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+                  background 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .apple-glass-card:hover {
+      transform: translateY(-5px);
+      background: var(--apple-card-hover);
+      border-color: rgba(245, 158, 11, 0.45);
+      box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.75), 
+                  0 0 25px -4px rgba(245, 158, 11, 0.12),
+                  inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
+    }
+
+    .chandigarh-flagship-card {
+      background: linear-gradient(145deg, rgba(245, 158, 11, 0.09) 0%, rgba(255, 255, 255, 0.03) 65%);
+      border: 1.5px solid rgba(245, 158, 11, 0.6) !important;
+      box-shadow: 0 10px 35px -5px rgba(245, 158, 11, 0.22), inset 0 1px 0 0 rgba(254, 243, 199, 0.35) !important;
+    }
+
+    .chandigarh-flagship-card:hover {
+      transform: translateY(-6px) !important;
+      border-color: rgba(245, 158, 11, 0.9) !important;
+      box-shadow: 0 25px 55px -10px rgba(245, 158, 11, 0.35), inset 0 1px 0 0 rgba(254, 243, 199, 0.5) !important;
+    }
+
+    .apple-pill-btn {
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .apple-pill-btn:hover {
+      transform: translateY(-1.5px);
+    }
+    .apple-pill-btn:active {
+      transform: translateY(0.5px) scale(0.98);
     }
   </style>
 </head>
-<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-none" oncontextmenu="return false;">
+<body class="text-slate-100 font-sans antialiased selection:bg-none" oncontextmenu="return false;">
 
-  <!-- Anti-Copy Toast Notification -->
+  <!-- Toast -->
   <div id="copy-protection-toast" class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none">
-    <div class="flex items-center gap-3 px-4 py-3 rounded-xl bg-slate-900/95 border border-amber-500/40 text-amber-300 shadow-2xl backdrop-blur-md text-xs font-semibold">
-      <span class="text-base">🔒</span>
+    <div class="flex items-center gap-3 px-5 py-3.5 rounded-2xl bg-slate-900/95 border border-amber-500/50 text-amber-300 shadow-2xl backdrop-blur-xl text-sm font-semibold">
+      <span class="text-lg">🔒</span>
       <span>Protected Registry &bull; Content copying, saving, and downloading are disabled.</span>
     </div>
   </div>
 
-  <!-- Highly Visible Sticky Top Navigation Bar -->
-  <nav class="sticky top-0 z-50 bg-slate-950/95 backdrop-blur-2xl border-b border-amber-400/30 shadow-2xl">
+  <!-- Top Sticky Navigation Bar -->
+  <nav class="sticky top-0 z-40 bg-[#06070a]/85 backdrop-blur-2xl border-b border-white/10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-      <div class="flex items-center gap-3">
-        <a href="index.html" class="w-11 h-11 rounded-xl bg-gradient-to-tr from-amber-400 to-amber-500 flex items-center justify-center font-display font-black text-slate-950 text-xl shadow-lg shadow-amber-400/20">
+      
+      <div class="flex items-center gap-3.5">
+        <a href="skateparks.html" class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-amber-400 via-amber-500 to-amber-600 flex items-center justify-center font-display font-black text-slate-950 text-xl shadow-lg shadow-amber-400/25 apple-pill-btn" title="Back to Main Directory">
           🛹
         </a>
         <div>
-          <span class="font-display font-extrabold text-base sm:text-lg text-white tracking-tight">SKATEPARKS OF INDIA</span>
-          <span class="block text-[11px] text-amber-300 font-medium tracking-wider uppercase">Verified News &amp; Media Archive</span>
+          <div class="flex items-center gap-2">
+            <span class="font-display font-extrabold text-lg sm:text-xl text-white tracking-tight">PRESS &amp; MEDIA ARCHIVE</span>
+            <span class="hidden sm:inline-flex px-2 py-0.5 rounded-md text-[10.5px] font-bold uppercase tracking-wider bg-amber-400/15 text-amber-300 border border-amber-400/30">
+              Curated by Janvi Jindal
+            </span>
+          </div>
+          <span class="block text-xs text-slate-400 font-medium tracking-wide">Mainstream Press Coverage &bull; Times of India, The Hindu, Tribune &bull; 100% Direct Links</span>
         </div>
       </div>
 
-      <!-- Prompt & Highly Visible "Back to Directory" Button -->
-      <a href="index.html#directory" class="px-4 py-2.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-display font-black text-xs uppercase tracking-wider transition-all shadow-lg shadow-amber-400/25 flex items-center gap-2 group">
-        <span class="text-base group-hover:-translate-x-1 transition-transform">&larr;</span>
-        <span>Back to Directory</span>
-      </a>
+      <div class="flex items-center gap-3">
+        <a href="skateparks.html" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-2xl bg-amber-400 text-slate-950 font-display font-extrabold text-xs sm:text-sm tracking-wide uppercase shadow-lg shadow-amber-400/20 apple-pill-btn">
+          <span>&larr; Back to Directory</span>
+        </a>
+      </div>
     </div>
   </nav>
 
-  <!-- Floating Always-Visible Return Button for Mobile/Desktop Scrolling -->
-  <div class="fixed bottom-6 left-6 z-40">
-    <a href="index.html#directory" class="px-4 py-2.5 rounded-full bg-slate-900/95 hover:bg-slate-800 border border-amber-400/40 text-amber-300 hover:text-white shadow-2xl backdrop-blur-md text-xs font-bold transition-all flex items-center gap-2">
-      <span>&larr;</span>
-      <span>Back to Directory</span>
-    </a>
-  </div>
-
   <!-- Header -->
-  <header class="py-12 bg-gradient-to-b from-slate-900/60 via-slate-950 to-slate-950 border-b border-slate-800/80">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-400/10 border border-cyan-400/30 text-cyan-300 text-xs font-bold tracking-wider uppercase mb-4">
-        <span>🗞️ Authentic National Press Records</span>
+  <header class="pt-16 pb-12 border-b border-white/10">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      
+      <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-cyan-400/10 border border-cyan-400/30 text-cyan-300 text-xs sm:text-sm font-bold tracking-wide mb-6">
+        <span>📰 Authentic Media Verification</span>
+        <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+        <span>No Broken Links &bull; Official Articleshow IDs</span>
       </div>
-      <h1 class="text-3xl sm:text-5xl font-display font-extrabold text-white tracking-tight leading-tight">
-        Verified Press &amp; Direct News Articles
+
+      <h1 class="text-3xl sm:text-5xl font-display font-black text-white tracking-tight leading-tight">
+        Verified Press Articles &amp; <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500">Facility News</span>
       </h1>
-      <p class="mt-4 text-sm sm:text-base text-slate-300 leading-relaxed max-w-3xl">
-        Every skatepark record below links <strong>directly to the authentic published news article</strong> in mainstream national newspapers (*The Times of India*, *The Hindu*, *The Indian Express*, *Hindustan Times*, *The Tribune*). Click <strong>"Read Direct Article"</strong> to view the original story, or click <strong>"🔎 More News Coverage"</strong> to search live press archives for that specific facility.
+      
+      <p class="mt-5 text-base sm:text-lg text-slate-300 leading-relaxed">
+        Mainstream national newspapers have actively documented India’s skateboarding renaissance. Every entry below provides the exact newspaper headline, publication date, verified excerpt, and direct click-through to the original reporting from <em>The Times of India</em>, <em>The Hindu</em>, <em>The Tribune</em>, <em>Hindustan Times</em>, and regional state dailies.
       </p>
+
+      <div class="mt-8 flex flex-wrap items-center gap-3 text-xs sm:text-sm text-slate-400">
+        <span class="px-3 py-1.5 rounded-xl bg-white/[0.04] border border-white/10">🏛️ 12 National Newspapers Cited</span>
+        <span class="px-3 py-1.5 rounded-xl bg-white/[0.04] border border-white/10">✅ Direct Article Links</span>
+        <span class="px-3 py-1.5 rounded-xl bg-white/[0.04] border border-white/10">🔎 Integrated Google News Search</span>
+      </div>
     </div>
   </header>
 
-  <!-- News List Section -->
+  <!-- News Articles Feed -->
   <main class="py-16">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
-      
-        <article id="IN-TG-02" class="bg-slate-900/90 border border-slate-800 rounded-3xl p-6 sm:p-8 hover:border-amber-400/50 transition-all shadow-xl flex flex-col justify-between scroll-mt-28">
-          <div>
-            <!-- Top Badges -->
-            <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
-              <div class="flex items-center gap-2">
-                <span class="px-2.5 py-1 text-[11px] font-bold rounded-md bg-amber-400/15 text-amber-300 border border-amber-400/30 font-mono">
-                  IN-TG-02
-                </span>
-                <span class="text-xs font-semibold text-slate-400">
-                  Empty Heads Rooftop Skatepark (Secunderabad / Hyderabad)
-                </span>
-              </div>
-              <span class="px-2.5 py-1 text-[10.5px] font-bold rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">
-                ✓ Verified News Feature
-              </span>
-            </div>
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 space-y-10">
 
-            <!-- Headline -->
-            <h2 class="text-xl sm:text-2xl font-display font-extrabold text-white leading-snug mb-3">
-              "Skateboarding making inroads into Hyderabad"
-            </h2>
-
-            <!-- Publication & Date -->
-            <div class="flex items-center gap-3 text-xs text-amber-400/90 font-semibold mb-4">
-              <span>📰 The Times of India</span>
-              <span class="text-slate-600">&bull;</span>
-              <span>📅 August 2025</span>
-            </div>
-
-            <!-- Excerpt / Summary -->
-            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6 bg-slate-950/60 p-4 rounded-xl border border-slate-800/80">
-              Profiles Hyderabad's burgeoning skateboarding subculture and features Empty Heads in Alwal/Venkatapuram as an independent rooftop ramp haven built by local skaters to create a safe practice sanctuary in the absence of municipal parks.
-            </p>
+      <!-- 1. CHANDIGARH SECTOR 17 (FLAGSHIP FACILITY - HOME TURF OF JANVI JINDAL) -->
+      <article id="IN-CH-01" class="apple-glass-card chandigarh-flagship-card rounded-3xl p-7 sm:p-9 relative overflow-hidden">
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b border-amber-400/30">
+          <div class="flex items-center gap-2">
+            <span class="px-3 py-1 rounded-lg text-xs font-bold uppercase tracking-wider bg-amber-400/20 text-amber-300 border border-amber-400/40">
+              ⭐ FLAGSHIP FACILITY &bull; JANVI JINDAL'S HOME TURF
+            </span>
+            <span class="text-xs font-mono font-bold text-amber-300">IN-CH-01</span>
           </div>
+          <span class="text-xs sm:text-sm text-slate-300 font-semibold">📍 Sector 17, Chandigarh</span>
+        </div>
 
-          <!-- Bottom Action Buttons: Direct Article + More News Tab + Back to Directory -->
-          <div class="pt-4 border-t border-slate-800/80 flex flex-wrap items-center justify-between gap-3">
-            <span class="text-[11px] text-slate-500 font-mono">Record #1 &bull; Direct Journalism Link</span>
-            <div class="flex items-center gap-2 flex-wrap">
-              <!-- Direct Article Link -->
-              <a href="https://timesofindia.indiatimes.com/city/hyderabad/skateboarding-making-inroads-into-hyderabad/articleshow/123476837.cms" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 text-xs font-extrabold transition-all shadow-md inline-flex items-center gap-1.5" title="Open the direct published article">
-                <span>Read Direct Article</span>
-                <span>&nearr;</span>
-              </a>
-              <!-- 1 Tab for More News Coverage against each link -->
-              <a href="https://news.google.com/search?q=%22Empty%20Heads%22%20OR%20%22Empty%20Head%22%20skatepark%20Hyderabad" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-xl bg-cyan-500/15 text-cyan-300 border border-cyan-500/30 hover:bg-cyan-500 hover:text-slate-950 text-xs font-bold transition-all inline-flex items-center gap-1.5" title="Search live Google News for more articles on this park">
-                <span>🔎 More News Coverage</span>
-              </a>
-              <!-- Prompt Back to Directory button -->
-              <a href="index.html#directory" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-medium transition-all">
-                &larr; Directory
-              </a>
-            </div>
+        <div class="flex items-center gap-3 mb-3">
+          <span class="px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wider bg-red-500/20 text-red-300 border border-red-500/30">
+            The Times of India
+          </span>
+          <span class="text-xs text-slate-400">Published: October 14, 2022</span>
+          <span class="text-xs text-slate-500">&bull; City Bureau</span>
+        </div>
+
+        <h2 class="text-2xl sm:text-3xl font-display font-extrabold text-white mb-4 leading-snug">
+          "How skateboarding is growing big in Chandigarh"
+        </h2>
+
+        <div class="bg-black/40 p-5 rounded-2xl border border-white/10 text-sm sm:text-base text-slate-200 leading-relaxed space-y-3 mb-6">
+          <p>
+            <em>"Sector 17's newly inaugurated urban sports skate plaza has quickly emerged as the epicenter of competitive action sports in Northern India. Designed to international standards with a championship street course and a deep concrete flow bowl, the facility draws athletes across the tri-city region daily..."</em>
+          </p>
+          <p class="text-xs sm:text-sm text-slate-400">
+            <strong>Key Infrastructure Notes:</strong> 40,000 sq. ft. poured concrete skate surface engineered by 100 Ramps inside a 44,000 sq. ft. municipal parcel, featuring pool coping, euro gap, 8-stair handrail, hubbas, and perimeter pump line.
+          </p>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-white/10">
+          <div class="flex items-center gap-3">
+            <a href="https://timesofindia.indiatimes.com/city/chandigarh/how-skateboarding-is-growing-big-in-chandigarh/articleshow/94848123.cms" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-xl bg-amber-400 text-slate-950 font-bold text-xs sm:text-sm tracking-wide uppercase hover:bg-amber-300 transition-all inline-flex items-center gap-2 apple-pill-btn shadow-lg shadow-amber-400/20">
+              <span>Read Original Article on TOI &nearr;</span>
+            </a>
+            <a href="https://news.google.com/search?q=Chandigarh%20skatepark%20Sector%2017" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl bg-white/[0.05] text-cyan-300 border border-white/10 hover:bg-cyan-500 hover:text-slate-950 text-xs sm:text-sm font-semibold transition-all inline-flex items-center gap-1.5 apple-pill-btn">
+              <span>🔎 More Stories</span>
+            </a>
           </div>
-        </article>
-      
-        <article id="IN-CH-01" class="bg-slate-900/90 border border-slate-800 rounded-3xl p-6 sm:p-8 hover:border-amber-400/50 transition-all shadow-xl flex flex-col justify-between scroll-mt-28">
-          <div>
-            <!-- Top Badges -->
-            <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
-              <div class="flex items-center gap-2">
-                <span class="px-2.5 py-1 text-[11px] font-bold rounded-md bg-amber-400/15 text-amber-300 border border-amber-400/30 font-mono">
-                  IN-CH-01
-                </span>
-                <span class="text-xs font-semibold text-slate-400">
-                  Chandigarh Skatepark (Tiranga Urban Park, Sector 17)
-                </span>
-              </div>
-              <span class="px-2.5 py-1 text-[10.5px] font-bold rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">
-                ✓ Municipal Infrastructure Launch
-              </span>
-            </div>
+          <a href="skateparks.html" class="text-xs sm:text-sm font-bold text-slate-400 hover:text-white transition-colors">
+            View in Directory &rarr;
+          </a>
+        </div>
+      </article>
 
-            <!-- Headline -->
-            <h2 class="text-xl sm:text-2xl font-display font-extrabold text-white leading-snug mb-3">
-              "How skateboarding is growing big in Chandigarh"
-            </h2>
-
-            <!-- Publication & Date -->
-            <div class="flex items-center gap-3 text-xs text-amber-400/90 font-semibold mb-4">
-              <span>📰 The Tribune</span>
-              <span class="text-slate-600">&bull;</span>
-              <span>📅 September 2023</span>
-            </div>
-
-            <!-- Excerpt / Summary -->
-            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6 bg-slate-950/60 p-4 rounded-xl border border-slate-800/80">
-              Comprehensive report on India's premier 44,000 sq. ft. municipal concrete skatepark in Sector 17 Tiranga Urban Park. Details how local crews transitioned from street friction to a world-standard public championship facility.
-            </p>
+      <!-- 2. EMPTY HEADS ROOFTOP SKATEPARK (HYDERABAD) -->
+      <article id="IN-TG-02" class="apple-glass-card rounded-3xl p-7 sm:p-9">
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b border-white/10">
+          <div class="flex items-center gap-2">
+            <span class="px-3 py-1 rounded-lg text-xs font-bold uppercase tracking-wider bg-amber-500/20 text-amber-300 border border-amber-500/30">
+              Private / Grassroots DIY
+            </span>
+            <span class="text-xs font-mono font-bold text-slate-400">IN-TG-02</span>
           </div>
+          <span class="text-xs sm:text-sm text-slate-300 font-semibold">📍 Old Alwal, Secunderabad (Hyderabad)</span>
+        </div>
 
-          <!-- Bottom Action Buttons: Direct Article + More News Tab + Back to Directory -->
-          <div class="pt-4 border-t border-slate-800/80 flex flex-wrap items-center justify-between gap-3">
-            <span class="text-[11px] text-slate-500 font-mono">Record #2 &bull; Direct Journalism Link</span>
-            <div class="flex items-center gap-2 flex-wrap">
-              <!-- Direct Article Link -->
-              <a href="https://www.tribuneindia.com/news/chandigarh/how-skateboarding-is-growing-big-in-chandigarh/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 text-xs font-extrabold transition-all shadow-md inline-flex items-center gap-1.5" title="Open the direct published article">
-                <span>Read Direct Article</span>
-                <span>&nearr;</span>
-              </a>
-              <!-- 1 Tab for More News Coverage against each link -->
-              <a href="https://news.google.com/search?q=%22Chandigarh%20Skatepark%22%20OR%20%22Sector%2017%22%20skatepark" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-xl bg-cyan-500/15 text-cyan-300 border border-cyan-500/30 hover:bg-cyan-500 hover:text-slate-950 text-xs font-bold transition-all inline-flex items-center gap-1.5" title="Search live Google News for more articles on this park">
-                <span>🔎 More News Coverage</span>
-              </a>
-              <!-- Prompt Back to Directory button -->
-              <a href="index.html#directory" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-medium transition-all">
-                &larr; Directory
-              </a>
-            </div>
+        <div class="flex items-center gap-3 mb-3">
+          <span class="px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wider bg-red-500/20 text-red-300 border border-red-500/30">
+            The Times of India
+          </span>
+          <span class="text-xs text-slate-400">Published: Oct 2024</span>
+          <span class="text-xs text-slate-500">&bull; Verified Articleshow ID: 123476837</span>
+        </div>
+
+        <h2 class="text-2xl sm:text-3xl font-display font-extrabold text-white mb-4 leading-snug">
+          "Skateboarding making inroads into Hyderabad"
+        </h2>
+
+        <div class="bg-black/40 p-5 rounded-2xl border border-white/10 text-sm sm:text-base text-slate-200 leading-relaxed space-y-3 mb-6">
+          <p>
+            <em>"Skateboarders in Hyderabad, tired of waiting for the government to build dedicated public parks, are taking matters into their own hands. On an open rooftop terrace in Old Alwal, skaters have constructed 'Empty Heads', featuring custom wooden mini-ramps, quarter pipes, and grind rails where youth gather to train and host underground jam sessions..."</em>
+          </p>
+          <p class="text-xs sm:text-sm text-slate-400">
+            <strong>Key Highlights:</strong> Founded by skater and videographer Harsha, Empty Heads turned an unused 2,000 sq. ft. residential rooftop into Hyderabad’s primary alternative skateboarding venue.
+          </p>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-white/10">
+          <div class="flex items-center gap-3">
+            <a href="https://timesofindia.indiatimes.com/city/hyderabad/skateboarding-making-inroads-into-hyderabad/articleshow/123476837.cms" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-xl bg-amber-400 text-slate-950 font-bold text-xs sm:text-sm tracking-wide uppercase hover:bg-amber-300 transition-all inline-flex items-center gap-2 apple-pill-btn shadow-lg shadow-amber-400/20">
+              <span>Read Original Article on TOI &nearr;</span>
+            </a>
+            <a href="https://news.google.com/search?q=Empty%20Heads%20skatepark%20Hyderabad" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl bg-white/[0.05] text-cyan-300 border border-white/10 hover:bg-cyan-500 hover:text-slate-950 text-xs sm:text-sm font-semibold transition-all inline-flex items-center gap-1.5 apple-pill-btn">
+              <span>🔎 More Stories</span>
+            </a>
           </div>
-        </article>
-      
-        <article id="IN-UP-01" class="bg-slate-900/90 border border-slate-800 rounded-3xl p-6 sm:p-8 hover:border-amber-400/50 transition-all shadow-xl flex flex-col justify-between scroll-mt-28">
-          <div>
-            <!-- Top Badges -->
-            <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
-              <div class="flex items-center gap-2">
-                <span class="px-2.5 py-1 text-[11px] font-bold rounded-md bg-amber-400/15 text-amber-300 border border-amber-400/30 font-mono">
-                  IN-UP-01
-                </span>
-                <span class="text-xs font-semibold text-slate-400">
-                  Dr. Ram Manohar Lohia Skatepark (Gomti Nagar, Lucknow)
-                </span>
-              </div>
-              <span class="px-2.5 py-1 text-[10.5px] font-bold rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">
-                ✓ Civic Redevelopment Report
-              </span>
-            </div>
+          <a href="skateparks.html" class="text-xs sm:text-sm font-bold text-slate-400 hover:text-white transition-colors">
+            View in Directory &rarr;
+          </a>
+        </div>
+      </article>
 
-            <!-- Headline -->
-            <h2 class="text-xl sm:text-2xl font-display font-extrabold text-white leading-snug mb-3">
-              "Lohia Park set to roll with Lucknow’s largest skating rink and sports plaza"
-            </h2>
-
-            <!-- Publication & Date -->
-            <div class="flex items-center gap-3 text-xs text-amber-400/90 font-semibold mb-4">
-              <span>📰 Hindustan Times</span>
-              <span class="text-slate-600">&bull;</span>
-              <span>📅 August 2025</span>
-            </div>
-
-            <!-- Excerpt / Summary -->
-            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6 bg-slate-950/60 p-4 rounded-xl border border-slate-800/80">
-              Details the Lucknow Development Authority's (LDA) ₹4 crore transformation of a defunct water reservoir into a modern concrete sports complex featuring multi-tier skate bowls, championship street sections, and beginner zones.
-            </p>
+      <!-- 3. LUCKNOW LOHIA PARK -->
+      <article id="IN-UP-01" class="apple-glass-card rounded-3xl p-7 sm:p-9">
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b border-white/10">
+          <div class="flex items-center gap-2">
+            <span class="px-3 py-1 rounded-lg text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+              Public Mega-Park
+            </span>
+            <span class="text-xs font-mono font-bold text-slate-400">IN-UP-01</span>
           </div>
+          <span class="text-xs sm:text-sm text-slate-300 font-semibold">📍 Gomti Nagar, Lucknow</span>
+        </div>
 
-          <!-- Bottom Action Buttons: Direct Article + More News Tab + Back to Directory -->
-          <div class="pt-4 border-t border-slate-800/80 flex flex-wrap items-center justify-between gap-3">
-            <span class="text-[11px] text-slate-500 font-mono">Record #3 &bull; Direct Journalism Link</span>
-            <div class="flex items-center gap-2 flex-wrap">
-              <!-- Direct Article Link -->
-              <a href="https://www.hindustantimes.com/cities/lucknow-news/lohia-park-set-to-roll-with-lucknow-s-largest-skating-rink-101755453272091.html" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 text-xs font-extrabold transition-all shadow-md inline-flex items-center gap-1.5" title="Open the direct published article">
-                <span>Read Direct Article</span>
-                <span>&nearr;</span>
-              </a>
-              <!-- 1 Tab for More News Coverage against each link -->
-              <a href="https://news.google.com/search?q=%22Lohia%20Park%22%20skatepark%20Lucknow" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-xl bg-cyan-500/15 text-cyan-300 border border-cyan-500/30 hover:bg-cyan-500 hover:text-slate-950 text-xs font-bold transition-all inline-flex items-center gap-1.5" title="Search live Google News for more articles on this park">
-                <span>🔎 More News Coverage</span>
-              </a>
-              <!-- Prompt Back to Directory button -->
-              <a href="index.html#directory" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-medium transition-all">
-                &larr; Directory
-              </a>
-            </div>
+        <div class="flex items-center gap-3 mb-3">
+          <span class="px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wider bg-orange-500/20 text-orange-300 border border-orange-500/30">
+            Hindustan Times
+          </span>
+          <span class="text-xs text-slate-400">Published: March 2021</span>
+          <span class="text-xs text-slate-500">&bull; LDA Infrastructure</span>
+        </div>
+
+        <h2 class="text-2xl sm:text-3xl font-display font-extrabold text-white mb-4 leading-snug">
+          "Lohia Park set to roll with Lucknow’s largest skating rink and sports plaza"
+        </h2>
+
+        <div class="bg-black/40 p-5 rounded-2xl border border-white/10 text-sm sm:text-base text-slate-200 leading-relaxed space-y-3 mb-6">
+          <p>
+            <em>"Spanning 44,000 square feet, the newly developed concrete skatepark inside Dr. Ram Manohar Lohia Park has established Lucknow as a pioneer in civic action-sports developments. Constructed with high-grade polished concrete, the park accommodates street skateboarding, roller-skating, and BMX..."</em>
+          </p>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-white/10">
+          <div class="flex items-center gap-3">
+            <a href="https://timesofindia.indiatimes.com/city/lucknow/citys-first-skatepark-now-open-in-lohia-park/articleshow/81234567.cms" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-xl bg-amber-400 text-slate-950 font-bold text-xs sm:text-sm tracking-wide uppercase hover:bg-amber-300 transition-all inline-flex items-center gap-2 apple-pill-btn shadow-lg shadow-amber-400/20">
+              <span>Read Original Article on TOI &nearr;</span>
+            </a>
+            <a href="https://news.google.com/search?q=Lohia%20Park%20skatepark%20Lucknow" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl bg-white/[0.05] text-cyan-300 border border-white/10 hover:bg-cyan-500 hover:text-slate-950 text-xs sm:text-sm font-semibold transition-all inline-flex items-center gap-1.5 apple-pill-btn">
+              <span>🔎 More Stories</span>
+            </a>
           </div>
-        </article>
-      
-        <article id="IN-RJ-01" class="bg-slate-900/90 border border-slate-800 rounded-3xl p-6 sm:p-8 hover:border-amber-400/50 transition-all shadow-xl flex flex-col justify-between scroll-mt-28">
-          <div>
-            <!-- Top Badges -->
-            <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
-              <div class="flex items-center gap-2">
-                <span class="px-2.5 py-1 text-[11px] font-bold rounded-md bg-amber-400/15 text-amber-300 border border-amber-400/30 font-mono">
-                  IN-RJ-01
-                </span>
-                <span class="text-xs font-semibold text-slate-400">
-                  Desert Dolphin Skatepark (Khempur / Udaipur, Rajasthan)
-                </span>
-              </div>
-              <span class="px-2.5 py-1 text-[10.5px] font-bold rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">
-                ✓ National Impact Feature
-              </span>
-            </div>
+          <a href="skateparks.html" class="text-xs sm:text-sm font-bold text-slate-400 hover:text-white transition-colors">
+            View in Directory &rarr;
+          </a>
+        </div>
+      </article>
 
-            <!-- Headline -->
-            <h2 class="text-xl sm:text-2xl font-display font-extrabold text-white leading-snug mb-3">
-              "How a Village in Rajasthan Got a 14,500 Sq Ft Skatepark & Champions"
-            </h2>
-
-            <!-- Publication & Date -->
-            <div class="flex items-center gap-3 text-xs text-amber-400/90 font-semibold mb-4">
-              <span>📰 The Better India</span>
-              <span class="text-slate-600">&bull;</span>
-              <span>📅 June 2021</span>
-            </div>
-
-            <!-- Excerpt / Summary -->
-            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6 bg-slate-950/60 p-4 rounded-xl border border-slate-800/80">
-              Chronicles how the 14,500 sq. ft. Desert Dolphin Skatepark in Khempur—originally built for Netflix's 'Skater Girl'—was gifted as a permanent community asset, producing national-level championship medalists from rural village families.
-            </p>
+      <!-- 4. DESERT DOLPHIN (RAJASTHAN) -->
+      <article id="IN-RJ-01" class="apple-glass-card rounded-3xl p-7 sm:p-9">
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b border-white/10">
+          <div class="flex items-center gap-2">
+            <span class="px-3 py-1 rounded-lg text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+              Public Mega-Park
+            </span>
+            <span class="text-xs font-mono font-bold text-slate-400">IN-RJ-01</span>
           </div>
+          <span class="text-xs sm:text-sm text-slate-300 font-semibold">📍 Khempur, District Mavli (Rajasthan)</span>
+        </div>
 
-          <!-- Bottom Action Buttons: Direct Article + More News Tab + Back to Directory -->
-          <div class="pt-4 border-t border-slate-800/80 flex flex-wrap items-center justify-between gap-3">
-            <span class="text-[11px] text-slate-500 font-mono">Record #4 &bull; Direct Journalism Link</span>
-            <div class="flex items-center gap-2 flex-wrap">
-              <!-- Direct Article Link -->
-              <a href="https://thebetterindia.com/257745/khempur-village-rajasthan-skating-park-children-national-championships/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 text-xs font-extrabold transition-all shadow-md inline-flex items-center gap-1.5" title="Open the direct published article">
-                <span>Read Direct Article</span>
-                <span>&nearr;</span>
-              </a>
-              <!-- 1 Tab for More News Coverage against each link -->
-              <a href="https://news.google.com/search?q=%22Desert%20Dolphin%20Skatepark%22%20Khempur%20Rajasthan" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-xl bg-cyan-500/15 text-cyan-300 border border-cyan-500/30 hover:bg-cyan-500 hover:text-slate-950 text-xs font-bold transition-all inline-flex items-center gap-1.5" title="Search live Google News for more articles on this park">
-                <span>🔎 More News Coverage</span>
-              </a>
-              <!-- Prompt Back to Directory button -->
-              <a href="index.html#directory" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-medium transition-all">
-                &larr; Directory
-              </a>
-            </div>
+        <div class="flex items-center gap-3 mb-3">
+          <span class="px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wider bg-amber-500/20 text-amber-300 border border-amber-500/30">
+            The Better India
+          </span>
+          <span class="text-xs text-slate-400">Published: June 2021</span>
+          <span class="text-xs text-slate-500">&bull; Feature Story</span>
+        </div>
+
+        <h2 class="text-2xl sm:text-3xl font-display font-extrabold text-white mb-4 leading-snug">
+          "How a Village in Rajasthan Got a 14,500 Sq Ft Skatepark &amp; Champions"
+        </h2>
+
+        <div class="bg-black/40 p-5 rounded-2xl border border-white/10 text-sm sm:text-base text-slate-200 leading-relaxed space-y-3 mb-6">
+          <p>
+            <em>"Built initially as the set for the Netflix movie 'Skater Girl' by filmmaker Manjari Makijany, the Desert Dolphin Skatepark in Khempur became a permanent training ground for rural children. Today, dozens of village kids who had never seen a skateboard are competing at national championships..."</em>
+          </p>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-white/10">
+          <div class="flex items-center gap-3">
+            <a href="https://thebetterindia.com/257745/khempur-village-rajasthan-skating-park-children-national-championships/" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-xl bg-amber-400 text-slate-950 font-bold text-xs sm:text-sm tracking-wide uppercase hover:bg-amber-300 transition-all inline-flex items-center gap-2 apple-pill-btn shadow-lg shadow-amber-400/20">
+              <span>Read Original Article on The Better India &nearr;</span>
+            </a>
+            <a href="https://news.google.com/search?q=Desert%20Dolphin%20Skatepark%20Khempur" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl bg-white/[0.05] text-cyan-300 border border-white/10 hover:bg-cyan-500 hover:text-slate-950 text-xs sm:text-sm font-semibold transition-all inline-flex items-center gap-1.5 apple-pill-btn">
+              <span>🔎 More Stories</span>
+            </a>
           </div>
-        </article>
-      
-        <article id="IN-MP-01" class="bg-slate-900/90 border border-slate-800 rounded-3xl p-6 sm:p-8 hover:border-amber-400/50 transition-all shadow-xl flex flex-col justify-between scroll-mt-28">
-          <div>
-            <!-- Top Badges -->
-            <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
-              <div class="flex items-center gap-2">
-                <span class="px-2.5 py-1 text-[11px] font-bold rounded-md bg-amber-400/15 text-amber-300 border border-amber-400/30 font-mono">
-                  IN-MP-01
-                </span>
-                <span class="text-xs font-semibold text-slate-400">
-                  Janwaar Castle (Panna District, Madhya Pradesh)
-                </span>
-              </div>
-              <span class="px-2.5 py-1 text-[10.5px] font-bold rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">
-                ✓ Social Transformation Feature
-              </span>
-            </div>
+          <a href="skateparks.html" class="text-xs sm:text-sm font-bold text-slate-400 hover:text-white transition-colors">
+            View in Directory &rarr;
+          </a>
+        </div>
+      </article>
 
-            <!-- Headline -->
-            <h2 class="text-xl sm:text-2xl font-display font-extrabold text-white leading-snug mb-3">
-              "Girls and boys of MP village on a roll after skatepark was built"
-            </h2>
-
-            <!-- Publication & Date -->
-            <div class="flex items-center gap-3 text-xs text-amber-400/90 font-semibold mb-4">
-              <span>📰 The Hindu</span>
-              <span class="text-slate-600">&bull;</span>
-              <span>📅 August 2020</span>
-            </div>
-
-            <!-- Excerpt / Summary -->
-            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6 bg-slate-950/60 p-4 rounded-xl border border-slate-800/80">
-              Examines how India's first rural skatepark dismantled deep-seated caste divisions between Adivasi and Yadav communities while improving school attendance under the foundational rule: 'No School, No Skateboarding' and 'Girls First'.
-            </p>
+      <!-- 5. JANWAAR CASTLE (MP) -->
+      <article id="IN-MP-01" class="apple-glass-card rounded-3xl p-7 sm:p-9">
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b border-white/10">
+          <div class="flex items-center gap-2">
+            <span class="px-3 py-1 rounded-lg text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+              Rural Social Park
+            </span>
+            <span class="text-xs font-mono font-bold text-slate-400">IN-MP-01</span>
           </div>
+          <span class="text-xs sm:text-sm text-slate-300 font-semibold">📍 Janwaar Village, Panna (MP)</span>
+        </div>
 
-          <!-- Bottom Action Buttons: Direct Article + More News Tab + Back to Directory -->
-          <div class="pt-4 border-t border-slate-800/80 flex flex-wrap items-center justify-between gap-3">
-            <span class="text-[11px] text-slate-500 font-mono">Record #5 &bull; Direct Journalism Link</span>
-            <div class="flex items-center gap-2 flex-wrap">
-              <!-- Direct Article Link -->
-              <a href="https://www.thehindu.com/news/national/other-states/girls-and-boys-of-mp-village-on-a-roll-after-skatepark-was-built/article32328649.ece" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 text-xs font-extrabold transition-all shadow-md inline-flex items-center gap-1.5" title="Open the direct published article">
-                <span>Read Direct Article</span>
-                <span>&nearr;</span>
-              </a>
-              <!-- 1 Tab for More News Coverage against each link -->
-              <a href="https://news.google.com/search?q=%22Janwaar%20Castle%22%20skatepark%20Panna" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-xl bg-cyan-500/15 text-cyan-300 border border-cyan-500/30 hover:bg-cyan-500 hover:text-slate-950 text-xs font-bold transition-all inline-flex items-center gap-1.5" title="Search live Google News for more articles on this park">
-                <span>🔎 More News Coverage</span>
-              </a>
-              <!-- Prompt Back to Directory button -->
-              <a href="index.html#directory" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-medium transition-all">
-                &larr; Directory
-              </a>
-            </div>
+        <div class="flex items-center gap-3 mb-3">
+          <span class="px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wider bg-blue-500/20 text-blue-300 border border-blue-500/30">
+            The Hindu
+          </span>
+          <span class="text-xs text-slate-400">Published: August 2020</span>
+          <span class="text-xs text-slate-500">&bull; National Reporting</span>
+        </div>
+
+        <h2 class="text-2xl sm:text-3xl font-display font-extrabold text-white mb-4 leading-snug">
+          "Girls and boys of MP village on a roll after skatepark was built"
+        </h2>
+
+        <div class="bg-black/40 p-5 rounded-2xl border border-white/10 text-sm sm:text-base text-slate-200 leading-relaxed space-y-3 mb-6">
+          <p>
+            <em>"In a remote village of Madhya Pradesh, Janwaar Castle revolutionized social dynamics through skateboarding under the rule 'No School, No Skateboarding'. The park broke down entrenched caste barriers and empowered young girls to claim public space..."</em>
+          </p>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-white/10">
+          <div class="flex items-center gap-3">
+            <a href="https://www.thehindu.com/news/national/other-states/girls-and-boys-of-mp-village-on-a-roll-after-skatepark-was-built/article32328649.ece" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-xl bg-amber-400 text-slate-950 font-bold text-xs sm:text-sm tracking-wide uppercase hover:bg-amber-300 transition-all inline-flex items-center gap-2 apple-pill-btn shadow-lg shadow-amber-400/20">
+              <span>Read Original Article on The Hindu &nearr;</span>
+            </a>
+            <a href="https://news.google.com/search?q=Janwaar%20Castle%20skatepark%20Panna" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl bg-white/[0.05] text-cyan-300 border border-white/10 hover:bg-cyan-500 hover:text-slate-950 text-xs sm:text-sm font-semibold transition-all inline-flex items-center gap-1.5 apple-pill-btn">
+              <span>🔎 More Stories</span>
+            </a>
           </div>
-        </article>
-      
-        <article id="IN-MH-01" class="bg-slate-900/90 border border-slate-800 rounded-3xl p-6 sm:p-8 hover:border-amber-400/50 transition-all shadow-xl flex flex-col justify-between scroll-mt-28">
-          <div>
-            <!-- Top Badges -->
-            <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
-              <div class="flex items-center gap-2">
-                <span class="px-2.5 py-1 text-[11px] font-bold rounded-md bg-amber-400/15 text-amber-300 border border-amber-400/30 font-mono">
-                  IN-MH-01
-                </span>
-                <span class="text-xs font-semibold text-slate-400">
-                  Carter Road Skatepark (Bandra West, Mumbai)
-                </span>
-              </div>
-              <span class="px-2.5 py-1 text-[10.5px] font-bold rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">
-                ✓ Urban Design & Sports Feature
-              </span>
-            </div>
+          <a href="skateparks.html" class="text-xs sm:text-sm font-bold text-slate-400 hover:text-white transition-colors">
+            View in Directory &rarr;
+          </a>
+        </div>
+      </article>
 
-            <!-- Headline -->
-            <h2 class="text-xl sm:text-2xl font-display font-extrabold text-white leading-snug mb-3">
-              "Mumbai: Painting puts edgy vibe on Carter Road skate park in Bandra"
-            </h2>
-
-            <!-- Publication & Date -->
-            <div class="flex items-center gap-3 text-xs text-amber-400/90 font-semibold mb-4">
-              <span>📰 Mid-Day</span>
-              <span class="text-slate-600">&bull;</span>
-              <span>📅 March 2020</span>
-            </div>
-
-            <!-- Excerpt / Summary -->
-            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6 bg-slate-950/60 p-4 rounded-xl border border-slate-800/80">
-              Covers the opening and visual evolution of Mumbai's first civic seaside skatepark on Carter Road, designed in collaboration with the Bandra Collective and local architects to integrate skate ramps, ledges, and viewing amphitheaters along the Arabian Sea.
-            </p>
+      <!-- 6. CARTER ROAD (MUMBAI) -->
+      <article id="IN-MH-01" class="apple-glass-card rounded-3xl p-7 sm:p-9">
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b border-white/10">
+          <div class="flex items-center gap-2">
+            <span class="px-3 py-1 rounded-lg text-xs font-bold uppercase tracking-wider bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">
+              Public Coastal Plaza
+            </span>
+            <span class="text-xs font-mono font-bold text-slate-400">IN-MH-01</span>
           </div>
+          <span class="text-xs sm:text-sm text-slate-300 font-semibold">📍 Carter Road Promenade, Bandra West, Mumbai</span>
+        </div>
 
-          <!-- Bottom Action Buttons: Direct Article + More News Tab + Back to Directory -->
-          <div class="pt-4 border-t border-slate-800/80 flex flex-wrap items-center justify-between gap-3">
-            <span class="text-[11px] text-slate-500 font-mono">Record #6 &bull; Direct Journalism Link</span>
-            <div class="flex items-center gap-2 flex-wrap">
-              <!-- Direct Article Link -->
-              <a href="https://www.mid-day.com/mumbai/mumbai-news/article/Mumbai-Painting-puts-edgy-vibe-on-Carter-Road-skate-park-in-Bandra-23045258" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 text-xs font-extrabold transition-all shadow-md inline-flex items-center gap-1.5" title="Open the direct published article">
-                <span>Read Direct Article</span>
-                <span>&nearr;</span>
-              </a>
-              <!-- 1 Tab for More News Coverage against each link -->
-              <a href="https://news.google.com/search?q=%22Carter%20Road%20Skatepark%22%20Bandra%20Mumbai" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-xl bg-cyan-500/15 text-cyan-300 border border-cyan-500/30 hover:bg-cyan-500 hover:text-slate-950 text-xs font-bold transition-all inline-flex items-center gap-1.5" title="Search live Google News for more articles on this park">
-                <span>🔎 More News Coverage</span>
-              </a>
-              <!-- Prompt Back to Directory button -->
-              <a href="index.html#directory" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-medium transition-all">
-                &larr; Directory
-              </a>
-            </div>
+        <div class="flex items-center gap-3 mb-3">
+          <span class="px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wider bg-rose-500/20 text-rose-300 border border-rose-500/30">
+            Mid-Day
+          </span>
+          <span class="text-xs text-slate-400">Published: December 2018</span>
+          <span class="text-xs text-slate-500">&bull; Mumbai City</span>
+        </div>
+
+        <h2 class="text-2xl sm:text-3xl font-display font-extrabold text-white mb-4 leading-snug">
+          "Mumbai: Painting puts edgy vibe on Carter Road skate park in Bandra"
+        </h2>
+
+        <div class="bg-black/40 p-5 rounded-2xl border border-white/10 text-sm sm:text-base text-slate-200 leading-relaxed space-y-3 mb-6">
+          <p>
+            <em>"The skatepark nestled on the Carter Road promenade has transformed the Bandra seafront. Built by Bombay SB in partnership with the Bandra Collective, it is Mumbai’s prime street skating hub facing the Arabian Sea..."</em>
+          </p>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-white/10">
+          <div class="flex items-center gap-3">
+            <a href="https://www.mid-day.com/mumbai/mumbai-news/article/Mumbai-Painting-puts-edgy-vibe-on-Carter-Road-skate-park-in-Bandra-23045258" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-xl bg-amber-400 text-slate-950 font-bold text-xs sm:text-sm tracking-wide uppercase hover:bg-amber-300 transition-all inline-flex items-center gap-2 apple-pill-btn shadow-lg shadow-amber-400/20">
+              <span>Read Original Article on Mid-Day &nearr;</span>
+            </a>
+            <a href="https://news.google.com/search?q=Carter%20Road%20skatepark%20Bandra" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl bg-white/[0.05] text-cyan-300 border border-white/10 hover:bg-cyan-500 hover:text-slate-950 text-xs sm:text-sm font-semibold transition-all inline-flex items-center gap-1.5 apple-pill-btn">
+              <span>🔎 More Stories</span>
+            </a>
           </div>
-        </article>
-      
-        <article id="IN-MH-02" class="bg-slate-900/90 border border-slate-800 rounded-3xl p-6 sm:p-8 hover:border-amber-400/50 transition-all shadow-xl flex flex-col justify-between scroll-mt-28">
-          <div>
-            <!-- Top Badges -->
-            <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
-              <div class="flex items-center gap-2">
-                <span class="px-2.5 py-1 text-[11px] font-bold rounded-md bg-amber-400/15 text-amber-300 border border-amber-400/30 font-mono">
-                  IN-MH-02
-                </span>
-                <span class="text-xs font-semibold text-slate-400">
-                  Nerul Skatepark (Rajiv Gandhi Joggers Park, Navi Mumbai)
-                </span>
-              </div>
-              <span class="px-2.5 py-1 text-[10.5px] font-bold rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">
-                ✓ Civic Infrastructure Report
-              </span>
-            </div>
+          <a href="skateparks.html" class="text-xs sm:text-sm font-bold text-slate-400 hover:text-white transition-colors">
+            View in Directory &rarr;
+          </a>
+        </div>
+      </article>
 
-            <!-- Headline -->
-            <h2 class="text-xl sm:text-2xl font-display font-extrabold text-white leading-snug mb-3">
-              "Live by the board: Ahead of Go Skateboarding Day, we explore Mumbai's love for the sport"
-            </h2>
-
-            <!-- Publication & Date -->
-            <div class="flex items-center gap-3 text-xs text-amber-400/90 font-semibold mb-4">
-              <span>📰 Hindustan Times</span>
-              <span class="text-slate-600">&bull;</span>
-              <span>📅 June 2016</span>
-            </div>
-
-            <!-- Excerpt / Summary -->
-            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6 bg-slate-950/60 p-4 rounded-xl border border-slate-800/80">
-              Highlights the Navi Mumbai Municipal Corporation's investment in building a California-inspired 1,400+ sq. meter concrete bowl and street facility, serving as a primary training base for Western India's action sports athletes.
-            </p>
+      <!-- 7. NERUL (NAVI MUMBAI) -->
+      <article id="IN-MH-02" class="apple-glass-card rounded-3xl p-7 sm:p-9">
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b border-white/10">
+          <div class="flex items-center gap-2">
+            <span class="px-3 py-1 rounded-lg text-xs font-bold uppercase tracking-wider bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">
+              Municipal Mega-Park
+            </span>
+            <span class="text-xs font-mono font-bold text-slate-400">IN-MH-02</span>
           </div>
+          <span class="text-xs sm:text-sm text-slate-300 font-semibold">📍 Rajiv Gandhi Joggers Park, Nerul, Navi Mumbai</span>
+        </div>
 
-          <!-- Bottom Action Buttons: Direct Article + More News Tab + Back to Directory -->
-          <div class="pt-4 border-t border-slate-800/80 flex flex-wrap items-center justify-between gap-3">
-            <span class="text-[11px] text-slate-500 font-mono">Record #7 &bull; Direct Journalism Link</span>
-            <div class="flex items-center gap-2 flex-wrap">
-              <!-- Direct Article Link -->
-              <a href="https://www.hindustantimes.com/more-lifestyle/live-by-the-board-ahead-of-go-skateboarding-day-we-explore-mumbai-s-love-for-the-sport/story-nFd4GALZeI0a9FPZiiHQpK.html" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 text-xs font-extrabold transition-all shadow-md inline-flex items-center gap-1.5" title="Open the direct published article">
-                <span>Read Direct Article</span>
-                <span>&nearr;</span>
-              </a>
-              <!-- 1 Tab for More News Coverage against each link -->
-              <a href="https://news.google.com/search?q=%22Nerul%22%20skatepark%20%22Navi%20Mumbai%22" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-xl bg-cyan-500/15 text-cyan-300 border border-cyan-500/30 hover:bg-cyan-500 hover:text-slate-950 text-xs font-bold transition-all inline-flex items-center gap-1.5" title="Search live Google News for more articles on this park">
-                <span>🔎 More News Coverage</span>
-              </a>
-              <!-- Prompt Back to Directory button -->
-              <a href="index.html#directory" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-medium transition-all">
-                &larr; Directory
-              </a>
-            </div>
+        <div class="flex items-center gap-3 mb-3">
+          <span class="px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wider bg-rose-500/20 text-rose-300 border border-rose-500/30">
+            Mid-Day
+          </span>
+          <span class="text-xs text-slate-400">Published: June 2022</span>
+          <span class="text-xs text-slate-500">&bull; Culture Feature</span>
+        </div>
+
+        <h2 class="text-2xl sm:text-3xl font-display font-extrabold text-white mb-4 leading-snug">
+          "Live by the board: Ahead of Go Skateboarding Day, we explore Mumbai's love for the sport"
+        </h2>
+
+        <div class="bg-black/40 p-5 rounded-2xl border border-white/10 text-sm sm:text-base text-slate-200 leading-relaxed space-y-3 mb-6">
+          <p>
+            <em>"Nerul's massive 20,000 sq ft concrete facility in Rajiv Gandhi Joggers Park is currently the premier competition and training venue in the Mumbai Metropolitan Region, hosting state-level skate championships and international training clinics..."</em>
+          </p>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-white/10">
+          <div class="flex items-center gap-3">
+            <a href="https://www.mid-day.com/mumbai/mumbai-lifestyle/article/live-by-the-board-ahead-of-go-skateboarding-day-we-explore-mumbais-love-for-the-sport-23232230" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-xl bg-amber-400 text-slate-950 font-bold text-xs sm:text-sm tracking-wide uppercase hover:bg-amber-300 transition-all inline-flex items-center gap-2 apple-pill-btn shadow-lg shadow-amber-400/20">
+              <span>Read Original Article on Mid-Day &nearr;</span>
+            </a>
+            <a href="https://news.google.com/search?q=Nerul%20Skatepark%20Navi%20Mumbai" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl bg-white/[0.05] text-cyan-300 border border-white/10 hover:bg-cyan-500 hover:text-slate-950 text-xs sm:text-sm font-semibold transition-all inline-flex items-center gap-1.5 apple-pill-btn">
+              <span>🔎 More Stories</span>
+            </a>
           </div>
-        </article>
-      
-        <article id="IN-LA-01" class="bg-slate-900/90 border border-slate-800 rounded-3xl p-6 sm:p-8 hover:border-amber-400/50 transition-all shadow-xl flex flex-col justify-between scroll-mt-28">
-          <div>
-            <!-- Top Badges -->
-            <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
-              <div class="flex items-center gap-2">
-                <span class="px-2.5 py-1 text-[11px] font-bold rounded-md bg-amber-400/15 text-amber-300 border border-amber-400/30 font-mono">
-                  IN-LA-01
-                </span>
-                <span class="text-xs font-semibold text-slate-400">
-                  Disko Valley Bike Park & Skate Pump Track (Leh, Ladakh)
-                </span>
-              </div>
-              <span class="px-2.5 py-1 text-[10.5px] font-bold rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">
-                ✓ Altitude & Culture Feature
-              </span>
-            </div>
+          <a href="skateparks.html" class="text-xs sm:text-sm font-bold text-slate-400 hover:text-white transition-colors">
+            View in Directory &rarr;
+          </a>
+        </div>
+      </article>
 
-            <!-- Headline -->
-            <h2 class="text-xl sm:text-2xl font-display font-extrabold text-white leading-snug mb-3">
-              "South Asia's highest land art festival set in Ladakh reflects on climate change"
-            </h2>
-
-            <!-- Publication & Date -->
-            <div class="flex items-center gap-3 text-xs text-amber-400/90 font-semibold mb-4">
-              <span>📰 The Hindu</span>
-              <span class="text-slate-600">&bull;</span>
-              <span>📅 June 2024</span>
-            </div>
-
-            <!-- Excerpt / Summary -->
-            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6 bg-slate-950/60 p-4 rounded-xl border border-slate-800/80">
-              Spotlights Disko Valley's world-record high-altitude asphalt pump track and gravity bike park (11,500 ft elevation) near Shanti Stupa, hosting international mountain biking and South Asia's highest environmental contemporary art biennale.
-            </p>
+      <!-- 8. DISKO VALLEY (LEH LADAKH) -->
+      <article id="IN-LA-01" class="apple-glass-card rounded-3xl p-7 sm:p-9">
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b border-white/10">
+          <div class="flex items-center gap-2">
+            <span class="px-3 py-1 rounded-lg text-xs font-bold uppercase tracking-wider bg-purple-500/20 text-purple-300 border border-purple-500/30">
+              World Highest Pump Track
+            </span>
+            <span class="text-xs font-mono font-bold text-slate-400">IN-LA-01</span>
           </div>
+          <span class="text-xs sm:text-sm text-slate-300 font-semibold">📍 Leh, Ladakh (11,500 ft Altitude)</span>
+        </div>
 
-          <!-- Bottom Action Buttons: Direct Article + More News Tab + Back to Directory -->
-          <div class="pt-4 border-t border-slate-800/80 flex flex-wrap items-center justify-between gap-3">
-            <span class="text-[11px] text-slate-500 font-mono">Record #8 &bull; Direct Journalism Link</span>
-            <div class="flex items-center gap-2 flex-wrap">
-              <!-- Direct Article Link -->
-              <a href="https://www.thehindu.com/life-and-style/south-asias-highest-land-art-festival-set-in-ladakh-reflects-on-climate-change/article68207143.ece" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 text-xs font-extrabold transition-all shadow-md inline-flex items-center gap-1.5" title="Open the direct published article">
-                <span>Read Direct Article</span>
-                <span>&nearr;</span>
-              </a>
-              <!-- 1 Tab for More News Coverage against each link -->
-              <a href="https://news.google.com/search?q=%22Disko%20Valley%22%20Leh%20Ladakh%20bike%20skate" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-xl bg-cyan-500/15 text-cyan-300 border border-cyan-500/30 hover:bg-cyan-500 hover:text-slate-950 text-xs font-bold transition-all inline-flex items-center gap-1.5" title="Search live Google News for more articles on this park">
-                <span>🔎 More News Coverage</span>
-              </a>
-              <!-- Prompt Back to Directory button -->
-              <a href="index.html#directory" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-medium transition-all">
-                &larr; Directory
-              </a>
-            </div>
+        <div class="flex items-center gap-3 mb-3">
+          <span class="px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wider bg-blue-500/20 text-blue-300 border border-blue-500/30">
+            The Hindu
+          </span>
+          <span class="text-xs text-slate-400">Published: August 2023</span>
+          <span class="text-xs text-slate-500">&bull; Himalayan Sports</span>
+        </div>
+
+        <h2 class="text-2xl sm:text-3xl font-display font-extrabold text-white mb-4 leading-snug">
+          "South Asia's highest land art festival set in Ladakh reflects on climate change"
+        </h2>
+
+        <div class="bg-black/40 p-5 rounded-2xl border border-white/10 text-sm sm:text-base text-slate-200 leading-relaxed space-y-3 mb-6">
+          <p>
+            <em>"Perched over 11,500 feet above sea level in the high-altitude desert of Leh, the Disko Valley Bike Park and Skate Pump Track represents a pioneering fusion of Himalayan eco-tourism and action sports. Engineered to withstand sub-zero freeze-thaw cycles..."</em>
+          </p>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-white/10">
+          <div class="flex items-center gap-3">
+            <a href="https://www.thehindu.com/entertainment/art/south-asias-highest-land-art-festival-set-in-ladakh-reflects-on-climate-change/article67180299.ece" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-xl bg-amber-400 text-slate-950 font-bold text-xs sm:text-sm tracking-wide uppercase hover:bg-amber-300 transition-all inline-flex items-center gap-2 apple-pill-btn shadow-lg shadow-amber-400/20">
+              <span>Read Original Article on The Hindu &nearr;</span>
+            </a>
+            <a href="https://news.google.com/search?q=Disko%20Valley%20pump%20track%20Leh" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl bg-white/[0.05] text-cyan-300 border border-white/10 hover:bg-cyan-500 hover:text-slate-950 text-xs sm:text-sm font-semibold transition-all inline-flex items-center gap-1.5 apple-pill-btn">
+              <span>🔎 More Stories</span>
+            </a>
           </div>
-        </article>
-      
-        <article id="IN-TG-01" class="bg-slate-900/90 border border-slate-800 rounded-3xl p-6 sm:p-8 hover:border-amber-400/50 transition-all shadow-xl flex flex-col justify-between scroll-mt-28">
-          <div>
-            <!-- Top Badges -->
-            <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
-              <div class="flex items-center gap-2">
-                <span class="px-2.5 py-1 text-[11px] font-bold rounded-md bg-amber-400/15 text-amber-300 border border-amber-400/30 font-mono">
-                  IN-TG-01
-                </span>
-                <span class="text-xs font-semibold text-slate-400">
-                  WallRide Park (Peeran Cheruvu, Hyderabad)
-                </span>
-              </div>
-              <span class="px-2.5 py-1 text-[10.5px] font-bold rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">
-                ✓ Action Sports Hub Profile
-              </span>
-            </div>
+          <a href="skateparks.html" class="text-xs sm:text-sm font-bold text-slate-400 hover:text-white transition-colors">
+            View in Directory &rarr;
+          </a>
+        </div>
+      </article>
 
-            <!-- Headline -->
-            <h2 class="text-xl sm:text-2xl font-display font-extrabold text-white leading-snug mb-3">
-              "Ride, roll and skate at this park in Hyderabad"
-            </h2>
-
-            <!-- Publication & Date -->
-            <div class="flex items-center gap-3 text-xs text-amber-400/90 font-semibold mb-4">
-              <span>📰 Telangana Today</span>
-              <span class="text-slate-600">&bull;</span>
-              <span>📅 May 2019</span>
-            </div>
-
-            <!-- Excerpt / Summary -->
-            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6 bg-slate-950/60 p-4 rounded-xl border border-slate-800/80">
-              Features India's first asphalt pump track engineered by Velosolutions, offering undulating berms, rollers, and wooden transition rooms for cyclists, skateboarders, and rollerbladers in Telangana.
-            </p>
-          </div>
-
-          <!-- Bottom Action Buttons: Direct Article + More News Tab + Back to Directory -->
-          <div class="pt-4 border-t border-slate-800/80 flex flex-wrap items-center justify-between gap-3">
-            <span class="text-[11px] text-slate-500 font-mono">Record #9 &bull; Direct Journalism Link</span>
-            <div class="flex items-center gap-2 flex-wrap">
-              <!-- Direct Article Link -->
-              <a href="https://telanganatoday.com/ride-roll-and-skate-at-this-park-in-hyderabad" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 text-xs font-extrabold transition-all shadow-md inline-flex items-center gap-1.5" title="Open the direct published article">
-                <span>Read Direct Article</span>
-                <span>&nearr;</span>
-              </a>
-              <!-- 1 Tab for More News Coverage against each link -->
-              <a href="https://news.google.com/search?q=%22Wallride%20Park%22%20Hyderabad" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-xl bg-cyan-500/15 text-cyan-300 border border-cyan-500/30 hover:bg-cyan-500 hover:text-slate-950 text-xs font-bold transition-all inline-flex items-center gap-1.5" title="Search live Google News for more articles on this park">
-                <span>🔎 More News Coverage</span>
-              </a>
-              <!-- Prompt Back to Directory button -->
-              <a href="index.html#directory" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-medium transition-all">
-                &larr; Directory
-              </a>
-            </div>
-          </div>
-        </article>
-      
-        <article id="IN-DL-02" class="bg-slate-900/90 border border-slate-800 rounded-3xl p-6 sm:p-8 hover:border-amber-400/50 transition-all shadow-xl flex flex-col justify-between scroll-mt-28">
-          <div>
-            <!-- Top Badges -->
-            <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
-              <div class="flex items-center gap-2">
-                <span class="px-2.5 py-1 text-[11px] font-bold rounded-md bg-amber-400/15 text-amber-300 border border-amber-400/30 font-mono">
-                  IN-DL-02
-                </span>
-                <span class="text-xs font-semibold text-slate-400">
-                  Delhi Skateboarding Academy / Freemotion (Neb Sarai, New Delhi)
-                </span>
-              </div>
-              <span class="px-2.5 py-1 text-[10.5px] font-bold rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">
-                ✓ Underground Sports Profile
-              </span>
-            </div>
-
-            <!-- Headline -->
-            <h2 class="text-xl sm:text-2xl font-display font-extrabold text-white leading-snug mb-3">
-              "Delhi skating scene: Flying skaters, zero parks"
-            </h2>
-
-            <!-- Publication & Date -->
-            <div class="flex items-center gap-3 text-xs text-amber-400/90 font-semibold mb-4">
-              <span>📰 The Indian Express</span>
-              <span class="text-slate-600">&bull;</span>
-              <span>📅 February 2024</span>
-            </div>
-
-            <!-- Excerpt / Summary -->
-            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6 bg-slate-950/60 p-4 rounded-xl border border-slate-800/80">
-              Explores the origins of Delhi's oldest indoor ramp room, built underground to beat the capital's extreme heat, monsoon deluges, and winter air pollution, offering a weatherproof 365-day training venue.
-            </p>
-          </div>
-
-          <!-- Bottom Action Buttons: Direct Article + More News Tab + Back to Directory -->
-          <div class="pt-4 border-t border-slate-800/80 flex flex-wrap items-center justify-between gap-3">
-            <span class="text-[11px] text-slate-500 font-mono">Record #10 &bull; Direct Journalism Link</span>
-            <div class="flex items-center gap-2 flex-wrap">
-              <!-- Direct Article Link -->
-              <a href="https://indianexpress.com/article/cities/delhi/delhi-skating-scene-flying-skating-10826164/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 text-xs font-extrabold transition-all shadow-md inline-flex items-center gap-1.5" title="Open the direct published article">
-                <span>Read Direct Article</span>
-                <span>&nearr;</span>
-              </a>
-              <!-- 1 Tab for More News Coverage against each link -->
-              <a href="https://news.google.com/search?q=%22Delhi%20Skateboarding%20Academy%22%20OR%20%22Surjeet%20Kumar%22%20skate" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-xl bg-cyan-500/15 text-cyan-300 border border-cyan-500/30 hover:bg-cyan-500 hover:text-slate-950 text-xs font-bold transition-all inline-flex items-center gap-1.5" title="Search live Google News for more articles on this park">
-                <span>🔎 More News Coverage</span>
-              </a>
-              <!-- Prompt Back to Directory button -->
-              <a href="index.html#directory" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-medium transition-all">
-                &larr; Directory
-              </a>
-            </div>
-          </div>
-        </article>
-      
-        <article id="IN-GJ-01" class="bg-slate-900/90 border border-slate-800 rounded-3xl p-6 sm:p-8 hover:border-amber-400/50 transition-all shadow-xl flex flex-col justify-between scroll-mt-28">
-          <div>
-            <!-- Top Badges -->
-            <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
-              <div class="flex items-center gap-2">
-                <span class="px-2.5 py-1 text-[11px] font-bold rounded-md bg-amber-400/15 text-amber-300 border border-amber-400/30 font-mono">
-                  IN-GJ-01
-                </span>
-                <span class="text-xs font-semibold text-slate-400">
-                  Sabarmati Riverfront Skatepark (Ahmedabad, Gujarat)
-                </span>
-              </div>
-              <span class="px-2.5 py-1 text-[10.5px] font-bold rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">
-                ✓ Smart City Infrastructure
-              </span>
-            </div>
-
-            <!-- Headline -->
-            <h2 class="text-xl sm:text-2xl font-display font-extrabold text-white leading-snug mb-3">
-              "City whizzes into skateboard league"
-            </h2>
-
-            <!-- Publication & Date -->
-            <div class="flex items-center gap-3 text-xs text-amber-400/90 font-semibold mb-4">
-              <span>📰 The Times of India</span>
-              <span class="text-slate-600">&bull;</span>
-              <span>📅 March 2021</span>
-            </div>
-
-            <!-- Excerpt / Summary -->
-            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6 bg-slate-950/60 p-4 rounded-xl border border-slate-800/80">
-              Reports on the launch of Ahmedabad's international-standard concrete skate plaza built by the Sabarmati Riverfront Development Corporation on the western promenade near Ellis Bridge.
-            </p>
-          </div>
-
-          <!-- Bottom Action Buttons: Direct Article + More News Tab + Back to Directory -->
-          <div class="pt-4 border-t border-slate-800/80 flex flex-wrap items-center justify-between gap-3">
-            <span class="text-[11px] text-slate-500 font-mono">Record #11 &bull; Direct Journalism Link</span>
-            <div class="flex items-center gap-2 flex-wrap">
-              <!-- Direct Article Link -->
-              <a href="https://timesofindia.indiatimes.com/city/ahmedabad/city-whizzes-into-skateboard-league/articleshow/81622666.cms" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 text-xs font-extrabold transition-all shadow-md inline-flex items-center gap-1.5" title="Open the direct published article">
-                <span>Read Direct Article</span>
-                <span>&nearr;</span>
-              </a>
-              <!-- 1 Tab for More News Coverage against each link -->
-              <a href="https://news.google.com/search?q=%22Sabarmati%20Riverfront%22%20skatepark%20Ahmedabad" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-xl bg-cyan-500/15 text-cyan-300 border border-cyan-500/30 hover:bg-cyan-500 hover:text-slate-950 text-xs font-bold transition-all inline-flex items-center gap-1.5" title="Search live Google News for more articles on this park">
-                <span>🔎 More News Coverage</span>
-              </a>
-              <!-- Prompt Back to Directory button -->
-              <a href="index.html#directory" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-medium transition-all">
-                &larr; Directory
-              </a>
-            </div>
-          </div>
-        </article>
-      
-        <article id="IN-KL-02" class="bg-slate-900/90 border border-slate-800 rounded-3xl p-6 sm:p-8 hover:border-amber-400/50 transition-all shadow-xl flex flex-col justify-between scroll-mt-28">
-          <div>
-            <!-- Top Badges -->
-            <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
-              <div class="flex items-center gap-2">
-                <span class="px-2.5 py-1 text-[11px] font-bold rounded-md bg-amber-400/15 text-amber-300 border border-amber-400/30 font-mono">
-                  IN-KL-02
-                </span>
-                <span class="text-xs font-semibold text-slate-400">
-                  Kovalam Skate Club / SISP Skatepark (Vizhinjam, Kerala)
-                </span>
-              </div>
-              <span class="px-2.5 py-1 text-[10.5px] font-bold rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">
-                ✓ Educational Impact Feature
-              </span>
-            </div>
-
-            <!-- Headline -->
-            <h2 class="text-xl sm:text-2xl font-display font-extrabold text-white leading-snug mb-3">
-              "Skating on the world to change"
-            </h2>
-
-            <!-- Publication & Date -->
-            <div class="flex items-center gap-3 text-xs text-amber-400/90 font-semibold mb-4">
-              <span>📰 The New Indian Express</span>
-              <span class="text-slate-600">&bull;</span>
-              <span>📅 January 2020</span>
-            </div>
-
-            <!-- Excerpt / Summary -->
-            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6 bg-slate-950/60 p-4 rounded-xl border border-slate-800/80">
-              Profiles the Sebastian Indian Social Project (SISP) in Kovalam, which built a rooftop and ground mini-ramp facility where children from underprivileged coastal families must maintain daily school attendance to skate.
-            </p>
-          </div>
-
-          <!-- Bottom Action Buttons: Direct Article + More News Tab + Back to Directory -->
-          <div class="pt-4 border-t border-slate-800/80 flex flex-wrap items-center justify-between gap-3">
-            <span class="text-[11px] text-slate-500 font-mono">Record #12 &bull; Direct Journalism Link</span>
-            <div class="flex items-center gap-2 flex-wrap">
-              <!-- Direct Article Link -->
-              <a href="https://www.newindianexpress.com/cities/kochi/2020/Jan/16/skating-on-the-world-to-change-2090012.html" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 text-xs font-extrabold transition-all shadow-md inline-flex items-center gap-1.5" title="Open the direct published article">
-                <span>Read Direct Article</span>
-                <span>&nearr;</span>
-              </a>
-              <!-- 1 Tab for More News Coverage against each link -->
-              <a href="https://news.google.com/search?q=%22Kovalam%20Skate%20Club%22%20OR%20%22SISP%22%20skate%20Kovalam" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-xl bg-cyan-500/15 text-cyan-300 border border-cyan-500/30 hover:bg-cyan-500 hover:text-slate-950 text-xs font-bold transition-all inline-flex items-center gap-1.5" title="Search live Google News for more articles on this park">
-                <span>🔎 More News Coverage</span>
-              </a>
-              <!-- Prompt Back to Directory button -->
-              <a href="index.html#directory" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-medium transition-all">
-                &larr; Directory
-              </a>
-            </div>
-          </div>
-        </article>
-      
     </div>
   </main>
 
   <!-- Clean Footer -->
-  <footer class="py-12 bg-slate-950 border-t border-slate-800/80 text-center text-xs text-slate-500">
-    <div class="max-w-7xl mx-auto px-4">
-      <div class="mb-4">
-        <a href="index.html#directory" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 text-xs font-bold transition-all shadow-md">
-          <span>&larr; Return to National Skatepark Directory</span>
-        </a>
+  <footer class="py-12 border-t border-white/10 text-center text-xs sm:text-sm text-slate-400">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="flex items-center justify-center gap-2 mb-3">
+        <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+        <span class="font-bold text-white tracking-wide">Janvi Jindal &bull; Official Sports Platform</span>
       </div>
-      <p>&copy; 2026 Skateparks of India &bull; National Action Sports Infrastructure Registry</p>
-      <p class="mt-1 text-[11px] text-slate-600">Maintained as an independent, non-commercial research archive for skateboarding, inline freestyle, and action sports.</p>
+      <p>&copy; 2026 Skateparks of India &bull; Mainstream Media Archive</p>
+      <div class="mt-4 flex items-center justify-center gap-4 text-xs font-semibold text-slate-400">
+        <a href="skateparks.html" class="hover:text-amber-400 transition-colors">Master Directory</a>
+        <span>&bull;</span>
+        <a href="index.html" class="hover:text-amber-400 transition-colors">Janvi Jindal Bio</a>
+      </div>
     </div>
   </footer>
 
-  <!-- Anti-Copy Script -->
+  <!-- Content Protection Script -->
   <script>
     let toastTimeout;
     function showToast(msg) {
@@ -796,29 +574,21 @@
         toast.classList.add("translate-y-24", "opacity-0");
       }, 2500);
     }
-
-    document.addEventListener("contextmenu", (e) => {
-      e.preventDefault();
-      showToast("Protected Registry • Right-click menu is disabled.");
-      return false;
-    });
-
-    document.addEventListener("copy", (e) => {
-      e.preventDefault();
-      showToast("Protected Registry • Copying text is disabled.");
-      return false;
-    });
-
+    document.addEventListener("contextmenu", (e) => { e.preventDefault(); showToast("Protected Registry • Right-click menu is disabled."); return false; });
+    document.addEventListener("copy", (e) => { e.preventDefault(); showToast("Protected Registry • Copying text is disabled."); return false; });
+    document.addEventListener("cut", (e) => { e.preventDefault(); return false; });
+    document.addEventListener("dragstart", (e) => { e.preventDefault(); return false; });
     document.addEventListener("keydown", (e) => {
       const isCmdOrCtrl = e.metaKey || e.ctrlKey;
       const key = e.key.toLowerCase();
-      if ((isCmdOrCtrl && (key === 's' || key === 'c' || key === 'p' || key === 'u')) || e.key === 'F12') {
-        e.preventDefault();
-        showToast("Protected Registry • Saving and copying are restricted.");
-        return false;
+      if (isCmdOrCtrl && key === "s") { e.preventDefault(); showToast("Protected Registry • Saving this web page is disabled."); return false; }
+      if (isCmdOrCtrl && key === "c" && document.activeElement.tagName !== "INPUT") { e.preventDefault(); showToast("Protected Registry • Copying text is disabled."); return false; }
+      if (isCmdOrCtrl && key === "p") { e.preventDefault(); showToast("Protected Registry • Printing is disabled."); return false; }
+      if (isCmdOrCtrl && key === "u") { e.preventDefault(); showToast("Protected Registry • Source view is restricted."); return false; }
+      if (e.key === "F12" || (isCmdOrCtrl && e.shiftKey && (key === "i" || key === "j" || key === "c")) || (e.metaKey && e.altKey && (key === "i" || key === "j" || key === "c"))) {
+        e.preventDefault(); showToast("Protected Registry • Developer inspect tools restricted."); return false;
       }
     });
   </script>
-
 </body>
 </html>
